@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project - To-Do List</title>
+  </head>
+  <body>
+    <header id="header-container">
+      <h1>Minha Lista de Tarefas</h1>
+      <p id="funcionamento">
+        Clique duas vezes em um item para marcá-lo como completo
+      </p>
+    </header>
+    <main id="main-container">
+      <section>
+        <input type="text" id="texto-tarefa" placeholder="ex. estudar" />
+        <button type="button" id="criar-tarefa" name="botao-criar-tarefa">Adicionar tarefa</button>
+        <button type="button" id="salvar-tarefas" name="botao-salvar-tarefa">
+          <!-- "https://icons8.com/icon/3XFYHsXWeno2/save" -->
+          <img alt="icone-disk" src="https://img.icons8.com/plumpy/24/000000/save.png" />
+        </button>
+      </section>
+      <section>
+        <ol id="lista-tarefas"></ol>
+      </section>
+      <section>
+        <button type="button" id="remover-selecionado" name="botao-remover-selecionados">
+          <!-- "https://icons8.com/icon/111057/x" -->
+          <img alt="x" src="https://img.icons8.com/ios-filled/50/000000/x.png" width="17px" />
+        </button>
+        <button type="button" id="apaga-tudo" name="botao-apagar-tarefas">Limpar lista</button>
+        <button type="button" id="remover-finalizados" name="botar-remover-finalizados">Remover finalizados</button>
+      </section>
+      <section id="move-btn-container">
+        <button type="button" id="mover-cima" name="mover-cima">
+          <!-- "https://icons8.com/icon/105594/move-up" -->
+          <img alt="seta-cima" src="https://img.icons8.com/material-outlined/24/000000/move-up.png" width="20px" />
+        </button>
+        <button type="button" id="mover-baixo" name="mover-baixo">
+          <!-- "https://icons8.com/icon/105591/move-down" -->
+          <img alt="seta-baixo" src="https://img.icons8.com/material-outlined/24/000000/move-down.png" width="20px" />
+        </button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: url('layered-waves-haikei.svg') no-repeat center fixed;
+  background-size: cover;
+}
+
+#header-container {
+  margin: 60px auto 40px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+h1 {
+  color: rgb(255 , 255 , 254);
+  font-weight: 550;
+}
+
+p {
+  color: rgb(148 , 161 , 178);
+  font-weight: 500;
+}
+
+#main-container {
+  text-align: center;
+  width: 470px;
+  padding: 20px 30px;
+  margin: 0 auto 50px;
+  border-radius: 10px;
+
+  /* Source da box-shadow
+  https://www.codegrepper.com/code-examples/css/black+box+shadow+css */
+  box-shadow: 0 4px 8px 0 rgba(0 , 0 , 0 , 0.2), 0 6px 20px 0 rgba(0 , 0 , 0 , 0.19);
+}
+
+input {
+  width: 220px;
+  margin-right: 2px;
+  padding: 6px;
+  border: none;
+  font-weight: 400;
+}
+
+ol {
+  margin: 30px auto;
+}
+
+li {
+  color: rgb(148 , 161 , 178);
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  font-weight: 570;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+button {
+  background-color: rgb(127 , 90 , 240);
+  color: rgb(255 , 255 , 254);
+  border: none;
+  padding: 6px 15px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(44 , 182 , 125);
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+#salvar-tarefas img {
+  margin: -5px -10px -8px;
+}
+
+#remover-selecionado img {
+  margin: -5px -10px;
+}
+
+#move-btn-container {
+  margin-top: 10px;
+}
+
+#mover-cima img , #mover-baixo img {
+  margin: -5px -10px -6px;
+}
