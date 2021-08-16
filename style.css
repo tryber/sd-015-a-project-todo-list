@@ -1,0 +1,17 @@
+.listItem-Selected {
+    background-color:rgb(128, 128, 128);
+    cursor: pointer;
+
+}
+
+.listItem:hover {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through solid rgb(0, 0, 0);
+    }
+
+#deleteDoneButton {
+     margin-left: 4px;
+}
