@@ -1,0 +1,11 @@
+body {
+  background-color: aquamarine;
+}
+
+.selected {
+  background-color: grey;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
