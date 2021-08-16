@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header>Minha Lista de Tarefas</header>
+    <small id="funcionamento"
+      >Clique duas vezes em um item para marcá-lo como completo</small
+    >
+    <section id="secao-input-item">
+      <label for="texto-tarefa">Nova Tarefa:</label>
+      <input type="text" id="texto-tarefa" placeholder="Lavar Louça..." />
+    </section>
+    <ol id="lista-tarefas"></ol>
+    <section id="secao-button-item">
+      <p>Ações - Tarefas</p>
+      <button id="criar-tarefa">Criar Tarefa</button>
+      <button id="salvar-tarefas">Salvar Tarefas</button>
+      <button id="remover-finalizados">Remover Completos</button>
+      <button id="apaga-tudo">Apagar Tudo</button>
+    </section>
+    <section id="secao-button-selected-item">
+      <p>Ações - Tarefas Selecionadas</p>
+      <button id="mover-cima">Mover p/ cima</button>
+      <button id="mover-baixo">Mover p/ baixo</button>
+      <button id="remover-selecionado">Remover Item</button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

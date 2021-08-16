@@ -1,0 +1,47 @@
+* {
+  font-family: Courier New, Courier, monospace;
+}
+
+.selected {
+  background-color: rgb (128, 128, 128);
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#secao-input-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#lista-tarefas {
+  width: 50%;
+}
+
+#lista-tarefas li {
+  background-color: aliceblue;
+}
+
+button {
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 1px;
+}
+
+#criar-tarefa , #salvar-tarefas {
+  background-color: lightgreen;
+}
+
+#remover-finalizados , #remover-selecionado , #apaga-tudo {
+  background-color: lightcoral;
+}
+
+#mover-cima , #mover-baixo {
+  background-color: khaki;
+}
