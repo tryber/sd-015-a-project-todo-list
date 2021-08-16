@@ -1,4 +1,6 @@
 {
   "root": true,
-  "extends": "trybe-fundamentals"
+  "extends": "trybe-fundamentals",
+  "no-const-assign": "warn",
+  "no-this-before-super": "warn"
 }
