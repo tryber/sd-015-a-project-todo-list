@@ -1,0 +1,8 @@
+.completed {
+  text-decoration: line-through solid black;
+  background-color: white;
+}
+
+.backgroundRgb {
+  background-color: grey;
+}
