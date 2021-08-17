@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url('background.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  height: 100%;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+#list-container {
+  background-color: white;
+  border-radius: 30px;
+  padding: 40px;
+  width: 650px;
+  display: inline-block;
+}
+
+#buttons-container {
+  float: right;
+  background-color: white;
+  padding: 24px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+button {
+  margin: 5px 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(132 , 223 , 199);
+  font-size: 0.75rem;
+  border-style: none;
+
+}
+
+input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 300px;
+  font-size: 0.75rem;
+  border-style: none;
+  background-color: rgb(132 , 223 , 199);
+}
+
+.selecionada {
+  background-color: gray;
+
+  /* color: white; */
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+ol {
+  list-style: circle;
+}
