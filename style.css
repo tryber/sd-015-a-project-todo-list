@@ -1,0 +1,21 @@
+#criar-tarefa {
+    position: absolute;
+    left:200px;
+    top: 114px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+#apaga-tudo {
+    position:absolute;
+    top: 114px;
+    left: 280px;
+}
+
+#remover-finalizados {
+    position: absolute;
+    top: 114px;
+    left: 376px;
+}
