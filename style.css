@@ -1,0 +1,57 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+}
+
+.centralize {
+  margin: 0 auto;
+  border: solid black 2px;
+  max-width: 700px;
+  min-width: 700px;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: rgb(63 , 63 , 63);
+}
+
+h1 {
+  margin: 0 auto;
+
+}
+
+#funcionamento {
+  font-style: italic;
+  color: rgba(167 , 167 , 167 , 5);
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.selected {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+.buttomRadius {
+  border-radius: 50%;
+  border: none;
+  color: rgb(255 , 123 , 0);
+  background-color: black;
+  padding: 7px;
+}
+
+#texto-tarefa {
+  background-color: rgb(185 , 185 , 185);
+}
+
+.buttons {
+  background-color: rgb(255 , 123 , 0);
+  font-family: Impact, Haettenschweiler, sans-serif;
+  border-radius: 10px;
+}
+
+#lista-tarefas {
+  color: gainsboro;
+}
