@@ -1,0 +1,51 @@
+body {
+  background-color: lightblue;
+}
+#container {
+height: auto;
+width: 500px;
+padding: 20px;
+background-color: white;
+text-align: center;
+border-radius: 30px;
+margin-top: 50px;
+
+}
+
+#item {
+  width: 230px;
+  padding: 1px;
+  font-family: monospace;
+  text-align: left;
+}
+
+.completed{
+  text-decoration: line-through;
+}
+
+#apaga-tudo {
+  background-color: red;
+  border: 0px;
+  border-radius: 20px;
+  color: white;
+  font-family: monospace;
+  padding: 8px;
+}
+
+#remover-finalizados {
+  background-color: blue;
+  border: 0px;
+  border-radius: 20px;
+  color: white;
+  font-family: monospace;
+  padding: 8px;
+}
+
+#salvar-tarefas {
+  background-color: rgb(255, 187, 0);
+  border: 0px;
+  border-radius: 20px;
+  color: white;
+  font-family: monospace;
+  padding: 8px;
+}
