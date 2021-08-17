@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="caderno">
+        <div id="linhas-verticais"></div>
+        <div id="caderno-conteudo">
+            <header>
+                <h1 id="titulo">Minha Lista de Tarefas</h1>
+                <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+            </header>
+            <main>
+                <div>
+                    <input id="texto-tarefa" type="text" placeholder="Escreva aqui sua tarefa"> <button id="criar-tarefa" class="material-icons">add</button>
+                </div>
+                <div>
+                    <ol id="lista-tarefas"></ol>
+                </div>
+                <footer>
+                    <div id="navigation">
+                        <button id="remover-selecionado" class="material-icons">
+                            delete</button> <button id="mover-cima" i class="material-icons">keyboard_arrow_up</i></button> <button id="mover-baixo" i class="material-icons">keyboard_arrow_down</button> <button id="salvar-tarefas" class="material-icons">save</button>
+                    </div>
+                    <div id="excluir">
+                    <button id="apaga-tudo">Exclui lista</button> <button id="remover-finalizados">Exclui itens concluídos</button>
+                </div>
+                </footer>
+            </main>
+        </div>
+    </section>
+        <script src="script.js"></script>
+    </body>
+    </html>

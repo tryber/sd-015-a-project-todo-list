@@ -1,0 +1,101 @@
+/* Estilização baseada nos conteúdos dos links:
+https://www.csscodelab.com/simple-paper-textarea-html-css/
+https://css-tricks.com/how-to-create-a-notebook-design-with-css/*/
+body {
+    background-color: #91D1D3;
+    
+}
+#caderno {
+    background-color: #FFFAF0;
+    min-height: 870px;
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 5px rgba(15, 15, 15, 0.288);
+}
+#caderno-conteudo {
+    text-align: center;
+    margin-left: 30px;
+}
+#lista-tarefa {
+    font-size: 18px;
+    left: 20px;
+    width: 500px;
+    border: 1px solid #f3e0e0;
+}
+.tarefa.selected {
+    background-color: rgb(128, 128, 128);
+    color: #df7575;
+}
+.completed {
+    text-decoration: line-through solid rgb(0, 0, 0);
+}
+.tarefa {
+    cursor: pointer;
+    border-bottom: 1.5px dotted #ccc;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #555;
+}
+#titulo {
+    font-family: 'League Script', cursive;
+    font-size: 60px;
+    font-weight: lighter;
+}
+#funcionamento {
+    font-family: 'Courier New', Courier, monospace;
+    color: #555;
+    font-size: 15px;
+    border-bottom: 1.5px dotted #ccc;
+    padding: 10px;
+}
+#linhas-verticais {
+    float: left;
+    border-left: #B22222 solid 1px;
+    border-right: #B22222 solid 1px;
+    height: 100%;
+    margin: 0 20px;
+    width: 2px;
+    position: absolute;
+    top: 0;
+}
+#texto-tarefa {
+    display: inline-block;
+    padding: 6px 30px;
+    font-family: 'Courier New', Courier, monospace;
+    border: #555 solid 1px;
+}
+button {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    box-shadow: 4px 4px 3px #5b8585a8;
+    background-color: #e8fdfd;
+    border-radius: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+
+}
+footer {
+    bottom: 0;
+    position: relative;
+    text-align: center;
+    width: 600px;
+    margin:5px 20px;
+}
+footer button {
+    margin: 5px 1px;
+}
+::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
