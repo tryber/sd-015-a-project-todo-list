@@ -1,0 +1,46 @@
+.completed {
+  text-decoration: line-through;
+}
+
+body {
+  align-items: center;
+  background-color: darkgreen;
+}
+
+section {
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px;
+  padding-top: 20px;
+  margin: auto;
+  width: 80%;
+}
+
+button {
+  font-size: 20px;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid black;
+  box-shadow: 5px black;
+  text-shadow: none;
+  text-align: center;
+  align-content: center;
+  margin: 5px;
+}
+
+#remover-selecionado , #apaga-tudo , #remover-finalizados {
+  background-color: red;
+}
+
+#mover-cima , #mover-baixo {
+  background-color: orange;
+}
+
+#criar-tarefa , #salvar-tarefas {
+  background-color: blue;
+}
+
+#funcionamento {
+  font-style: italic;
+  margin-top: 0;
+}
