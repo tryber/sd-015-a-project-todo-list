@@ -13,16 +13,17 @@ const listaTarefas = document.querySelector('#lista-tarefas')
 // 5 - Adicione um botão com id="criar-tarefa" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo
 
 const botaoCriarTarefa = document.querySelector('#criar-tarefa');
+const objectList = document.querySelectorAll('#lista-tarefas li');
 
 
 function criarTarefa(){
 
-  let li = document.createElement("li");
-    li.innerText = textoTarefa.value;
-    li.backgroundColor = "white";
-    li.addEventListener('click', alterarCor);
-
-  listaTarefas.appendChild(li);
+  var listElement = document.createElement("li");
+    listElement.innerText = textoTarefa.value;
+    listElement.backgroundColor = "white";
+    listElement.addEventListener('click', alterarCor);
+    listElement.addEventListener('dblclick', riscarTexto);
+  listaTarefas.appendChild(listElement);
   textoTarefa.value = '';
 }
 
@@ -31,10 +32,28 @@ function criarTarefa(){
 
 
 // 7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128)
-
+// 8 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo
+  
+var itensLista = document.querySelectorAll("#lista-tarefas li");
 function alterarCor(e) {
+
   let elementoClicado = e.target;
-  elementoClicado.style.backgroundColor = "rgb(128,128,128)";
+
+
+
+ // for (let i = 0; i < itensLista.length; i += 1){
+ // if (itensLista[i].className = "selected") {itensLista[i].className.rem}
+ // }
+
+  elementoClicado.className = "selected";
+  console.log(objectList)
+
 }
 
-// 8 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo
+
+
+function riscarTexto(e){
+  let elementoClicado = e.target;
+  elementoClicado.innerText = elementoClicado.innerText.strike();
+  console.log(elementoClicado)
+}
