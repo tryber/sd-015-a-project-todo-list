@@ -1,0 +1,10 @@
+
+header {text-align: center;
+}
+main{text-align: center;
+}
+
+.completed {
+    text-decoration: line-through solid black;
+}
+
