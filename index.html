@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,
+         initial-scale=1.0">
+        <link href="stylesheet"  type="text/css" href="style.css" 
+        href="script.js"> 
+    </head>
+</html>
+<script>
+    let header = document.createElement('header')
+    let body = document.querySelector('body')
+    body.appendChild(header)
+    header.innerHTML = 'Minha Lista de Tarefas'
+
+    let p = document.createElement('p')
+    body.appendChild(p)
+    p.innerHTML = 'Clique duas vezes em um item  para marcá-lo como completo'
+    p.id = 'funcionamento'
+
+    let divInputBotao = document.createElement('div')
+    body.appendChild(divInputBotao)
+
+    let input = document.createElement('input')
+    input.id = 'texto-tarefa'
+    divInputBotao.appendChild(input)
+    input.placeholder = 'Digite aqui sua tarefa'
+
+    let listaDeTarefas = document.createElement('ol')
+    body.appendChild(listaDeTarefas)
+    listaDeTarefas.id = 'lista-tarefas'
+
+    let botao = document.createElement('button')
+    divInputBotao.appendChild(botao)
+    botao.innerHTML = 'Criar Tarefa'
+    botao.style.marginLeft = '15px'
+    botao.id = 'criar-tarefa'    
+
+    
+
+
+    let divBotoes = document.createElement('div')
+    body.appendChild(divBotoes)
+
+    let botaoReset = document.createElement('button')
+    divBotoes.appendChild(botaoReset)
+    botaoReset.innerHTML = 'Apagar tudo'
+    botaoReset.id = 'apaga-tudo'
+    botaoReset.style.marginLeft = '50px'
+
+   
+    
+
+    botao.addEventListener('click', function (){
+        let tarefa = input.value
+        let li = document.createElement('li')
+        listaDeTarefas.appendChild(li)
+        li.innerHTML = tarefa
+        input.value = ''
+        
+
+        function removeSelected (){
+            let aux = document.querySelectorAll('li')
+            for (let i = 0; i < aux.length; i ++) {
+                if (aux[i].id = 'selected'){
+                    aux[i].id = ''
+                }
+            }
+        }
+
+        function removeColor (){
+            let auxColor = document.querySelectorAll('li')
+            for (let i = 0; i < auxColor.length; i ++) {
+                if (auxColor[i].style.backgroundColor !== 'white'){
+                    auxColor[i].style.backgroundColor = 'white'
+                }
+            }
+        }
+
+        
+
+        li.addEventListener('click', function (){
+            removeSelected()
+            removeColor()
+            li.id = 'selected'
+            let selected = document.querySelector('#selected')
+            
+            selected.style.backgroundColor = 'rgb(128, 128, 128)'
+            
+        })
+        
+        // depois volto para o requisito 9
+        
+        
+
+        botaoReset.addEventListener('click', function (){
+            let tarefasAdcionadas = document.querySelectorAll('li')
+            for (let i = 0; i < tarefasAdcionadas.length; i++){
+                let auxReset = tarefasAdcionadas[i]
+                auxReset.remove()
+            }
+        })
+    })
+    
+    
+        
+
+
+        
+
+        
+        
+        
+
+        
+
+    
+    
+    
+    
+    
+    
+    
+
+
+</script>
