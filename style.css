@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Function JS */
+.selected {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through;
+}
