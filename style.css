@@ -1,0 +1,81 @@
+body {
+  margin-left: 10%;
+  background-color: rgba(209 , 209 , 209);
+}
+
+.selected {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+  color: green;
+}
+
+button {
+  background: rgb(118 , 179 , 250);
+  border-radius: 100px;
+  padding: 3px 10px;
+  color: black;
+  margin: 5px 15px;
+  border: 1px solid black;
+}
+
+#apaga-tudo {
+  background-color: rgb(255 , 91 , 91);
+  border-radius: 5px;
+}
+
+#lista {
+  background-image: url('/fundo-lista.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  width: 700px;
+}
+
+header {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+#lista p {
+  text-align: center;
+  margin-left: 18%;
+  font-size: 14px;
+  margin-top: 3%;
+}
+
+#lista ol {
+  margin-top: 9.5%;
+  margin-left: 15%;
+  margin-right: 75px;
+  line-height: 30px;
+}
+
+h2 {
+  padding-top: 5%;
+}
+
+.hover {
+  display: block;
+  background-color: yellow;
+  color: black;
+}
+
+#remover-selecionado {
+  background-color: red;
+}
+
+#content {
+  margin-top: 2%;
+  padding: 5%;
+  float: left;
+  background-color: rgb(222 , 199 , 135);
+  border-radius: 50px;
+}
+
+#remover-finalizados {
+  background-color: rgb(255 , 91 , 91);
+}
