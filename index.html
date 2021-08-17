@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>Project TODO List</title>
+</head>
+<body>
+  <header>
+    <h1>Minha Lista de Tarefas</h1>
+    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+  </header>
+<section id="list-section">
+  <input type="text" id="texto-tarefa" placeholder="Digite uma tarefa">
+  <button id="criar-tarefa">Adicionar</button>
+  <ol id="lista-tarefas">
+    <!--Itens da lista criados dinamicamente com JavaScript a partir da interação do usuário-->
+  </ol>
+</section>
+<section id="btn-section">
+  <button id="apaga-tudo">Limpar Lista</button>
+  <button id="remover-finalizados">Limpar Finalizados</button>
+  <button id="salvar-tarefas">Salvar Lista</button>
+  <button id="mover-cima">↑</button>
+  <button id="mover-baixo">↓</button>
+  <button id="remover-selecionado">Remover</button>
+</section>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 30px 0;
+}
+
+body {
+  background-color: rgb(22 , 23 , 27);
+  color: white;
+  font-family: Roboto Slab, serif;
+  text-align: center;
+}
+
+#list-section {
+  max-width: 650px;
+  margin: auto;
+}
+
+ol {
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+#btn-section {
+  margin-top: 20px;
+}
+
+button , #texto-tarefa {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-family: Roboto Slab, serif;
+}
+
+button:hover {
+  background-color: rgb(245 , 193 , 8);
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+#criar-tarefa:hover {
+  background-color: rgb(77 , 193 , 139);
+}
+
+#remover-selecionado:hover {
+  background-color: rgb(191 , 76 , 76);
+}
