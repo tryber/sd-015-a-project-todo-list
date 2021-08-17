@@ -1,0 +1,48 @@
+body{
+  background-color: #40AD40;
+  font-family: sans-serif;
+}
+/*
+  Criando o conteudo da pagina
+*/
+#content{
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/*
+  Estilizando o header
+*/
+#funcionamento{
+  color: #727272;
+}
+
+/*
+  Estilizando o formulario
+*/
+
+#texto-tarefa{
+  padding: 5px;
+}
+
+#criar-tarefa{
+  border-style: none;
+  padding: 8px;
+  width: 120px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #39A2D9;
+  color: white;
+  font-weight: bold;
+}
+
+.liSelecionada{
+  background:rgb(128, 128, 128);
+}
+.completed{
+  text-decoration: line-through solid rgb(0, 0, 0);
+}
