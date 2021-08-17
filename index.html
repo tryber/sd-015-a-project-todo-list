@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List 📝</title>
+  <link rel="stylesheet"  href="./style.css" type="text/css" >
+</head>
+
+<body>
+  <header>
+    <h1>Minha Lista de Tarefas</h1>
+    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como <span style="text-decoration: line-through solid 3px #f33737;">completo</span></p>
+  </header>
+  <main>
+    <section>
+      <input id="texto-tarefa" placeholder="Escreva sua tarefa!">
+      <button id="criar-tarefa">Adicionar Tarefa 📝</button>
+      <ol id="lista-tarefas"></ol>
+      <button id="salvar-tarefas">Salvar sua lista de tarefas 💾</button>
+      <button id="remover-finalizados">Apagar tarefas já concluídas ✅</button>
+      <button id="remover-selecionado">Apagar item selecionado ❌</button>
+      <button id="apaga-tudo">Apagar todos os itens da lista 🗑️</button>
+      <button id="mover-cima" class="moveBtns">👆</button>
+      <button id="mover-baixo" class="moveBtns">👇</button>
+    </section>
+  </main>
+  <footer>
+    <span>
+      Made with <span id="heart">♥</span> by <a href="https://github.com/joaofelipelliccione" rel="noreferrer" target="_blank">João Felipe Pelliccione</a>
+    </span>
+  </footer>
+<script src="./script.js"></script>
+</body>
+</html>
