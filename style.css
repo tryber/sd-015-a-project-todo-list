@@ -1,0 +1,11 @@
+body {
+  background-color: aquamarine;
+}
+
+.selected {
+  background-color: rgb(128, 128, 128);
+}
+
+.completed {
+  text-Decoration: line-through solid rgb(0, 0, 0);
+}
