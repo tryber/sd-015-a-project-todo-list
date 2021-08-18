@@ -1,0 +1,7 @@
+.alterBack {
+    background-color: rgb(128, 128, 128);
+}
+
+.completed {
+    text-decoration: solid rgb(0, 0, 0) line-through; 
+}
