@@ -1,0 +1,71 @@
+@font-face {
+  font-family: indieFlower;
+  src: url('/imagens/IndieFlower-Regular.ttf');
+}
+
+/*
+body {
+  font-family: supermario, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  margin: 0;
+  background-image: url(/images/860645.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+} */
+
+
+body {
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  background-image: url('/imagens/cover3.png');
+  background-size: cover;
+  font-family: indieFlower, cursive;
+}
+
+header {
+  margin-top: 200px;
+  font-size: 125%;
+  text-decoration: underline;
+}
+
+#funcionamento {
+  font-size: 70%;
+}
+
+#lista-tarefas {
+  height: 245px;
+}
+
+.itens-lista-individuais {
+  font-size: 90%;
+  width: 15%;
+  margin-left: 780px;
+
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+button {
+  font-family: indieFlower, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50%;
+  margin: 3px;
+  height: 35px;
+  background-color: rgb(254 , 238 , 190);
+  border: 2px solid rgb(249 , 229 , 169);
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(245 , 217 , 131);
+}
+
+#texto-tarefa {
+  height: 30px;
+  background-color: rgb(254 , 238 , 190);
+  border: 2px solid rgb(249 , 229 , 169);
+  border-radius: 10px;
+}
