@@ -1,0 +1,22 @@
+.completed {
+  text-decoration: line-through solid rgb(0, 0, 0);
+}
+
+.selected {
+  background-color: rgb(128, 128, 128)  ;
+}
+
+#remover-selecionado {
+  border-radius: 25%;
+  background-color: red;
+}
+
+#mover-cima,
+#mover-baixo {
+  border-radius: 25%;
+  border-color: #68b465;
+  background: linear-gradient(to bottom, #abd5aa 5%, #68b465 100%);
+  box-shadow: inset 0px 1px 0px 0px #e3f1e3;
+  color: #fff;
+  text-shadow: 0px 1px 0px #528009;
+}
