@@ -1,0 +1,942 @@
+{
+  "stats": {
+    "suites": 14,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-16T22:13:13.094Z",
+    "end": "2021-08-16T22:13:16.393Z",
+    "duration": 3299,
+    "testsRegistered": 28,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 14,
+    "hasOther": true,
+    "skipped": 28,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "b8d63657-2092-4f49-bb20-4b5b704bb0ce",
+      "title": "",
+      "fullFile": "cypress/integration/project.spec.js",
+      "file": "cypress/integration/project.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7385514c-1d4b-4e29-b295-eb7d682c8509",
+          "title": "1 - Adicone à sua lista o título \"Minha Lista de Tarefas\" em uma tag <header>",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificado se sua página possui uma tag `header` com o conteúdo `Minha Lista de Tarefas`",
+              "fullTitle": "1 - Adicone à sua lista o título \"Minha Lista de Tarefas\" em uma tag <header> Será verificado se sua página possui uma tag `header` com o conteúdo `Minha Lista de Tarefas`",
+              "timedOut": null,
+              "duration": 273,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('header').contains(TODO_PAGE_TITLE);",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '1 - Adicone à sua lista o t...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '1 - Adicone à sua lista o t...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "ea9e8f43-c351-4b54-b096-23de33f5bed0",
+              "parentUUID": "7385514c-1d4b-4e29-b295-eb7d682c8509",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ea9e8f43-c351-4b54-b096-23de33f5bed0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 273,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "84bad21e-146b-4e7c-aad4-ccb4d8dbde40",
+          "title": "2 - Adicione abaixo do título um pequeno e discreto parágrafo com id=\"funcionamento\" e com o texto \"Clique duas vezes em um item para marcá-lo como completo\"",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificado que existe na sua página um elemento com o id `funcionamento` com o conteúdo `Clique duas vezes em um item para marcá-lo como completo`",
+              "fullTitle": "2 - Adicione abaixo do título um pequeno e discreto parágrafo com id=\"funcionamento\" e com o texto \"Clique duas vezes em um item para marcá-lo como completo\" Será verificado que existe na sua página um elemento com o id `funcionamento` com o conteúdo `Clique duas vezes em um item para marcá-lo como completo`",
+              "timedOut": null,
+              "duration": 206,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(TODO_PAGE_DESCRIPTION_SELECTOR).contains(TODO_PAGE_DESCRIPTION);",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '2 - Adicione abaixo do títu...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '2 - Adicione abaixo do títu...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "0b759f98-df48-4dd3-9d9b-2779f7722405",
+              "parentUUID": "84bad21e-146b-4e7c-aad4-ccb4d8dbde40",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0b759f98-df48-4dd3-9d9b-2779f7722405"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 206,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "06b3ee34-fd15-437a-951c-e8984d3838b3",
+          "title": "3 - Adicione um input com o id=\"texto-tarefa\" onde o usuário poderá digitar o nome do item que deseja adicionar à lista",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificada a existência de um elemento do tipo `input` com o id `texto-tarefa`",
+              "fullTitle": "3 - Adicione um input com o id=\"texto-tarefa\" onde o usuário poderá digitar o nome do item que deseja adicionar à lista Será verificada a existência de um elemento do tipo `input` com o id `texto-tarefa`",
+              "timedOut": null,
+              "duration": 287,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(TODO_ADD_INPUT_SELECTOR).should('exist');",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '3 - Adicione um input com o...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '3 - Adicione um input com o...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "d9c00c63-b3c8-4654-a4ac-f3516d09383b",
+              "parentUUID": "06b3ee34-fd15-437a-951c-e8984d3838b3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d9c00c63-b3c8-4654-a4ac-f3516d09383b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 287,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "45524c5c-2396-49b2-bb36-6b4fc5c15571",
+          "title": "4 - Adicione uma lista ordenada de tarefas com o id=\"lista-tarefas\"",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificada a existência de um elemento `ol` com o id `lista-tarefas`",
+              "fullTitle": "4 - Adicione uma lista ordenada de tarefas com o id=\"lista-tarefas\" Será verificada a existência de um elemento `ol` com o id `lista-tarefas`",
+              "timedOut": null,
+              "duration": 177,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(TODO_LIST_SELECTOR).should('exist');",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '4 - Adicione uma lista orde...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '4 - Adicione uma lista orde...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "d2d4242f-3b39-4850-93d8-a08c91717414",
+              "parentUUID": "45524c5c-2396-49b2-bb36-6b4fc5c15571",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d2d4242f-3b39-4850-93d8-a08c91717414"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 177,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "a7235055-0292-465b-948c-338b2ddbf5ec",
+          "title": "5 - Adicione um botão com id=\"criar-tarefa\" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificada a existência de um elemento do tipo `button` com o id `criar-tarefa",
+              "fullTitle": "5 - Adicione um botão com id=\"criar-tarefa\" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo Será verificada a existência de um elemento do tipo `button` com o id `criar-tarefa",
+              "timedOut": null,
+              "duration": 206,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(TODO_ADD_BUTTON_SELECTOR).should('exist');",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '5 - Adicione um botão com i...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '5 - Adicione um botão com i...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "1b35336f-020f-4009-bef4-fc83a501deff",
+              "parentUUID": "a7235055-0292-465b-948c-338b2ddbf5ec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "No campo de input será digitado o texto de uma tarefa qualquer e, em seguida, clicar-se-á no botão de criar tarefa. Será verificado que, após o clique, o texto digitado aparece na lista e desaparece do input",
+              "fullTitle": "5 - Adicione um botão com id=\"criar-tarefa\" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo No campo de input será digitado o texto de uma tarefa qualquer e, em seguida, clicar-se-á no botão de criar tarefa. Será verificado que, após o clique, o texto digitado aparece na lista e desaparece do input",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todo1 = {\n  content: 'minha primeira tarefa'\n};\naddTodo(todo1);\ncheckTodoList([todo1]);\ncy.get(TODO_ADD_INPUT_SELECTOR).should('have.value', '');",
+              "err": {},
+              "uuid": "c20f93f3-3ffe-4bad-a983-788766f80478",
+              "parentUUID": "a7235055-0292-465b-948c-338b2ddbf5ec",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "A adição de elementos na lista será feita algumas vezes, e será checado se todos os itens criados permanecem na lista na medida em que novos são adicionados",
+              "fullTitle": "5 - Adicione um botão com id=\"criar-tarefa\" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo A adição de elementos na lista será feita algumas vezes, e será checado se todos os itens criados permanecem na lista na medida em que novos são adicionados",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todo1 = {\n  content: 'minha primeira tarefa'\n};\nvar todo2 = {\n  content: 'minha segunda tarefa'\n};\naddTodo(todo1);\ncheckTodoList([todo1]);\naddTodo(todo2);\ncheckTodoList([todo1, todo2]);\ncy.get(TODO_ADD_INPUT_SELECTOR).should('have.value', '');",
+              "err": {},
+              "uuid": "e6035e30-5600-4006-b42a-edfa6b03deec",
+              "parentUUID": "a7235055-0292-465b-948c-338b2ddbf5ec",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1b35336f-020f-4009-bef4-fc83a501deff"
+          ],
+          "pending": [],
+          "skipped": [
+            "c20f93f3-3ffe-4bad-a983-788766f80478",
+            "e6035e30-5600-4006-b42a-edfa6b03deec"
+          ],
+          "duration": 206,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3aa8be5a-2df0-4572-90ef-d25b2f2c0c87",
+          "title": "6 - Ordene os itens da lista de tarefas por ordem de criação",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Três itens serão criados na lista e será checado se eles estão ordenados por ordem de criação - ou seja, primeiro o primeiro item criado, depois o segundo, e assim por diante",
+              "fullTitle": "6 - Ordene os itens da lista de tarefas por ordem de criação Três itens serão criados na lista e será checado se eles estão ordenados por ordem de criação - ou seja, primeiro o primeiro item criado, depois o segundo, e assim por diante",
+              "timedOut": null,
+              "duration": 204,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var todo1 = {\n  content: 'minha tarefa'\n};\nvar todo2 = {\n  content: 'minha outra tarefa'\n};\nvar todo3 = {\n  content: 'minha terceira tarefa'\n};\naddTodo(todo1);\ncheckTodoList([todo1]);\naddTodo(todo2);\ncheckTodoList([todo1, todo2]);\naddTodo(todo3);\ncheckTodoList([todo1, todo2, todo3]);",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '6 - Ordene os itens da list...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '6 - Ordene os itens da list...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "84b46f18-e8f0-4bc2-bec1-399e162ba017",
+              "parentUUID": "3aa8be5a-2df0-4572-90ef-d25b2f2c0c87",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "84b46f18-e8f0-4bc2-bec1-399e162ba017"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 204,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "84a51984-8baf-45a2-a1eb-fe8b497f0f2d",
+          "title": "7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128)",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificado que, ao se carregar a página, os itens da lista **não tem** o estilo CSS `background-color: rgb(128, 128, 128)`",
+              "fullTitle": "7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128) Será verificado que, ao se carregar a página, os itens da lista **não tem** o estilo CSS `background-color: rgb(128, 128, 128)`",
+              "timedOut": null,
+              "duration": 211,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'uma tarefa qualquer'\n}, {\n  content: 'uma outra tarefa atoa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'background-color', 'rgb(128, 128, 128)');",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '7 - Clicar em um item da li...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '7 - Clicar em um item da li...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "64b42b8a-34c9-402c-9765-18373f73fe88",
+              "parentUUID": "84a51984-8baf-45a2-a1eb-fe8b497f0f2d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será verificado que, ao se clicar em um item da lista, ele passa a ter o estilo CSS `background-color: rgb(128, 128, 128)`",
+              "fullTitle": "7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128) Será verificado que, ao se clicar em um item da lista, ele passa a ter o estilo CSS `background-color: rgb(128, 128, 128)`",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'uma tarefa qualquer'\n}, {\n  content: 'uma outra tarefa atoa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().click().then(function ($li) {\n  expect($li).to.have.css('background-color', 'rgb(128, 128, 128)');\n});",
+              "err": {},
+              "uuid": "b7c4b09d-235f-45f2-aa20-389ede232c18",
+              "parentUUID": "84a51984-8baf-45a2-a1eb-fe8b497f0f2d",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "64b42b8a-34c9-402c-9765-18373f73fe88"
+          ],
+          "pending": [],
+          "skipped": [
+            "b7c4b09d-235f-45f2-aa20-389ede232c18"
+          ],
+          "duration": 211,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "9619a7c0-775c-4c51-991f-cae0d7561e57",
+          "title": "8 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificado que, quando um elemento da lista é selecionado, o elemento selecionado previamente deixa de sê-lo. Isso é verificado através da presença ou não do estilo `background-color: rgb(128, 128, 128)` no elemento",
+              "fullTitle": "8 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo Será verificado que, quando um elemento da lista é selecionado, o elemento selecionado previamente deixa de sê-lo. Isso é verificado através da presença ou não do estilo `background-color: rgb(128, 128, 128)` no elemento",
+              "timedOut": null,
+              "duration": 196,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'uma tarefa qualquer'\n}, {\n  content: 'uma outra tarefa atoa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'background-color', 'rgb(128, 128, 128)');\ncy.get(TODO_LIST_LINE_SELECTOR).first().click().then(function ($li) {\n  expect($li).to.have.css('background-color', 'rgb(128, 128, 128)');\n});\ncy.get(TODO_LIST_LINE_SELECTOR).last().click().then(function ($li) {\n  expect($li).to.have.css('background-color', 'rgb(128, 128, 128)');\n});\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'background-color', 'rgb(128, 128, 128)');",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '8 - Não deve ser possível s...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '8 - Não deve ser possível s...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "f597846f-5217-4878-a28d-dc48d356799a",
+              "parentUUID": "9619a7c0-775c-4c51-991f-cae0d7561e57",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f597846f-5217-4878-a28d-dc48d356799a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 196,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ec859df1-e790-4049-b629-d45e8bb71a67",
+          "title": "9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificado que, antes da ação ser disparada, o elemento adicionado à lista não tem nem a classe `completed` nem o estilo `line-through solid rgb(0, 0, 0)`",
+              "fullTitle": "9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item Será verificado que, antes da ação ser disparada, o elemento adicionado à lista não tem nem a classe `completed` nem o estilo `line-through solid rgb(0, 0, 0)`",
+              "timedOut": null,
+              "duration": 275,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'já terminei essa tarefa'\n}, {\n  content: 'está eu ainda não terminei'\n}];\naddTodos(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.class', 'completed');\ncy.get(TODO_LIST_LINE_SELECTOR).should('not.have.css', 'text-decoration', 'line-through solid rgb(0, 0, 0)');",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '9 - Clicar duas vezes em um...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '9 - Clicar duas vezes em um...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "7485d34a-33fc-4c5c-b58a-de2cf23ad8bf",
+              "parentUUID": "ec859df1-e790-4049-b629-d45e8bb71a67",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será verificado que a ação pedida é disparada mediante duplo clique no elemento da lista e que os elementos da lista completos tem em si a classe `completed` e a propriedade `text-decoration` com o valor `line-through solid rgb(0, 0, 0)`",
+              "fullTitle": "9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item Será verificado que a ação pedida é disparada mediante duplo clique no elemento da lista e que os elementos da lista completos tem em si a classe `completed` e a propriedade `text-decoration` com o valor `line-through solid rgb(0, 0, 0)`",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'já terminei essa tarefa'\n}, {\n  content: 'está eu ainda não terminei'\n}];\naddTodos(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().dblclick();\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('have.class', 'completed');\ncy.get('.completed').should('have.css', 'text-decoration', 'line-through solid rgb(0, 0, 0)');",
+              "err": {},
+              "uuid": "6ab65960-9aa3-47fa-b2b9-4eb2399db1c9",
+              "parentUUID": "ec859df1-e790-4049-b629-d45e8bb71a67",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Será verificado que, com um segundo duplo clique, um elemento completo deixa de sê-lo",
+              "fullTitle": "9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item Será verificado que, com um segundo duplo clique, um elemento completo deixa de sê-lo",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'já terminei essa tarefa'\n}, {\n  content: 'está eu ainda não terminei'\n}];\naddTodos(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().dblclick().dblclick();\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.class', 'completed');\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'text-decoration', 'line-through solid rgb(0, 0, 0)');",
+              "err": {},
+              "uuid": "c2e708bc-d04c-412c-a16e-0dbc3c95e88c",
+              "parentUUID": "ec859df1-e790-4049-b629-d45e8bb71a67",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7485d34a-33fc-4c5c-b58a-de2cf23ad8bf"
+          ],
+          "pending": [],
+          "skipped": [
+            "6ab65960-9aa3-47fa-b2b9-4eb2399db1c9",
+            "c2e708bc-d04c-412c-a16e-0dbc3c95e88c"
+          ],
+          "duration": 275,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5ddfbc91-6a89-4cf8-9b69-9cccffa11f5c",
+          "title": "10 - Adicione um botão com id=\"apaga-tudo\" que quando clicado deve apagar todos os itens da lista",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificado que existe um elemento `button` com o id `apaga-tudo`",
+              "fullTitle": "10 - Adicione um botão com id=\"apaga-tudo\" que quando clicado deve apagar todos os itens da lista Será verificado que existe um elemento `button` com o id `apaga-tudo`",
+              "timedOut": null,
+              "duration": 203,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(TODO_REMOVE_ALL_BUTTON_SELECTOR).should('exist');",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '10 - Adicione um botão com ...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '10 - Adicione um botão com ...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "4653a80d-612f-4614-8ec0-2ede1821161e",
+              "parentUUID": "5ddfbc91-6a89-4cf8-9b69-9cccffa11f5c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será verificado que, dado que uma lista possui tarefas, um clique no botão a deixa vazia",
+              "fullTitle": "10 - Adicione um botão com id=\"apaga-tudo\" que quando clicado deve apagar todos os itens da lista Será verificado que, dado que uma lista possui tarefas, um clique no botão a deixa vazia",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'blablabla'\n}, {\n  content: 'hahahahaha'\n}];\naddTodos(todos);\ncy.get(TODO_REMOVE_ALL_BUTTON_SELECTOR).click();\ncheckTodoList();",
+              "err": {},
+              "uuid": "23c34655-b56d-4e3f-bcf3-ed4cc1d5d742",
+              "parentUUID": "5ddfbc91-6a89-4cf8-9b69-9cccffa11f5c",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4653a80d-612f-4614-8ec0-2ede1821161e"
+          ],
+          "pending": [],
+          "skipped": [
+            "23c34655-b56d-4e3f-bcf3-ed4cc1d5d742"
+          ],
+          "duration": 203,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "382ed100-9525-4fff-892c-1cc8634de973",
+          "title": "11 - Adicione um botão com id=\"remover-finalizados\" que quando clicado remove **somente** os elementos finalizados da sua lista",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificado que existe um elemento `button` com o id `remover-finalizados`",
+              "fullTitle": "11 - Adicione um botão com id=\"remover-finalizados\" que quando clicado remove **somente** os elementos finalizados da sua lista Será verificado que existe um elemento `button` com o id `remover-finalizados`",
+              "timedOut": null,
+              "duration": 194,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(TODO_REMOVE_DONE_BUTTON_SELECTOR).should('exist');",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '11 - Adicione um botão com ...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '11 - Adicione um botão com ...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "35d872bb-143b-4bab-b925-605ff960b3fd",
+              "parentUUID": "382ed100-9525-4fff-892c-1cc8634de973",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será verificado que, ao clicar no botão, todos os elementos marcados como feitos são removidos da lista",
+              "fullTitle": "11 - Adicione um botão com id=\"remover-finalizados\" que quando clicado remove **somente** os elementos finalizados da sua lista Será verificado que, ao clicar no botão, todos os elementos marcados como feitos são removidos da lista",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todo1 = {\n  content: 'vou terminar essa tarefa logo'\n};\nvar todo2 = {\n  content: 'essa tarefa eu vou demorar para finalizar'\n};\nvar todo3 = {\n  content: 'essa tarefa tbm vai demorar...'\n};\nvar todos = [todo1, todo2, todo3];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(2)\")).dblclick();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(3)\")).dblclick();\ncy.get(TODO_REMOVE_DONE_BUTTON_SELECTOR).click();\ncheckTodoList([todo1]);",
+              "err": {},
+              "uuid": "8510bdb0-b2ee-45f0-aaae-c1eee75888fe",
+              "parentUUID": "382ed100-9525-4fff-892c-1cc8634de973",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "35d872bb-143b-4bab-b925-605ff960b3fd"
+          ],
+          "pending": [],
+          "skipped": [
+            "8510bdb0-b2ee-45f0-aaae-c1eee75888fe"
+          ],
+          "duration": 194,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "bb9773ba-6d1b-4e9d-bc4f-d23863d16f40",
+          "title": "12 - Adicione um botão com id=\"salvar-tarefas\" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificado que existe um elemento `button` com o id `salvar-tarefas`",
+              "fullTitle": "12 - Adicione um botão com id=\"salvar-tarefas\" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava Será verificado que existe um elemento `button` com o id `salvar-tarefas`",
+              "timedOut": null,
+              "duration": 188,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(TODO_SAVE_LIST_BUTTON_SELECTOR).should('exist');",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '12 - Adicione um botão com ...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '12 - Adicione um botão com ...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "cd373f44-c424-45b2-a780-88d9dcf8d064",
+              "parentUUID": "bb9773ba-6d1b-4e9d-bc4f-d23863d16f40",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será verificado que, quando a lista tem vários elementos, alguns dos quais marcados como finalizados, um recarregamento da página mantém a lista exatamente como está.",
+              "fullTitle": "12 - Adicione um botão com id=\"salvar-tarefas\" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava Será verificado que, quando a lista tem vários elementos, alguns dos quais marcados como finalizados, um recarregamento da página mantém a lista exatamente como está.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todo1 = {\n  content: 'primeira tarefa a ser salva'\n};\nvar todo2 = {\n  content: 'esta tarefa será salva também'\n};\nvar todo3 = {\n  content: 'mais uma para salvar'\n};\nvar todos = [todo1, todo2, todo3];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().dblclick();\ncy.get(TODO_SAVE_LIST_BUTTON_SELECTOR).click();\ncy.reload();\nvar newTodosState = [(0, _objectSpread2[\"default\"])({}, todo1, {\n  done: true\n}), todo2, todo3];\ncheckTodoList(newTodosState);",
+              "err": {},
+              "uuid": "e1672d31-907d-430d-b1e2-3e8284daad71",
+              "parentUUID": "bb9773ba-6d1b-4e9d-bc4f-d23863d16f40",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cd373f44-c424-45b2-a780-88d9dcf8d064"
+          ],
+          "pending": [],
+          "skipped": [
+            "e1672d31-907d-430d-b1e2-3e8284daad71"
+          ],
+          "duration": 188,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8c7d588f-2026-4afb-a61e-accd8489cd88",
+          "title": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificada a existência de dois elementos `button`, um com o id `mover-cima` e o outro com o id `mover-baixo`",
+              "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas Será verificada a existência de dois elementos `button`, um com o id `mover-cima` e o outro com o id `mover-baixo`",
+              "timedOut": null,
+              "duration": 192,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(TODO_MOVE_UP_BUTTON_SELECTOR).should('exist');\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).should('exist');",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '13 - Adicione dois botões, ...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '13 - Adicione dois botões, ...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "c77e8f64-821b-4bec-8a94-a90be176cb49",
+              "parentUUID": "8c7d588f-2026-4afb-a61e-accd8489cd88",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será verificado que, dado que diversos elementos foram acrescentados à lista, movimentá-los de formas diversas os deixa nas posições esperadas",
+              "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas Será verificado que, dado que diversos elementos foram acrescentados à lista, movimentá-los de formas diversas os deixa nas posições esperadas",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}, {\n  content: 'terceira tarefa'\n}, {\n  content: 'quarta tarefa'\n}];\nvar newTodosState = [todos[3], todos[2], todos[1], todos[0]];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(2)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(4)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(3)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(4)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(3)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(newTodosState);",
+              "err": {},
+              "uuid": "9fc9c5fe-5993-48b5-b9ae-1276eeeaa7df",
+              "parentUUID": "8c7d588f-2026-4afb-a61e-accd8489cd88",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Será verificado que, caso algum elemento esteja finalizado, este status deve persistir ainda que se mova o elemento",
+              "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas Será verificado que, caso algum elemento esteja finalizado, este status deve persistir ainda que se mova o elemento",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'primeira tarefa',\n  done: true\n}, {\n  content: 'segunda tarefa'\n}];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click().dblclick();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
+              "err": {},
+              "uuid": "25094b70-9974-4d25-aa87-a9e3167db32a",
+              "parentUUID": "8c7d588f-2026-4afb-a61e-accd8489cd88",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Será verificado que, caso nenhum elemento esteja selecionado, clicar nos botões não altera a lista",
+              "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas Será verificado que, caso nenhum elemento esteja selecionado, clicar nos botões não altera a lista",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}, {\n  content: 'terceira tarefa'\n}, {\n  content: 'quarta tarefa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
+              "err": {},
+              "uuid": "7ac57a32-2776-4424-a57d-6a6d23259aab",
+              "parentUUID": "8c7d588f-2026-4afb-a61e-accd8489cd88",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Será verificado que um elemento que esteja selecionado deve se manter selecionado mesmo depois de movido",
+              "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas Será verificado que um elemento que esteja selecionado deve se manter selecionado mesmo depois de movido",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\nvar newTodos = [{\n  content: 'segunda tarefa'\n}, {\n  content: 'primeira tarefa'\n}];\ncheckTodoList(newTodos);\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
+              "err": {},
+              "uuid": "ebd6dae3-7e97-44c2-a33d-949ca3de0eab",
+              "parentUUID": "8c7d588f-2026-4afb-a61e-accd8489cd88",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "_Caso especial!_ Será verificado que, caso se tente subir o elemento no topo da lista ou, caso se tente descer o último elemento da lista, esta não deve ser alterada",
+              "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas _Caso especial!_ Será verificado que, caso se tente subir o elemento no topo da lista ou, caso se tente descer o último elemento da lista, esta não deve ser alterada",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(2)\")).click();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
+              "err": {},
+              "uuid": "e5f9979f-b88a-46a6-a385-c1b22cf21dbe",
+              "parentUUID": "8c7d588f-2026-4afb-a61e-accd8489cd88",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c77e8f64-821b-4bec-8a94-a90be176cb49"
+          ],
+          "pending": [],
+          "skipped": [
+            "9fc9c5fe-5993-48b5-b9ae-1276eeeaa7df",
+            "25094b70-9974-4d25-aa87-a9e3167db32a",
+            "7ac57a32-2776-4424-a57d-6a6d23259aab",
+            "ebd6dae3-7e97-44c2-a33d-949ca3de0eab",
+            "e5f9979f-b88a-46a6-a385-c1b22cf21dbe"
+          ],
+          "duration": 192,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "cebcdfa5-2532-4b6f-839f-74eca263693e",
+          "title": "14 - Adicione um botão com id=\"remover-selecionado\" que, quando clicado, remove o item selecionado",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será verificada a presença de um elemento `button` com um id `remover-selecionado`",
+              "fullTitle": "14 - Adicione um botão com id=\"remover-selecionado\" que, quando clicado, remove o item selecionado Será verificada a presença de um elemento `button` com um id `remover-selecionado`",
+              "timedOut": null,
+              "duration": 217,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(TODO_REMOVE_SELECTED_BUTTON_SELECTOR).should('exist');",
+              "err": {
+                "message": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '14 - Adicione um botão com ...'",
+                "estack": "Uncaught TypeError: Cannot read property 'length' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '14 - Adicione um botão com ...'\n    at restoreTask (http://localhost:43671/script.js:90:32)",
+                "diff": null
+              },
+              "uuid": "03b7e06d-4d6a-44d9-b36e-926dc9230bec",
+              "parentUUID": "cebcdfa5-2532-4b6f-839f-74eca263693e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será verificado que, no clicar no botão, somente o elemento selecionado é removido",
+              "fullTitle": "14 - Adicione um botão com id=\"remover-selecionado\" que, quando clicado, remove o item selecionado Será verificado que, no clicar no botão, somente o elemento selecionado é removido",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var todo1 = {\n  content: 'não posso remover essa tarefa'\n};\nvar todo2 = {\n  content: 'essa tarefa aqui eu posso remover'\n};\nvar todos = [todo1, todo2];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).last().click();\ncy.get(TODO_REMOVE_SELECTED_BUTTON_SELECTOR).click();\ncheckTodoList([todo1]);",
+              "err": {},
+              "uuid": "a92d02d0-9d25-4137-82e6-27c550e7941b",
+              "parentUUID": "cebcdfa5-2532-4b6f-839f-74eca263693e",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "03b7e06d-4d6a-44d9-b36e-926dc9230bec"
+          ],
+          "pending": [],
+          "skipped": [
+            "a92d02d0-9d25-4137-82e6-27c550e7941b"
+          ],
+          "duration": 217,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
