@@ -1,4 +1,6 @@
 // requisito 5
+// baseado no código do Caio, que postou uma dúvida no slack
+// repositorio disponível em https://github.com/tryber/sd-015-a-project-todo-list/pull/128/files
 
 let botaoTarefa = document.getElementById('criar-tarefa');
 let inputTarefa = document.getElementById('texto-tarefa');
@@ -41,10 +43,10 @@ function riscaTarefa(evento) {
 
 // requisitos 7 e 8
 
-function pintaTarefa(event) {
+function pintaTarefa(evento) {
   let tarefaSelecionada = document.querySelectorAll("li"); // contém as li's
   for (let index = 0; index < tarefaSelecionada.length; index += 1) {
     tarefaSelecionada[index].classList.remove('selected'); // remove a classe selected caso haja em algum dos indices do array das li's
-    event.target.classList.add('selected'); // adiciona a classe selected no item clicado
+    evento.target.classList.add('selected'); // adiciona a classe selected no item clicado
   }
 }
