@@ -49,6 +49,14 @@ function deletList() {
   }
 }
 
+function removeFinished() {
+  const finished = document.querySelectorAll('.completed');
+  for (let i = 0; i < finished.length; i += 1) {
+    finished[i].remove();
+  }
+}
+
 document.getElementById('criar-tarefa').addEventListener('click', insertElement);
 document.getElementById('funcionamento').addEventListener('dblclick', risc);
 document.getElementById('apaga-tudo').addEventListener('click', deletList);
+document.getElementById('remover-finalizados').addEventListener('click', removeFinished);
