@@ -1,6 +1,5 @@
 const list = document.querySelector('#lista-tarefas');
 function risc(riscado) {
-  const allList4 = document.querySelectorAll('li');
   const itemRiscado = riscado.target;
   if (itemRiscado.className === 'completed') {
     itemRiscado.removeAttribute('class');
@@ -43,5 +42,13 @@ function insertElement() {
   evento2();
 }
 
+function deletList() {
+  const del = document.querySelectorAll('li');
+  for (let i = 0; i < del.length; i += 1) {
+    del[i].remove();
+  }
+}
+
 document.getElementById('criar-tarefa').addEventListener('click', insertElement);
 document.getElementById('funcionamento').addEventListener('dblclick', risc);
+document.getElementById('apaga-tudo').addEventListener('click', deletList);
