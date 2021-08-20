@@ -5,6 +5,7 @@ window.onload = function() {
 
   riscText();
 
+  deleteTasks()
   //adicionando texto
   function addText() {
     const btnText = document.querySelector('#criar-tarefa');
@@ -49,7 +50,11 @@ window.onload = function() {
     const btnDelete = document.querySelector('#apaga-tudo');
     btnDelete.addEventListener('click', deleteList);
     function deleteList() {
-      const 
+      let list = document.querySelectorAll('li');
+      for (let i = 0; i < list.length; i += 1) {
+        let color = list[i];
+        color.remove();
+      }
     }
   }
 }
