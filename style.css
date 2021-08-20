@@ -21,6 +21,10 @@
     background-color: rgb(34, 235, 34);
 }
 
-.estSelList {
+.estSelected {
     background-color: rgb(128, 128, 128);
+}
+
+.estDivDefault {
+    background-color: none;
 }

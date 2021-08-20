@@ -68,15 +68,25 @@ function addOl() {
         ol.appendChild(li);
         tagInput.value = '';
 
-        // adiciona click na li e pinta a linha de cinza
+        // adiciona click nas li e pinta a linha de cinza
         let getLis = document.getElementsByTagName('li');
+        let ultSelec;
 
         for (let i = 0; i < getLis.length; i += 1) {
 
             getLis[i].addEventListener('click', function(event) {
-                //alert("foi")
-                getLis[i].className = ('estSelList');
+
+                for (let j = 0; j < getLis.length; j += 1) {
+
+                    if (getLis[j].className === ('estSelected')) {
+                        getLis[j].className = ('estDivDefault');
+                        getLis[j].innerHTML;
+                    }
+                }
+
+                getLis[i].className = ('estSelected');
                 getLis[i].innerHTML;
+                ultSelec = getLis[i];
 
             });
 
