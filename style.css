@@ -1,5 +1,11 @@
 .line {
     width: 100px;
     height: 15px;
-    background-color: rgb(250, 241, 241);
+}
+
+.selected {
+    background-color: rgb(128, 128, 128);
+}
+.completed {
+    text-decoration: line-through solidrgb(50, 50, 50);
 }

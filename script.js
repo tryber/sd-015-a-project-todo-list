@@ -1,5 +1,5 @@
 function botaoCriaTarefa() {
-  let buscaTextoTarefa = document.querySelector('#lista-tarefas');
+  const buscaTextoTarefa = document.querySelector('#lista-tarefas');
   let criaTarefa = document.createElement('button');
   criaTarefa.id = 'criar-tarefa';
   criaTarefa.innerHTML = 'Criar Tarefa'
@@ -10,42 +10,40 @@ botaoCriaTarefa()
 const buscalistaTarefas = document.getElementById("lista-tarefas");
 const buscaTextoInput = document.getElementById('texto-tarefa')
 const eventoBotao = document.querySelector('#criar-tarefa');
-const pintalinha = document.getElementsByClassName('line');
+
+
 /* criar constantes de uso comum fora da função facilita pois podem ser usadas entre funções */
 function criaLi() {
   let criaLi = document.createElement('li');
   criaLi.className = 'line';
   criaLi.innerText = buscaTextoInput.value
+  criaLi.addEventListener('click', corLi);
+  criaLi.addEventListener('dblclick', riscaLi)
   buscaTextoInput.value = '';
   buscalistaTarefas.appendChild(criaLi);
 }
 eventoBotao.addEventListener('click', criaLi)
 
-/* function corLi(event) {//ta errado..tenho que criar uma classe dinamica
-  for (let i = o; i < line.length; i += 1) {
-    if (!line.style.backgroundColor === 'rgb(128, 128, 128') {
-    } else {
-      event.target.style.backgroundColor = 'rgb(128, 128, 128';
-    }
-  }
-} */
-
-function retornaCor(event) {
-  let linha = event.target
-  if (!linha.style.backgroundColor === 'rgb(128, 128, 128)')
-    event.target.classList.add('select');
-    linha.appendChild(linha)
+function corLi(event) { 
+  event.target.classList.add('selected');
+ /*  if (!target.classList('selected')) {
+    event.target.classList.add('selected');
+  } else {
+    event.target.classList.remove('selected');
+  }*/
 } 
 
-function riscaLi(dpclic) {
-  let linha = dpclic.target
-  linha.style.strike(); // duvida se strike esta sendo usado corretamente
+function riscaLi(dpclick) {
+  if (target.classList('selected'))
+  dpclick.target.classList.remove('selected');
+  dpclick.target.classList.add('completed');
 }
 
-function buscaLi() {
-  for (let linha of pintaLinha) {
-    linha.addEventListener('click', corLi)
-    linha.addEventListener('click', retornaCor)
-    linha.addEventListener('dbclick', riscaLi)
+/* 
+function eventosLi () {
+  const linhas = document.getElementsByClassName('lista-tarefas'); 
+  for(let i = 0; i < linhas.length; i += 1) {
+    linhas[i].addEventListener('click', corLi)
   }
 }
+eventosLi() */
