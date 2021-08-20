@@ -32,3 +32,20 @@ function taskDone (event) {
     event.target.classList.add ('completed');
   }
 }
+
+//Requisito 10
+deleteBtn.addEventListener ('click', function (){
+  let lis = document.querySelectorAll ('li');
+  for (let index = 0; index < lis.length; index += 1) {
+    lis[index].remove();
+  }
+});
+
+//Requisito 11
+let removeFinished = document.getElementById ('remover-finalizados');
+removeFinished.addEventListener ('click', function () {
+  let taskFinished =  document.querySelectorAll('.completed');
+  for (let index = 0; index < taskFinished.length; index += 1) {
+    taskFinished[index].remove();
+    }
+})
