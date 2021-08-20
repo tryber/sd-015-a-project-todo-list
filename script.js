@@ -1,4 +1,9 @@
 const task = document.getElementById('lista-tarefas');
+const selectedSelector = '[style="background-color: rgb(128, 128, 128);"]';
+const buttonUp = document.getElementById('mover-cima');
+const buttonDown = document.getElementById('mover-baixo');
+const lineSelected = 'rgb(128, 128, 128)';
+
 function clearInput() {
   const clear = document.getElementById('texto-tarefa');
   clear.value = '';
@@ -77,7 +82,6 @@ function toButtonClearTasksDone() {
 
 toButtonClearTasksDone();
 
-const selectedSelector = '[style="background-color: rgb(128, 128, 128);"]';
 function removeTask() {
   const selected = document.querySelector(selectedSelector);
   selected.remove();
@@ -88,3 +92,32 @@ function toButtonRemoveTask() {
   buttonRemoveTask.addEventListener('click', removeTask);
 }
 toButtonRemoveTask();
+
+//insertBefore() retirado daqui://
+//https://www.ti-enxame.com/pt/javascript/mover-um-elemento-um-lugar-para-cima-ou-para-baixo-na-arvore-do-dom-com-javascript/822635469/
+
+function moveUp() {
+  const tasks = task.childNodes;
+  for (let i = 1; i < tasks.length; i += 1) {
+    if (
+      tasks[i] !== tasks[0] &&
+      tasks[i].style.backgroundColor === lineSelected
+    ) {
+      task.insertBefore(tasks[i], tasks[i - 1]);
+    }
+  }
+}
+
+function moveDown() {
+  const tasks = document.querySelectorAll('li');
+  for (let i = 0; i < tasks.length; i += 1) {
+    if (
+      tasks[i] !== tasks[tasks.length - 1] &&
+      tasks[i].style.backgroundColor === lineSelected
+    ) {
+      task.insertBefore(tasks[i + 1], tasks[i]);
+    }
+  }
+}
+buttonUp.addEventListener('click', moveUp);
+buttonDown.addEventListener('click', moveDown);
