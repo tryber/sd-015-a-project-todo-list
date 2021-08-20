@@ -32,8 +32,8 @@ function mudarACorDeFundo(event) { // função que vai estar na linha 49.
   const selection = document.querySelector('.selected');
   if (selection) { // se tiver a classe selected
     selection.classList.remove('selected'); // remove a classe do elemento
-   }
-   evento.classList.add('selected'); // quando disparado o evento ele coloca a classe se não tiver no elemento
+  }
+  evento.classList.add('selected'); // quando disparado o evento ele coloca a classe se não tiver no elemento
 }
 
 
