@@ -31,6 +31,8 @@ function insertInput() {
     input.innerHTML;
     divPaiAddTaref.appendChild(input);
 
+
+
 }
 insertInput();
 
@@ -65,6 +67,23 @@ function addOl() {
         li.innerHTML;
         ol.appendChild(li);
         tagInput.value = '';
+
+        // adiciona click na li e pinta a linha de cinza
+        let getLis = document.getElementsByTagName('li');
+
+        for (let i = 0; i < getLis.length; i += 1) {
+
+            getLis[i].addEventListener('click', function(event) {
+                //alert("foi")
+                getLis[i].className = ('estSelList');
+                getLis[i].innerHTML;
+
+            });
+
+        }
+
     });
+
+
 }
 addOl();
