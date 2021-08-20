@@ -1,4 +1,21 @@
 const list = document.querySelector('#lista-tarefas');
+function paintGrey(item) {
+  const allList2 = document.querySelectorAll('li');
+  for (let i = 0; i < allList2.length; i += 1) {
+    allList2[i].style.removeProperty('background-color');
+  }
+
+  const itemGrey = item.target;
+  itemGrey.style.backgroundColor = 'grey';
+}
+
+function evento() {
+  const allList = document.querySelectorAll('li');
+  for (let i = 0; i < allList.length; i += 1) {
+    allList[i].addEventListener('click', paintGrey);
+  }
+}
+
 function insertElement() {
   const item = document.getElementById('texto-tarefa').value;
   const itemList = document.createElement('li');
@@ -6,6 +23,7 @@ function insertElement() {
   list.appendChild(itemList);
   const input = document.getElementById('texto-tarefa');
   input.value = '';
+  evento();
 }
 
 document.getElementById('criar-tarefa').addEventListener('click', insertElement);
