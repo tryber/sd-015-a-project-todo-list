@@ -49,23 +49,12 @@ ol.addEventListener('dblclick', () => {
         } else {
             lists[i].classList.add('completed')
         }
-        // event.target.classList.add('completed')
-    }})
-//     }
-// } 
-// if(event.target.className = 'completed') {
-//     event.target.classList.remove('completed')
-
-    // if (event.target.nodeName == 'LI') {
-    //    event.target.classList.add('completed')
-    // console.log('cliquei em uma li')
-    // }
-    //     console.log('fui clicado')
-    // }  
-
+    }
+})
+// Requisito 10
 let clear = document.getElementById('apaga-tudo')
-clear.addEventListener('click', () => {
-   let liss = document.querySelectorAll('li')
-   for (let index = 0; index < liss.length; index += 1)
-   liss[index].innerHTML = ''
+clear.addEventListener('click', (event) => {
+    let ol = document.getElementById('lista-tarefas')
+    // let listt = document.querySelectorAll('li')
+    event.target.parentNode.remove('li')
 })
