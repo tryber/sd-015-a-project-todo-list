@@ -1,6 +1,11 @@
 window.onload = function() {
   addText();
+
   styleList();
+
+  riscText();
+
+  //adicionando texto
   function addText() {
     const btnText = document.querySelector('#criar-tarefa');
     btnText.addEventListener('click', addList);
@@ -14,6 +19,7 @@ window.onload = function() {
       document.querySelector("input").value = '';
       }
   }
+  //adicionando backgroundColor
   function styleList() {
     const ol = document.querySelector("#lista-tarefas");
     ol.addEventListener('click', function(event){
@@ -24,6 +30,27 @@ window.onload = function() {
       }
       event.target.style.backgroundColor = 'rgb(128, 128, 128)';
     });
+  }
+  //adicionando text decoration 
+  function riscText() {
+    const ol = document.querySelector("#lista-tarefas");
+    ol.addEventListener('dblclick', function(event) {
+      const item = event.target;
+
+      if (item.classList.contains('completed')) {
+        item.classList.remove('completed');
+      } else {
+        item.classList.add('completed');
+      }
+    });
+  }
+
+  function deleteTasks() {
+    const btnDelete = document.querySelector('#apaga-tudo');
+    btnDelete.addEventListener('click', deleteList);
+    function deleteList() {
+      const 
+    }
   }
 }
 
