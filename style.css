@@ -2,3 +2,13 @@
 #funcionamento {
   font-style: italic;
 }
+
+/* Requisito 8 */
+.selected {
+  background-color: 'gray';
+}
+
+/* Requisito 9 */
+.completed {
+  text-decoration: line-through solid 'black';
+}

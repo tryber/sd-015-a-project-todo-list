@@ -4,3 +4,31 @@ let insertText = document.getElementById('texto-tarefa');
 let ol = document.querySelector('#lista-tarefas');
 let deleteBtn = document.getElementById ('apaga-tudo');
 
+createBtn.addEventListener('click', function () {
+  let createLi = document.createElement('li');
+  createLi.className = 'lista';
+  let text = insertText.value;
+  createLi.innerText = text;
+  createLi.addEventListener ('click', selectColor); // Requisito 8
+  createLi.addEventListener ('dblclick', taskDone); //Requisito 9
+  ol.appendChild(createLi);
+  insertText.value = '';
+});
+
+// Requisito 7 e 8
+function selectColor (event) {
+  let listaLi = document.querySelectorAll ('.lista');
+  for (index = 0; index < listaLi.length; index +=1) {
+    listaLi[index].classList.remove ('selected');
+    event.target.classList.add ('selected');
+  }
+}
+
+//Requisito 9
+function taskDone (event) {
+  if (event.target .classList.contains ('completed')) {
+    event.target.classList.remove ('completed');
+  } else {
+    event.target.classList.add ('completed');
+  }
+}
