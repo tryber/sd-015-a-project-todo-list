@@ -30,12 +30,10 @@ CriarBotaoAddTarefa();
 function mudarACorDeFundo(event) {
   const evento = event.target;
   const selection = document.querySelector('.selected');
-  if (selection) selection.classList.remove('selected');
-  if (evento.classList.contains('selected')) {
-    evento.classList.remove('selected');
-  } else {
-    evento.classList.add('selected');
+  if (selection) {
+    selection.classList.remove('selected');
   }
+    evento.classList.add('selected');
 }
 
 function addOuRemoverClasseCompleted(event) {
