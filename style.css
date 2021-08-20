@@ -3,10 +3,79 @@
     padding: 0px;
 }
 
+body {
+    background-image: url("imagens/stacked-waves-haikei.svg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+#box-container {
+    background-image: url("imagens/day93-programing.png");
+    margin-left: 330px;
+    width: 600px;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#header {
+    text-align: center;
+    font-size: 25px;    
+}
+
+#funcionamento {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+#texto-tarefa {
+    margin-left: 30px;
+}
+
+.box-style {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 .completed {
     text-decoration: line-through solid rgb(0, 0, 0);
 }
 
 .selected {
     background-color: rgb(128, 128, 128);
+}
+
+#lista-tarefas {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 60px ;
+}
+
+#criar-tarefa {
+    height: 30px;
+    padding: 7px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+.button {
+    margin: 30px;
+
+}
+
+.button button {
+    height: 30px;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 10px;
+    color: rgb(8, 8, 82);
+    background-color: rgb(206, 206, 240);
+    font-family: monospace;
 }
