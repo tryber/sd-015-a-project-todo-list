@@ -19,33 +19,29 @@ function criaLi() {
   criaLi.className = 'line';
   criaLi.innerText = buscaTextoInput.value
   criaLi.addEventListener('click', corLi);
-  //criaLi.addEventListener('dblclick', riscaLi)
+  criaLi.addEventListener('dblclick', riscaLi),
   /* criaLi.addEventListener('click', btnApaga) */
   buscaTextoInput.value = '';
   buscalistaTarefas.appendChild(criaLi);
 }
 eventoBotao.addEventListener('click', criaLi)
 
-function corLi(event) { //com apoio em mentoria com Ronald..a função chama com a let 'x' o elemento com a classe 'selected' e o if verifica se 'x' existe com a classe. Se existe é pedido que a classe seja removida ou adicionada pelo evento.
+function corLi(event) { //com apoio em mentoria com Ronald..a função chama com a let 'x' o elemento com a classe 'selected' e o if verifica se 'x' existe com a classe. Se existe é pedido que a classe seja removida ou adicionada pelo evento
   let x = document.querySelector('.selected');
   if (x) {
-    x.classList.remove('selected');  
-  } 
-    event.target.classList.add('selected');
-} 
-
-/* function riscaLi(dpclick) {
-  if (target.classList('selected'))
-  dpclick.target.classList.remove('selected');
-  dpclick.target.classList.add('completed');
-} */
-
-
-/* 
-function eventosLi () {
-  const linhas = document.getElementsByClassName('lista-tarefas'); 
-  for(let i = 0; i < linhas.length; i += 1) {
-    linhas[i].addEventListener('click', corLi)
+    x.classList.remove('selected');
   }
+  event.target.classList.add('selected');
 }
-eventosLi() */
+
+function riscaLi(dbclick) { //falta retirar o riscado
+  let y = document.querySelector('.completed')
+  if (y) {
+    //y.classList.remove('completed');
+    dbclick.target.classList.remove('completed');
+  }
+  if(!y)
+    dbclick.target.classList.add('completed');
+  } 
+ 
+  
