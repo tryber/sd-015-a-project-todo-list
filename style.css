@@ -1,0 +1,26 @@
+.botao {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+#lista-tarefas {
+  text-decoration: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.selected {
+  background-color: rgb(128, 128, 128);
+}
+
+body {
+  font-family: sans-serif;
+}
