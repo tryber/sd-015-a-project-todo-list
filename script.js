@@ -36,7 +36,6 @@ function mudarACorDeFundo(event) { // função que vai estar na linha 49.
   evento.classList.add('selected'); // quando disparado o evento ele coloca a classe se não tiver no elemento
 }
 
-
 function addOuRemoverClasseCompleted(event) { // função que vai tá na linha 50.
   const evento = event.target;
   evento.classList.toggle('completed'); // refente ao objeto que disparou o evento
