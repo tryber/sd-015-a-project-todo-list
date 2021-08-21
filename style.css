@@ -53,6 +53,19 @@ main {
   line-height: 1.5rem;
 }
 
+#footer-list {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+}
+
 .completed {
   text-decoration: line-through;
+}
+
+#apaga-tudo {
+  border-radius: 10px;
+  height: 2rem;
+  width: 6rem;
+  background-color: silver;
 }

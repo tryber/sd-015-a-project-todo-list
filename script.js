@@ -1,5 +1,6 @@
 const buttonClick = document.getElementById('criar-tarefa');
 const toDoList = document.getElementById('lista-tarefas');
+const buttonDeleteEverything = document.getElementById('apaga-tudo');
 
 /* Função para criar os elementos */
 function createListItems() {
@@ -39,7 +40,13 @@ function taskCompleted(event) {
   }
 }
 
+/* Função para apagar tudo a partir do botão Apagar Tudo */
+function deleteEverything() {
+  window.location.reload();
+}
+
 buttonClick.addEventListener('click', createListItems);
 buttonClick.addEventListener('click', clear);
 toDoList.addEventListener('click', changeColor);
 toDoList.addEventListener('dblclick', taskCompleted);
+buttonDeleteEverything.addEventListener('click', deleteEverything);
