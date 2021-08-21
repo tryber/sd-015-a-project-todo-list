@@ -10,6 +10,7 @@ function addTask() {
   listItem.classList = 'list-item';
   inputArea.value = '';
   listItem.addEventListener('click', changeItemColor);
+  listItem.addEventListener('dblclick', complete);
 }
 
 addButton.addEventListener('click', addTask);
@@ -23,9 +24,16 @@ function changeItemColor() {
     selectedColor.classList.remove('selected');
   }
   //Elemento de origem do evento recebe a classe selected e a cor de fundo especial.
-  this.classList = 'selected'; 
+  this.classList.add('selected'); 
   let selectedColor = document.querySelector('.selected');
   selectedColor.style.backgroundColor = 'rgb(128, 128, 128)';
 }
 
+function complete() {
+  if (this.classList.contains('completed')) {
+    this.classList.remove('completed');
+  } else {
+    this.classList.add('completed');
+  }
+}
 
