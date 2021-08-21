@@ -10,8 +10,15 @@ function adiciona (){
   lista.appendChild(criacao)
   criacao.innerText = input.value
   input.value = "";
-  addEventListener('click', addColor)
+  
+riscar(criacao)
 }
+
+//referencia: um colega apareceu com uma função grande na mentoria e baêta o ajudou a refatorar, desse modo consegui entender a função e decidi replicar 
+
+const pintar = document.querySelector('#lista-tarefas')
+ pintar.addEventListener('click', addColor);
+const colorir = document.querySelectorAll('li')
 
 function addColor(event){
   let item = document.querySelector('.selected');
@@ -21,3 +28,12 @@ function addColor(event){
   event.target.classList.add('selected')
 }
 
+
+function riscar(criacao){ 
+  criacao.addEventListener('dblclick', function (){
+    if (this.classList.contains('completed')){ 
+     this.classList.remove('completed')
+    }else{
+    this.classList.add('completed')}
+  })
+}
