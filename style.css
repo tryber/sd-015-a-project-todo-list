@@ -1,0 +1,78 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: silver;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: white;
+  border-radius: 10px;
+  height: 25rem;
+  width: 50rem;
+  position: relative;
+  box-shadow: 10px 5px 5px black;
+}
+
+#cabecalho {
+  position: absolute;
+  margin: 2rem;
+}
+
+#section-1 {
+  position: absolute;
+  margin: 2rem;
+  margin-top: 7rem;
+}
+
+#texto-tarefa {
+  border: 1px solid black;
+}
+
+#criar-tarefa {
+  border-radius: 10px;
+  height: 2rem;
+  width: 6rem;
+  background-color: silver;
+  border: 1px solid;
+}
+
+#section-2 {
+  position: absolute;
+  margin: 2rem;
+  margin-top: 11rem;
+  margin-left: 5rem;
+  line-height: 1.5rem;
+}
+
+#footer-list {
+  display: flex;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: silver;
+}
+
+#apaga-tudo {
+  border-radius: 10px;
+  height: 2rem;
+  width: 6rem;
+  background-color: silver;
+  border: 1px solid;
+}
