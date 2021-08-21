@@ -18,6 +18,41 @@
   text-decoration: line-through solid rgb(0, 0, 0);
 }
 
-.list {
-  width: 350px;
+body {
+  background-color: rgb(84, 36, 36);
+}
+
+#texto-tarefa {
+  border-radius: 35px;
+}
+
+.paintGray {
+  background-color: gray;
+}
+
+#principal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+#funcionamento {
+  display: flex;
+  justify-content: center;
+}
+
+#inputAndButton {
+  display: flex;
+  justify-content: center;
+}
+
+#lista-tarefas {
+  padding-left: 215px;
 }
