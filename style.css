@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: aliceblue;
 }
 
 #funcionamento {
@@ -8,6 +8,7 @@ body {
 
 .selected {
   background-color: gray;
+  width: 380px;
 }
 
 .completed {
