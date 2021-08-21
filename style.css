@@ -1,0 +1,11 @@
+.lista {
+  background-color: white;
+}
+
+.selected {
+  background-color: grey;
+}
+
+.completed {
+  text-decoration: line-through;
+}
