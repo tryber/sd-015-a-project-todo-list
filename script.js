@@ -11,7 +11,7 @@ function completedTask(event) {
 }
 
 function paint(event) {
-  event.target.style.backgroundColor = 'gray'
+  event.target.style.backgroundColor = 'gray';
 }
 
 function addText() {

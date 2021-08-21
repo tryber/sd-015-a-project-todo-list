@@ -36,6 +36,8 @@ body {
   background-color: white;
   padding: 50px;
   border-radius: 15px;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 #header {
@@ -54,5 +56,9 @@ body {
 }
 
 #lista-tarefas {
-  padding-left: 215px;
+  padding-left: 210px;
+}
+
+.list {
+  width: 100px;
 }
