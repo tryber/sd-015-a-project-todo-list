@@ -12,9 +12,9 @@ body {
   text-align: center;
 }
 
-#texto-tarefa {
-  display: inline-block;
-  margin: auto;
+
+#lista {
+  text-align: center;
 }
 
 img.displayer {
@@ -28,4 +28,7 @@ nav {
   background:rgb(0, 152, 163);
   margin: 0px 40px 0px 40px;
   padding: 10px;
+}
+.botoes{
+  text-align: center;
 }
