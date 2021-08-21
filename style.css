@@ -21,6 +21,7 @@ main {
   height: 25rem;
   width: 50rem;
   position: relative;
+  box-shadow: 10px 5px 5px black;
 }
 
 #cabecalho {
@@ -43,6 +44,7 @@ main {
   height: 2rem;
   width: 6rem;
   background-color: silver;
+  border: 1px solid;
 }
 
 #section-2 {
@@ -54,13 +56,17 @@ main {
 }
 
 #footer-list {
+  display: flex;
   position: absolute;
   bottom: 1.5rem;
   left: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .completed {
   text-decoration: line-through;
+  color: silver;
 }
 
 #apaga-tudo {
@@ -68,4 +74,5 @@ main {
   height: 2rem;
   width: 6rem;
   background-color: silver;
+  border: 1px solid;
 }
