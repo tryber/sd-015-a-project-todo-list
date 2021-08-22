@@ -9,20 +9,24 @@
   <title>Project List</title>
 </head>
 <body>   
+  
+  <!-- Requisit 1 / 2 - Create a title and phrase in a tag "header". -->
   <header id="main-cointainer" >
-
-    <div > 
-    <h2>Minha Lista de Tarefas</h2>
-    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-  </div>
-  <div class="input-group mb-3">
-    <input id="texto-tarefa" type="text" class="form-control" placeholder="Adicione sua Tarefa" > <button id="criar-tarefa" class="btn btn-success " >Adicionar</button>
-  </div>
+    <div>     
+      <h2>Minha Lista de Tarefas</h2>
+      <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+    </div>
+    <!-- Requisit 3 - Add a input -->
+    <div class="input-group mb-3">
+      <input id="texto-tarefa" type="text" class="form-control" placeholder="Adicione sua Tarefa" > 
+      <button id="criar-tarefa" class="btn btn-success " >Adicionar</button>
+    </div>
+      <!-- Requisit 4 / 5 - Add a ordened list and a "add button"  -->
     <div id="container-taks" class="input-group mb-3">
-    <ol id="lista-tarefas"></ol>
-  </div>
-   
-  <div id="nav-buttons" class="input-group mb-3">
+      <ol id="lista-tarefas"></ol>
+    </div>
+    
+    <div id="nav-buttons" class="input-group mb-3">
       <button id="remover-selecionado" class="btn btn-danger" >X</button>
       <button id="mover-cima" class="btn btn-primary">&#8657;</button>
       <button id="mover-baixo" class="btn btn-primary">&#8659; </button>

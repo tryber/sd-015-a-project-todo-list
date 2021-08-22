@@ -21,11 +21,12 @@ button {
   font-weight: bold;
   border: rgb(128, 128, 128) solid 1px;
 }
-
+/* Requisit 9 */
 .completed {
   text-decoration: line-through solid rgb(0,0,0);
 }
 
+/* Requisit 7 - This class assign the color rgb(128, 128, 128) */
 .selected {
   background-color: rgb(128, 128, 128);
 }
