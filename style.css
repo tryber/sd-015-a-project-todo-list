@@ -1,0 +1,21 @@
+/* Alexandrexpjr repositório consultado: https://github.com/tryber/sd-015-a-project-todo-list/blob/a12af374dea151f62f0e27e42a29b12b0f7f82e1/style.css */
+
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  
+  header span{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  #funcionamento {
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+  }
