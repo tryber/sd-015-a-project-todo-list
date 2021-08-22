@@ -1,3 +1,6 @@
 #texto-tarefa{
     background-color: bisque;
 }
+.completed{
+    text-decoration: line-through;
+}
