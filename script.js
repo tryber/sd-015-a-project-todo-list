@@ -28,7 +28,7 @@ function changeItemColor() {
   let selectedColor = document.querySelector('.selected');
   selectedColor.style.backgroundColor = 'rgb(128, 128, 128)';
 }
-
+//Marca item selecionado com a classe completed, remove a classe competed se ela já existir.
 function complete() {
   if (this.classList.contains('completed')) {
     this.classList.remove('completed');
@@ -37,3 +37,13 @@ function complete() {
   }
 }
 
+let clearAllBtn = document.querySelector('#apaga-tudo');
+
+function clearList() {
+  let listItens = document.querySelectorAll('.list-item');
+  for (let item of listItens) {
+    let parent = item.parentNode;
+    parent.removeChild(item);
+  }
+}
+clearAllBtn.addEventListener('click', clearList);
