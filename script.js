@@ -1,6 +1,7 @@
 const accessButton = document.querySelector('#criar-tarefa');
 const accessInput = document.querySelector('#texto-tarefa');
 const accessDelete = document.querySelector('#apaga-tudo');
+const teste = document.querySelector('#teste')
 
 function completedTask(event) {
   if (event.target.classList.length == 1) {
@@ -10,7 +11,15 @@ function completedTask(event) {
   }
 }
 
-function paint(event) {
+function clearCompletedTask() {
+  const accessLi = document.querySelectorAll('.list');
+  for(let i = 0; i < accessLi.length; i += 1) {
+    accessLi[i].style.backgroundColor = '';
+  }
+}
+
+function selected(event) {
+  clearCompletedTask();
   event.target.style.backgroundColor = 'gray';
 }
 
@@ -22,7 +31,7 @@ function addText() {
   accessOl.appendChild(createLi);
   accessInput.value = '';
   createLi.addEventListener('dblclick', completedTask);
-  createLi.addEventListener('click', paint);
+  createLi.addEventListener('click', selected);
 }
 
 accessButton.addEventListener('click', addText);
