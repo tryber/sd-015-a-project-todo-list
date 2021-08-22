@@ -36,7 +36,7 @@ function complete() {
     this.classList.add('completed');
   }
 }
-
+//Apaga lista ao clica no botão #apaga-tudo.
 let clearAllBtn = document.querySelector('#apaga-tudo');
 
 function clearList() {
@@ -47,3 +47,13 @@ function clearList() {
   }
 }
 clearAllBtn.addEventListener('click', clearList);
+//Apaga itens com a classe completed ao clicar no botão #remover-finalizados
+let clearCompletedBtn = document.querySelector('#remover-finalizados');
+function clearCompleted() {
+  let completedItens = document.querySelectorAll('.completed');
+  for (let item of completedItens) {
+    let parent = item.parentNode;
+    parent.removeChild(item);
+  }
+}
+clearCompletedBtn.addEventListener('click', clearCompleted);
