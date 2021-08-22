@@ -25,10 +25,23 @@ function paintListItem(event){
 }
 
 // Requisito 08 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo
-
+// Ref.: https://stackoverflow.com/questions/8739665/is-background-colornone-valid-css
 function clearBackground() {
     let qtdListItem = listItem.children.length;
     for (let i = 0; i < qtdListItem; i += 1) {
         listItem.children[i].style.backgroundColor = 'inherit';
+    }
+}
+
+// Requisito 09 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item
+listItem.addEventListener('dblclick', checkedItem);
+
+function checkedItem(event) {
+    let checked = event.target;
+    console.log(checked);
+    if (checked.classList.contains('completed')) {
+        checked.classList.remove('completed');
+    } else {
+        checked.classList.add('completed');
     }
 }
