@@ -15,6 +15,24 @@ const body = document.querySelector('body');
 
 body.addEventListener('click', listSelect);
 
+body.addEventListener('dblclick', completed);
+
+function completed(e) {
+  const taskComplete = document.querySelectorAll('.list');
+   let list;
+  for (list of taskComplete) {
+    let li = e.target;
+    switch(li.classList.contains('completed')) {
+      case true:
+      li.classList.remove('completed');
+      break;
+      case false:
+        li.classList.add('completed');
+      break;
+    }
+  }
+}
+
 function listSelect() {
   const selectList = document.querySelectorAll('.list');
    let list;
@@ -32,4 +50,12 @@ function color(e) {
 
   li.classList.add('list-color');    
   }
+}
+
+const clear = document.querySelector('#apaga-tudo');
+
+clear.addEventListener('click', clearTask)
+
+function clearTask() {
+  ol.innerHTML = '';
 }
