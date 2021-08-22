@@ -1,6 +1,8 @@
+/* eslint-disable no-restricted-syntax */
 const btnAdicionar = document.getElementById('criar-tarefa');
 const lista = document.getElementById('lista-tarefas');
 const btnApagar = document.getElementById('apaga-tudo');
+const btnRemover = document.getElementById('remover-finalizados');
 
 // Adiciona cor de fundo em apenas um elemento da lista
 // Recebi suporte do Matheus Monteiro e do Diego Brito
@@ -42,6 +44,20 @@ function apagaTarefas() {
   lista.innerHTML = '';
 }
 
+// Remove os elementos com a classe 'completed', que representam os itens da lista já feitos
+// Resolvido com ajuda do Augusto Alves, da turma 15 da Trybe, da tribo A.
+function apagaConcluidas() {
+  for (let i = 0; i < lista.children.length; i += 0) {
+    if (lista.children[i].classList.contains('completed')) {
+      lista.removeChild(lista.children[i]);
+    } else {
+      i += 1;
+    }
+  }
+}
+
 btnAdicionar.addEventListener('click', adicionaTarefa);
 
 btnApagar.addEventListener('click', apagaTarefas);
+
+btnRemover.addEventListener('click', apagaConcluidas)
