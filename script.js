@@ -5,6 +5,7 @@ function createAndDeleteTasks () {
     const fatherItem = document.getElementById("lista-tarefas");
     const buttonClean = document.getElementById("apaga-tudo")
     const buttonFinish = document.getElementById("remover-finalizados")
+    const buttonRemoveSelected = document.getElementById("remover-selecionado")
 
     buttonCreate.addEventListener("click", function (){
         let newItem = document.createElement("li");
@@ -40,20 +41,17 @@ function createAndDeleteTasks () {
             }
         }
     })
-}
-createAndDeleteTasks()
-
-//Requisito 9
-function riskItem () {
-    let taskFather = document.getElementById("lista-tarefas")
-    taskFather.addEventListener("dblclick", function(event){
-         if (event.target.className !== "completed"){
-             event.target.className = "completed"
-         } else {
-             event.target.className = ""
-         }
+    buttonRemoveSelected.addEventListener("click", function() {
+        let selectItem = document.querySelector(".selected")
+        fatherItem.removeChild(selectItem)
     })
 }
+
+window.onload = function() {
+    createAndDeleteTasks()
+}
+
+
 
 
 
