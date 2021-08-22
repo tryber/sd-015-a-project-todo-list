@@ -18,20 +18,46 @@ body.addEventListener('click', listSelect);
 body.addEventListener('dblclick', completed);
 
 function completed(e) {
-  const taskComplete = document.querySelectorAll('.list');
-   let list;
-  for (list of taskComplete) {
-    let li = e.target;
-    switch(li.classList.contains('completed')) {
-      case true:
-      li.classList.remove('completed');
-      break;
-      case false:
-        li.classList.add('completed');
-      break;
-    }
+
+  e.target.classList.toggle('completed');  
+
+  // const taskComplete = document.querySelectorAll('.list');
+  //  let list;
+  // for (list of taskComplete) {
+  //   let li = e.target;
+
+  //   if(!li.classList.contains('completed')) {
+  //     li.classList.add('completed');
+  //   } else {
+  //     li.removeAttribute('')
+  //   }
+
+    // switch(!li.classList.contains('completed')) {
+    //   case true:
+    //     li.classList.add('completed');
+    //     break;
+    //   case false: 
+    //     li.classList.remove('completed');
+    //     break;
+    // }
+   
+    // if(li.classList.contains('completed')) {
+    //   li.classList.remove('completed');
+    // } else {
+    //   li.classList.add('completed');
+    // }
+
+    // switch(li.classList.contains('completed')) {
+    //   case true:
+    //   li.classList.remove('completed');
+    //   break;
+    //   case false:
+    //     li.classList.add('completed');
+    //   break;
+    // }
+
     // li.classList.toggle('completed');
-  }
+  // }
 }
 
 function listSelect() {
