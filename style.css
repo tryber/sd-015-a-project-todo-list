@@ -1,3 +1,15 @@
+/* ol {
+  list-style:none;
+} */
+
 .completed {
   text-decoration: line-through;
+}
+
+.seleted {
+  background-color: rgb(128, 128, 128);
+}
+
+.white {
+  background-color: white;
 }
