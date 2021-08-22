@@ -68,14 +68,14 @@ function addOl() {
         ol.appendChild(li);
         tagInput.value = '';
 
-        // adiciona click nas li e pinta a linha de cinza
+        // adiciona click nas lis e pinta a linha de cinza clicada
         let getLis = document.getElementsByTagName('li');
         let ultSelec;
 
         for (let i = 0; i < getLis.length; i += 1) {
 
             getLis[i].addEventListener('click', function(event) {
-
+                // verifica se ha outra li pintada e limpa pra ficar um so pintado de cinza
                 for (let j = 0; j < getLis.length; j += 1) {
 
                     if (getLis[j].className === ('estSelected')) {
@@ -94,6 +94,61 @@ function addOl() {
 
     });
 
-
 }
 addOl();
+
+function duploClique() {
+
+    let getLis = document.getElementsByTagName('li');
+
+    for (let k = 0; k < getLis.length; k += 1) {
+
+        getLis[k].addEventListener('dblclick', function(event) {
+            getLis[k].innerHTML;
+            alert('foi');
+        });
+
+    }
+
+    /*getLis.addEventListener('dblclick', function(event) {
+
+        if (getLis.className === 'completed') {
+            getLis.className = ('completedOff');
+            getLis.innerHTML;
+            alert('Ja clicou');
+        } else {
+
+            getLis.className = ('completed');
+            getLis.innerHTML;
+        }
+
+    });*/
+
+}
+duploClique();
+
+function removeAllList() {
+    // cria o botao
+    let getBody = document.querySelector('body');
+    let getListaLi = document.getElementsByTagName('li');
+    let btnDelAllLi = document.createElement('button');
+    btnDelAllLi.id = ('apaga-tudo');
+    btnDelAllLi.innerText = ('Limpar Lista');
+    btnDelAllLi.className = ('estDelAllLi');
+    btnDelAllLi.innerHTML;
+    getBody.appendChild(btnDelAllLi);
+
+
+    let getOl = document.getElementsByTagName('ol')[0];
+    let getLis = document.getElementsByTagName('li');
+
+    btnDelAllLi.addEventListener('click', function(event) {
+        // Função Retirada do site w3schools  https://www.w3schools.com/jsref/met_node_removechild.asp //
+        while (getOl.hasChildNodes()) {
+            getOl.removeChild(getOl.firstChild);
+        }
+
+    });
+
+}
+removeAllList();

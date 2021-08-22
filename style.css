@@ -28,3 +28,16 @@
 .estDivDefault {
     background-color: none;
 }
+
+.completed {
+    text-decoration: line-through;
+}
+
+.completedOff {
+    background-color: yellow;
+}
+
+.estDelAllLi {
+    background-color: tomato;
+    border-radius: 8px;
+}
