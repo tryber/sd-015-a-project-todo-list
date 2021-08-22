@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project To do List</title>
+</head>
+<body>
+  <header id="tarefa">Minha Lista de Tarefas</header>
+    <div id="cor" ></div>
+  </header>
+  <br>
+  <form class="alinhar-centro" >
+    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo.</p>
+    <div id="lista" >
+      <input id="texto-tarefa" type="input" name="texto">
+      <button id="criar-tarefa">Criar Tarefa</button>
+      <ol id="lista-tarefas"></ol>
+    </div>
+    <br>
+    <footer class="botoes">
+      <button id="remover-selecionado">Clear Select</button>
+      <button id="mover-cima">↑</button>
+      <button id="mover-baixo">↓</button>
+      <button id="remover-finalizados">Clear checks</button>
+      <button id="apaga-tudo">Clear</button>
+      <button id="salvar-tarefas">Save</button>
+    </footer>
+  </form>
+  <br>
+  <img class="displayer" src="fundo.png" alt="caricatura de ideia e pensando">
+  <script src="script.js"></script>
+</body>
+</html>
