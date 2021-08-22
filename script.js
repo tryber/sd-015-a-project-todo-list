@@ -30,6 +30,7 @@ function completed(e) {
         li.classList.add('completed');
       break;
     }
+    // li.classList.toggle('completed');
   }
 }
 
@@ -58,4 +59,18 @@ clear.addEventListener('click', clearTask)
 
 function clearTask() {
   ol.innerHTML = '';
+}
+
+const removeTask = document.querySelector('#remover-finalizados');
+
+removeTask.addEventListener('click', removeCompletedTasks);
+
+function removeCompletedTasks() {
+  const selectList = document.querySelectorAll('.list');
+   let list;
+  for (list of selectList) {
+    if(list.classList.contains('completed')) {
+      list.remove();
+    }
+  }
 }
