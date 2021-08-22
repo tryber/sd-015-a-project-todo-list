@@ -1,0 +1,20 @@
+body{
+  align-items:baseline;
+}
+
+li{
+  background-color: white;
+}
+
+#criar-tarefa {
+  width: 70px;
+  height: 20px;
+}
+
+#selected {
+  background-color: rgb(128,128,128);
+}
+
+.completed{
+  text-decoration: line-through;
+}
