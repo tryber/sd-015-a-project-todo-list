@@ -63,15 +63,29 @@ function deleteTasksFinish() {
       }
     }
 }
+//salvar tarefas
+const lista = document.getElementById('lista-tarefas')
+function saveTasks() {
+  const btnSave = document.getElementById('salvar-tarefas')
+  btnSave.addEventListener('click', save)
+  function save(){
+    localStorage.clear();
+    localStorage.setItem('list', lista.innerHTML);
+  }
+}
 
 window.onload = function() {
+  lista.innerHTML = localStorage.getItem('list');
+
   addText();
 
   styleList();
 
   riscText();
 
-  deleteTasks()
+  deleteTasks();
 
-  deleteTasksFinish()
+  deleteTasksFinish();
+
+  saveTasks()
 }
