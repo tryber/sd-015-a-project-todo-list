@@ -1,26 +1,32 @@
 body {
-  background-color: aquamarine;
+  background-color: #3A3B3C;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-header {
-  background-color: azure;
-  width: 600px;
-  border-radius: 5px;
-  height: 300px;
-  margin: 30px;
-  padding-left: 20px;
+
+#main-cointainer {
+  background-color: #B6B6B4;
+  box-shadow: 10px 5px 5px 5px  black;
+  border-radius: 15px;  
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
 }
 
 li {
   width: fit-content;
-
 }
 
 button {
   font-weight: bold;
+  border: rgb(128, 128, 128) solid 1px;
 }
+
 .completed {
   text-decoration: line-through solid rgb(0,0,0);
 }
+
 .selected {
   background-color: rgb(128, 128, 128);
 }
+

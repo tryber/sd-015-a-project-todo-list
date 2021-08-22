@@ -74,9 +74,7 @@ function saveLocalStorage() {
 
 buttonSave.addEventListener('click', saveLocalStorage);
 function mostraTarefas() {
-  
-
-  for (item of toDolist) {
+  for (const item of toDolist) {
     const itemList = document.createElement('li');
     const itemText = document.createTextNode(item);
     itemList.classList.add('lineList');
