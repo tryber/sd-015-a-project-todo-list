@@ -14,32 +14,23 @@
 
 <body>
 
-  <!-- 1 - Adicione à sua lista o título "Minha Lista de Tarefas" em uma tag header. -->
-
       <header>
         <h1>Minha Lista de Tarefas</h1>
       </header>
-
-  <!-- 2 - Adicione abaixo do título um pequeno e discreto parágrafo com id="funcionamento" e com o texto "Clique duas vezes em um item para marcá-lo como completo" -->
 
       <p id="funcionamento"
         > Clique duas vezes em um item para marcá-lo como completo 
       </p>
 
-  <!-- 3 - Adicione um input com o id="texto-tarefa" onde a pessoa usuária poderá digitar o nome do item que deseja adicionar à lista -->
-  
-  <!-- 5 - Adicione um botão com id="criar-tarefa" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo -->
-
       
 
-      <input type="text" id="texto-tarefa"><button id="criar-tarefa" onclick=criarTarefa()>adicionar</button>
-       
-  <!-- 4 - Adicione uma lista ordenada de tarefas com o id="lista-tarefas" -->
+      <input type="text" placeholder="Crie uma Tarefa" id="texto-tarefa"><button id="criar-tarefa" onclick=criarTarefa()>adicionar</button>
+      <button id="apaga-tudo" onclick=apagaTudo()>Apagar tudo</button>
 
+      <button id="remover-finalizados" onclick=removerFinalizados()>Remover Finalizados</button>
+      
       <ol id="lista-tarefas">
 
       </ol>
-
-  <!-- 5 - Adicione um botão com id="criar-tarefa" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo -->
 
 <script src="script.js"></script>
