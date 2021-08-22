@@ -11,18 +11,25 @@ button.addEventListener('click', addList);
 
 const ol = document.getElementById('lista-tarefas');
 
-function color(e) {
-  let li = e.target;
-  li.style.backgroundColor = 'rgb(128, 128, 128)';
-}
-function listSelect() {
-  const selectList = document.querySelectorAll('.list');
-let list;  
-for (list of selectList) {
-  list.addEventListener('click', color);
-}
-}
-
 const body = document.querySelector('body');
 
-body.addEventListener('click', listSelect)
+body.addEventListener('click', listSelect);
+
+function listSelect() {
+  const selectList = document.querySelectorAll('.list');
+   let list;
+  for (list of selectList) {
+    list.addEventListener('click', color);
+  }
+}
+
+function color(e) {
+  const selectList = document.querySelectorAll('.list');
+   let list;
+  for (list of selectList) {
+    list.classList.remove('list-color');
+  let li = e.target;
+
+  li.classList.add('list-color');    
+  }
+}
