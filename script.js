@@ -1,4 +1,5 @@
-const eraseAll = document.getElementById('apaga-tudo');
+const removeAll = document.getElementById('apaga-tudo');
+const removeDone = document.getElementById('remover-finalizados');
 const addBtn = document.getElementById('criar-tarefa');
 const input = document.getElementById('texto-tarefa');
 const ordList = document.getElementById('lista-tarefas');
@@ -33,4 +34,14 @@ function bleach() {
     listText[i].remove();
   }
 }
-eraseAll.addEventListener('click', bleach);
+removeAll.addEventListener('click', bleach);
+
+function estouPronto() {
+  let totalTasks = listText.length - 1;
+  for (let i = totalTasks; i >= 0; i -= 1) {
+    if (listText[i].className === 'completed') {
+      listText[i].remove();
+    }
+  }
+}
+removeDone.addEventListener('click', estouPronto);
