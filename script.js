@@ -6,6 +6,7 @@ const btnRemover = document.getElementById('remover-finalizados');
 const btnSalvarDados = document.getElementById('salvar-tarefas');
 const btnMoverCima = document.getElementById('mover-cima');
 const btnMoverBaixo = document.getElementById('mover-baixo');
+const btnRemoverSelec = document.getElementById('remover-selecionado');
 
 // Adiciona cor de fundo em apenas um elemento da lista
 // Recebi suporte do Matheus Monteiro e do Diego Brito
@@ -19,7 +20,7 @@ function setBackgroundGray(evento) {
 
 // Adiciona ou remove risco nos elementos da lista
 function riskLi(evento) {
-  let lineRisk = evento.target.classList;
+  const lineRisk = evento.target.classList;
   if (lineRisk.contains('completed')) {
     evento.target.classList.remove('completed');
   } else {
@@ -93,6 +94,15 @@ function descer() {
   }
 }
 
+// Função que remove elemento selecionado, caso tenha
+function removerSelec() {
+  for (let i = 0; i < lista.children.length; i += 1) {
+    if (lista.children[i].classList.contains('backgroundGray')) {
+      lista.removeChild(lista.children[i]);
+    }
+  }
+}
+
 btnAdicionar.addEventListener('click', adicionaTarefa);
 
 btnApagar.addEventListener('click', apagaTarefas);
@@ -104,5 +114,7 @@ btnSalvarDados.addEventListener('click', salvaDados);
 btnMoverCima.addEventListener('click', subir);
 
 btnMoverBaixo.addEventListener('click', descer);
+
+btnRemoverSelec.addEventListener('click', removerSelec);
 
 window.onload = salvados;
