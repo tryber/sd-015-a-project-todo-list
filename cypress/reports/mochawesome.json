@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2021-08-16T20:07:46.167Z",
-    "end": "2021-08-16T20:07:48.986Z",
-    "duration": 2819,
+    "start": "2021-08-23T22:37:23.656Z",
+    "end": "2021-08-23T22:37:26.404Z",
+    "duration": 2748,
     "testsRegistered": 28,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "05952240-e750-433a-8b31-1a3371d95db4",
+      "uuid": "c04b5956-1b21-40db-9728-019c456b8833",
       "title": "",
       "fullFile": "cypress/integration/project.spec.js",
       "file": "cypress/integration/project.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d18968df-d141-4da5-a2ba-d9fbcdf40232",
+          "uuid": "460e0bf4-318e-43db-8462-6a7c77a7eeb9",
           "title": "1 - Adicone à sua lista o título \"Minha Lista de Tarefas\" em uma tag <header>",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Será verificado se sua página possui uma tag `header` com o conteúdo `Minha Lista de Tarefas`",
               "fullTitle": "1 - Adicone à sua lista o título \"Minha Lista de Tarefas\" em uma tag <header> Será verificado se sua página possui uma tag `header` com o conteúdo `Minha Lista de Tarefas`",
               "timedOut": null,
-              "duration": 242,
+              "duration": 251,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "cy.get('header').contains(TODO_PAGE_TITLE);",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '1 - Adicone à sua lista o t...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '1 - Adicone à sua lista o t...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '1 - Adicone à sua lista o t...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '1 - Adicone à sua lista o t...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "d2e68424-c553-433b-bb79-3934032789eb",
-              "parentUUID": "d18968df-d141-4da5-a2ba-d9fbcdf40232",
+              "uuid": "798ca52d-2543-440e-96d6-3b331cdff982",
+              "parentUUID": "460e0bf4-318e-43db-8462-6a7c77a7eeb9",
               "isHook": false,
               "skipped": false
             }
@@ -60,17 +60,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "d2e68424-c553-433b-bb79-3934032789eb"
+            "798ca52d-2543-440e-96d6-3b331cdff982"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 242,
+          "duration": 251,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "6ed087a9-c43c-489d-bd21-132e910bf994",
+          "uuid": "b1be0e71-4302-4eba-b733-3e5e280ba414",
           "title": "2 - Adicione abaixo do título um pequeno e discreto parágrafo com id=\"funcionamento\" e com o texto \"Clique duas vezes em um item para marcá-lo como completo\"",
           "fullFile": "",
           "file": "",
@@ -81,7 +81,7 @@
               "title": "Será verificado que existe na sua página um elemento com o id `funcionamento` com o conteúdo `Clique duas vezes em um item para marcá-lo como completo`",
               "fullTitle": "2 - Adicione abaixo do título um pequeno e discreto parágrafo com id=\"funcionamento\" e com o texto \"Clique duas vezes em um item para marcá-lo como completo\" Será verificado que existe na sua página um elemento com o id `funcionamento` com o conteúdo `Clique duas vezes em um item para marcá-lo como completo`",
               "timedOut": null,
-              "duration": 170,
+              "duration": 185,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -90,12 +90,12 @@
               "context": null,
               "code": "cy.get(TODO_PAGE_DESCRIPTION_SELECTOR).contains(TODO_PAGE_DESCRIPTION);",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '2 - Adicione abaixo do títu...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '2 - Adicione abaixo do títu...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '2 - Adicione abaixo do títu...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '2 - Adicione abaixo do títu...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "61f6f672-94a1-4e65-b232-25c0ce9843af",
-              "parentUUID": "6ed087a9-c43c-489d-bd21-132e910bf994",
+              "uuid": "1fc5ae12-f771-4beb-b508-446a6a411b35",
+              "parentUUID": "b1be0e71-4302-4eba-b733-3e5e280ba414",
               "isHook": false,
               "skipped": false
             }
@@ -103,17 +103,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "61f6f672-94a1-4e65-b232-25c0ce9843af"
+            "1fc5ae12-f771-4beb-b508-446a6a411b35"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 170,
+          "duration": 185,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "68c09b58-0882-48d0-857c-10b299b62c9b",
+          "uuid": "75bffc69-cd50-430e-925c-c8e89cdd981a",
           "title": "3 - Adicione um input com o id=\"texto-tarefa\" onde o usuário poderá digitar o nome do item que deseja adicionar à lista",
           "fullFile": "",
           "file": "",
@@ -124,7 +124,7 @@
               "title": "Será verificada a existência de um elemento do tipo `input` com o id `texto-tarefa`",
               "fullTitle": "3 - Adicione um input com o id=\"texto-tarefa\" onde o usuário poderá digitar o nome do item que deseja adicionar à lista Será verificada a existência de um elemento do tipo `input` com o id `texto-tarefa`",
               "timedOut": null,
-              "duration": 176,
+              "duration": 188,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -133,12 +133,12 @@
               "context": null,
               "code": "cy.get(TODO_ADD_INPUT_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '3 - Adicione um input com o...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '3 - Adicione um input com o...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '3 - Adicione um input com o...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '3 - Adicione um input com o...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "257ee3ec-1781-4ef1-852e-d2e98ca59879",
-              "parentUUID": "68c09b58-0882-48d0-857c-10b299b62c9b",
+              "uuid": "2afbbc32-ce21-4b03-b4d4-555377bd375a",
+              "parentUUID": "75bffc69-cd50-430e-925c-c8e89cdd981a",
               "isHook": false,
               "skipped": false
             }
@@ -146,17 +146,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "257ee3ec-1781-4ef1-852e-d2e98ca59879"
+            "2afbbc32-ce21-4b03-b4d4-555377bd375a"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 176,
+          "duration": 188,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "7bd18021-f31e-40a4-9e12-cc86371abbc6",
+          "uuid": "0d8b1b88-ce99-4aa5-bfc9-34f35eec79cc",
           "title": "4 - Adicione uma lista ordenada de tarefas com o id=\"lista-tarefas\"",
           "fullFile": "",
           "file": "",
@@ -167,7 +167,7 @@
               "title": "Será verificada a existência de um elemento `ol` com o id `lista-tarefas`",
               "fullTitle": "4 - Adicione uma lista ordenada de tarefas com o id=\"lista-tarefas\" Será verificada a existência de um elemento `ol` com o id `lista-tarefas`",
               "timedOut": null,
-              "duration": 190,
+              "duration": 181,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -176,12 +176,12 @@
               "context": null,
               "code": "cy.get(TODO_LIST_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '4 - Adicione uma lista orde...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '4 - Adicione uma lista orde...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '4 - Adicione uma lista orde...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '4 - Adicione uma lista orde...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "ad583fdc-ff30-4f16-bee5-6aadb8210771",
-              "parentUUID": "7bd18021-f31e-40a4-9e12-cc86371abbc6",
+              "uuid": "270a4259-c2c4-47cf-a703-06a0dd33a54a",
+              "parentUUID": "0d8b1b88-ce99-4aa5-bfc9-34f35eec79cc",
               "isHook": false,
               "skipped": false
             }
@@ -189,17 +189,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "ad583fdc-ff30-4f16-bee5-6aadb8210771"
+            "270a4259-c2c4-47cf-a703-06a0dd33a54a"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 190,
+          "duration": 181,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "4e75b318-4aa3-4d1c-a8ec-6c76800fc82b",
+          "uuid": "309f88cf-45b3-47a0-b075-49ce72a444eb",
           "title": "5 - Adicione um botão com id=\"criar-tarefa\" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo",
           "fullFile": "",
           "file": "",
@@ -210,7 +210,7 @@
               "title": "Será verificada a existência de um elemento do tipo `button` com o id `criar-tarefa",
               "fullTitle": "5 - Adicione um botão com id=\"criar-tarefa\" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo Será verificada a existência de um elemento do tipo `button` com o id `criar-tarefa",
               "timedOut": null,
-              "duration": 162,
+              "duration": 190,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -219,12 +219,12 @@
               "context": null,
               "code": "cy.get(TODO_ADD_BUTTON_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '5 - Adicione um botão com i...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '5 - Adicione um botão com i...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '5 - Adicione um botão com i...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '5 - Adicione um botão com i...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "cbe38fbd-6094-431c-bdf5-184bd35c44b5",
-              "parentUUID": "4e75b318-4aa3-4d1c-a8ec-6c76800fc82b",
+              "uuid": "8b5ed2ef-c43b-4fe1-893c-88905836173a",
+              "parentUUID": "309f88cf-45b3-47a0-b075-49ce72a444eb",
               "isHook": false,
               "skipped": false
             },
@@ -241,8 +241,8 @@
               "context": null,
               "code": "var todo1 = {\n  content: 'minha primeira tarefa'\n};\naddTodo(todo1);\ncheckTodoList([todo1]);\ncy.get(TODO_ADD_INPUT_SELECTOR).should('have.value', '');",
               "err": {},
-              "uuid": "691942fe-5484-4e3e-987a-d2f549a82657",
-              "parentUUID": "4e75b318-4aa3-4d1c-a8ec-6c76800fc82b",
+              "uuid": "f5bbfe31-e0b0-4b5d-8405-d07b55561e59",
+              "parentUUID": "309f88cf-45b3-47a0-b075-49ce72a444eb",
               "isHook": false,
               "skipped": true
             },
@@ -259,8 +259,8 @@
               "context": null,
               "code": "var todo1 = {\n  content: 'minha primeira tarefa'\n};\nvar todo2 = {\n  content: 'minha segunda tarefa'\n};\naddTodo(todo1);\ncheckTodoList([todo1]);\naddTodo(todo2);\ncheckTodoList([todo1, todo2]);\ncy.get(TODO_ADD_INPUT_SELECTOR).should('have.value', '');",
               "err": {},
-              "uuid": "1a78d182-e4e5-4f04-bad8-65a0a907df79",
-              "parentUUID": "4e75b318-4aa3-4d1c-a8ec-6c76800fc82b",
+              "uuid": "f205edd7-dda9-4c55-a878-78b9ea43eed6",
+              "parentUUID": "309f88cf-45b3-47a0-b075-49ce72a444eb",
               "isHook": false,
               "skipped": true
             }
@@ -268,20 +268,20 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "cbe38fbd-6094-431c-bdf5-184bd35c44b5"
+            "8b5ed2ef-c43b-4fe1-893c-88905836173a"
           ],
           "pending": [],
           "skipped": [
-            "691942fe-5484-4e3e-987a-d2f549a82657",
-            "1a78d182-e4e5-4f04-bad8-65a0a907df79"
+            "f5bbfe31-e0b0-4b5d-8405-d07b55561e59",
+            "f205edd7-dda9-4c55-a878-78b9ea43eed6"
           ],
-          "duration": 162,
+          "duration": 190,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "b5664090-3cbd-46ce-a9f2-fa3c5e845056",
+          "uuid": "47655dfc-595a-443d-b3d0-7b80cbdeb7a2",
           "title": "6 - Ordene os itens da lista de tarefas por ordem de criação",
           "fullFile": "",
           "file": "",
@@ -292,7 +292,7 @@
               "title": "Três itens serão criados na lista e será checado se eles estão ordenados por ordem de criação - ou seja, primeiro o primeiro item criado, depois o segundo, e assim por diante",
               "fullTitle": "6 - Ordene os itens da lista de tarefas por ordem de criação Três itens serão criados na lista e será checado se eles estão ordenados por ordem de criação - ou seja, primeiro o primeiro item criado, depois o segundo, e assim por diante",
               "timedOut": null,
-              "duration": 177,
+              "duration": 187,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -301,12 +301,12 @@
               "context": null,
               "code": "var todo1 = {\n  content: 'minha tarefa'\n};\nvar todo2 = {\n  content: 'minha outra tarefa'\n};\nvar todo3 = {\n  content: 'minha terceira tarefa'\n};\naddTodo(todo1);\ncheckTodoList([todo1]);\naddTodo(todo2);\ncheckTodoList([todo1, todo2]);\naddTodo(todo3);\ncheckTodoList([todo1, todo2, todo3]);",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '6 - Ordene os itens da list...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '6 - Ordene os itens da list...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '6 - Ordene os itens da list...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '6 - Ordene os itens da list...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "a2592131-dc03-4f1e-9022-fa03448c18f2",
-              "parentUUID": "b5664090-3cbd-46ce-a9f2-fa3c5e845056",
+              "uuid": "0d39a324-ecd0-4960-88b5-b15f7fa184e2",
+              "parentUUID": "47655dfc-595a-443d-b3d0-7b80cbdeb7a2",
               "isHook": false,
               "skipped": false
             }
@@ -314,17 +314,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "a2592131-dc03-4f1e-9022-fa03448c18f2"
+            "0d39a324-ecd0-4960-88b5-b15f7fa184e2"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 177,
+          "duration": 187,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "33a0dd00-e253-4256-87ad-273a19d2d7e2",
+          "uuid": "cf59c59e-ab8e-452a-a455-a11959d3e0f1",
           "title": "7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128)",
           "fullFile": "",
           "file": "",
@@ -335,7 +335,7 @@
               "title": "Será verificado que, ao se carregar a página, os itens da lista **não tem** o estilo CSS `background-color: rgb(128, 128, 128)`",
               "fullTitle": "7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128) Será verificado que, ao se carregar a página, os itens da lista **não tem** o estilo CSS `background-color: rgb(128, 128, 128)`",
               "timedOut": null,
-              "duration": 167,
+              "duration": 169,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -344,12 +344,12 @@
               "context": null,
               "code": "var todos = [{\n  content: 'uma tarefa qualquer'\n}, {\n  content: 'uma outra tarefa atoa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'background-color', 'rgb(128, 128, 128)');",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '7 - Clicar em um item da li...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '7 - Clicar em um item da li...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '7 - Clicar em um item da li...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '7 - Clicar em um item da li...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "b9b7cfd6-e74b-4620-88cd-988ff910b9ec",
-              "parentUUID": "33a0dd00-e253-4256-87ad-273a19d2d7e2",
+              "uuid": "f8cb3758-b309-4555-9d52-439d5a68f1ea",
+              "parentUUID": "cf59c59e-ab8e-452a-a455-a11959d3e0f1",
               "isHook": false,
               "skipped": false
             },
@@ -366,8 +366,8 @@
               "context": null,
               "code": "var todos = [{\n  content: 'uma tarefa qualquer'\n}, {\n  content: 'uma outra tarefa atoa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().click().then(function ($li) {\n  expect($li).to.have.css('background-color', 'rgb(128, 128, 128)');\n});",
               "err": {},
-              "uuid": "f2cf70e9-d494-45b7-90d0-f13f9a2b7424",
-              "parentUUID": "33a0dd00-e253-4256-87ad-273a19d2d7e2",
+              "uuid": "f22ecc78-4b12-49d4-8fa9-d7a558476eb3",
+              "parentUUID": "cf59c59e-ab8e-452a-a455-a11959d3e0f1",
               "isHook": false,
               "skipped": true
             }
@@ -375,19 +375,19 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "b9b7cfd6-e74b-4620-88cd-988ff910b9ec"
+            "f8cb3758-b309-4555-9d52-439d5a68f1ea"
           ],
           "pending": [],
           "skipped": [
-            "f2cf70e9-d494-45b7-90d0-f13f9a2b7424"
+            "f22ecc78-4b12-49d4-8fa9-d7a558476eb3"
           ],
-          "duration": 167,
+          "duration": 169,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "5991ca97-4643-4f45-aebd-10dafad179b3",
+          "uuid": "740c844e-567f-4156-ab76-a6cfffeaa5cf",
           "title": "8 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo",
           "fullFile": "",
           "file": "",
@@ -398,7 +398,7 @@
               "title": "Será verificado que, quando um elemento da lista é selecionado, o elemento selecionado previamente deixa de sê-lo. Isso é verificado através da presença ou não do estilo `background-color: rgb(128, 128, 128)` no elemento",
               "fullTitle": "8 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo Será verificado que, quando um elemento da lista é selecionado, o elemento selecionado previamente deixa de sê-lo. Isso é verificado através da presença ou não do estilo `background-color: rgb(128, 128, 128)` no elemento",
               "timedOut": null,
-              "duration": 187,
+              "duration": 172,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -407,12 +407,12 @@
               "context": null,
               "code": "var todos = [{\n  content: 'uma tarefa qualquer'\n}, {\n  content: 'uma outra tarefa atoa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'background-color', 'rgb(128, 128, 128)');\ncy.get(TODO_LIST_LINE_SELECTOR).first().click().then(function ($li) {\n  expect($li).to.have.css('background-color', 'rgb(128, 128, 128)');\n});\ncy.get(TODO_LIST_LINE_SELECTOR).last().click().then(function ($li) {\n  expect($li).to.have.css('background-color', 'rgb(128, 128, 128)');\n});\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'background-color', 'rgb(128, 128, 128)');",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '8 - Não deve ser possível s...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '8 - Não deve ser possível s...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '8 - Não deve ser possível s...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '8 - Não deve ser possível s...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "6ea45def-89f6-454b-8463-4798896d5e5d",
-              "parentUUID": "5991ca97-4643-4f45-aebd-10dafad179b3",
+              "uuid": "68d2c5e9-240e-47a1-a016-78d0c4a76ba3",
+              "parentUUID": "740c844e-567f-4156-ab76-a6cfffeaa5cf",
               "isHook": false,
               "skipped": false
             }
@@ -420,17 +420,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "6ea45def-89f6-454b-8463-4798896d5e5d"
+            "68d2c5e9-240e-47a1-a016-78d0c4a76ba3"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 187,
+          "duration": 172,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "f91d0460-4939-4bb7-a6c6-7d760d269429",
+          "uuid": "5c98699e-92a1-4e6d-b2ee-c6584b3a7020",
           "title": "9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item",
           "fullFile": "",
           "file": "",
@@ -441,7 +441,7 @@
               "title": "Será verificado que, antes da ação ser disparada, o elemento adicionado à lista não tem nem a classe `completed` nem o estilo `line-through solid rgb(0, 0, 0)`",
               "fullTitle": "9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item Será verificado que, antes da ação ser disparada, o elemento adicionado à lista não tem nem a classe `completed` nem o estilo `line-through solid rgb(0, 0, 0)`",
               "timedOut": null,
-              "duration": 187,
+              "duration": 167,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -450,12 +450,12 @@
               "context": null,
               "code": "var todos = [{\n  content: 'já terminei essa tarefa'\n}, {\n  content: 'está eu ainda não terminei'\n}];\naddTodos(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.class', 'completed');\ncy.get(TODO_LIST_LINE_SELECTOR).should('not.have.css', 'text-decoration', 'line-through solid rgb(0, 0, 0)');",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '9 - Clicar duas vezes em um...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '9 - Clicar duas vezes em um...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '9 - Clicar duas vezes em um...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '9 - Clicar duas vezes em um...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "58146139-f0cc-41ae-a60d-e274c2b5c76b",
-              "parentUUID": "f91d0460-4939-4bb7-a6c6-7d760d269429",
+              "uuid": "52cd3433-5635-4a60-8b47-a8e43824910b",
+              "parentUUID": "5c98699e-92a1-4e6d-b2ee-c6584b3a7020",
               "isHook": false,
               "skipped": false
             },
@@ -472,8 +472,8 @@
               "context": null,
               "code": "var todos = [{\n  content: 'já terminei essa tarefa'\n}, {\n  content: 'está eu ainda não terminei'\n}];\naddTodos(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().dblclick();\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('have.class', 'completed');\ncy.get('.completed').should('have.css', 'text-decoration', 'line-through solid rgb(0, 0, 0)');",
               "err": {},
-              "uuid": "e6a857aa-2778-468b-87b5-66026cf37df6",
-              "parentUUID": "f91d0460-4939-4bb7-a6c6-7d760d269429",
+              "uuid": "b1bf1d51-3970-4c45-aa4c-00f294f7049a",
+              "parentUUID": "5c98699e-92a1-4e6d-b2ee-c6584b3a7020",
               "isHook": false,
               "skipped": true
             },
@@ -490,8 +490,8 @@
               "context": null,
               "code": "var todos = [{\n  content: 'já terminei essa tarefa'\n}, {\n  content: 'está eu ainda não terminei'\n}];\naddTodos(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().dblclick().dblclick();\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.class', 'completed');\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'text-decoration', 'line-through solid rgb(0, 0, 0)');",
               "err": {},
-              "uuid": "a5ffb635-fb4f-4aaa-bcdb-5010e8f95376",
-              "parentUUID": "f91d0460-4939-4bb7-a6c6-7d760d269429",
+              "uuid": "ceec8821-c245-46e8-8908-3797cd5522bd",
+              "parentUUID": "5c98699e-92a1-4e6d-b2ee-c6584b3a7020",
               "isHook": false,
               "skipped": true
             }
@@ -499,20 +499,20 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "58146139-f0cc-41ae-a60d-e274c2b5c76b"
+            "52cd3433-5635-4a60-8b47-a8e43824910b"
           ],
           "pending": [],
           "skipped": [
-            "e6a857aa-2778-468b-87b5-66026cf37df6",
-            "a5ffb635-fb4f-4aaa-bcdb-5010e8f95376"
+            "b1bf1d51-3970-4c45-aa4c-00f294f7049a",
+            "ceec8821-c245-46e8-8908-3797cd5522bd"
           ],
-          "duration": 187,
+          "duration": 167,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "b29d580d-bcf3-42ef-a1b7-933a07696eeb",
+          "uuid": "699fb1c4-6575-4023-99fe-1fe0cd6e1c38",
           "title": "10 - Adicione um botão com id=\"apaga-tudo\" que quando clicado deve apagar todos os itens da lista",
           "fullFile": "",
           "file": "",
@@ -523,7 +523,7 @@
               "title": "Será verificado que existe um elemento `button` com o id `apaga-tudo`",
               "fullTitle": "10 - Adicione um botão com id=\"apaga-tudo\" que quando clicado deve apagar todos os itens da lista Será verificado que existe um elemento `button` com o id `apaga-tudo`",
               "timedOut": null,
-              "duration": 177,
+              "duration": 164,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -532,12 +532,12 @@
               "context": null,
               "code": "cy.get(TODO_REMOVE_ALL_BUTTON_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '10 - Adicione um botão com ...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '10 - Adicione um botão com ...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '10 - Adicione um botão com ...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '10 - Adicione um botão com ...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "62497f70-e0dc-4f0f-8c49-6f76136fd50e",
-              "parentUUID": "b29d580d-bcf3-42ef-a1b7-933a07696eeb",
+              "uuid": "ad47b659-7f6f-4937-9d5e-ef161bbfcacf",
+              "parentUUID": "699fb1c4-6575-4023-99fe-1fe0cd6e1c38",
               "isHook": false,
               "skipped": false
             },
@@ -554,8 +554,8 @@
               "context": null,
               "code": "var todos = [{\n  content: 'blablabla'\n}, {\n  content: 'hahahahaha'\n}];\naddTodos(todos);\ncy.get(TODO_REMOVE_ALL_BUTTON_SELECTOR).click();\ncheckTodoList();",
               "err": {},
-              "uuid": "483799c9-9751-471b-b02f-726ff4564899",
-              "parentUUID": "b29d580d-bcf3-42ef-a1b7-933a07696eeb",
+              "uuid": "7a62625a-6b9b-46a7-9493-b500486dc49e",
+              "parentUUID": "699fb1c4-6575-4023-99fe-1fe0cd6e1c38",
               "isHook": false,
               "skipped": true
             }
@@ -563,19 +563,19 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "62497f70-e0dc-4f0f-8c49-6f76136fd50e"
+            "ad47b659-7f6f-4937-9d5e-ef161bbfcacf"
           ],
           "pending": [],
           "skipped": [
-            "483799c9-9751-471b-b02f-726ff4564899"
+            "7a62625a-6b9b-46a7-9493-b500486dc49e"
           ],
-          "duration": 177,
+          "duration": 164,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "58953ed9-604d-4ace-908c-83910a430037",
+          "uuid": "1665b678-43a9-4732-8c5f-c565ffd323dc",
           "title": "11 - Adicione um botão com id=\"remover-finalizados\" que quando clicado remove **somente** os elementos finalizados da sua lista",
           "fullFile": "",
           "file": "",
@@ -586,7 +586,7 @@
               "title": "Será verificado que existe um elemento `button` com o id `remover-finalizados`",
               "fullTitle": "11 - Adicione um botão com id=\"remover-finalizados\" que quando clicado remove **somente** os elementos finalizados da sua lista Será verificado que existe um elemento `button` com o id `remover-finalizados`",
               "timedOut": null,
-              "duration": 207,
+              "duration": 169,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -595,12 +595,12 @@
               "context": null,
               "code": "cy.get(TODO_REMOVE_DONE_BUTTON_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '11 - Adicione um botão com ...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '11 - Adicione um botão com ...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '11 - Adicione um botão com ...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '11 - Adicione um botão com ...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "251142dd-4dce-4abc-aa53-4e3e9c250f7c",
-              "parentUUID": "58953ed9-604d-4ace-908c-83910a430037",
+              "uuid": "4d6bb097-da2b-4335-a1ee-77f2af33d965",
+              "parentUUID": "1665b678-43a9-4732-8c5f-c565ffd323dc",
               "isHook": false,
               "skipped": false
             },
@@ -617,8 +617,8 @@
               "context": null,
               "code": "var todo1 = {\n  content: 'vou terminar essa tarefa logo'\n};\nvar todo2 = {\n  content: 'essa tarefa eu vou demorar para finalizar'\n};\nvar todo3 = {\n  content: 'essa tarefa tbm vai demorar...'\n};\nvar todos = [todo1, todo2, todo3];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(2)\")).dblclick();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(3)\")).dblclick();\ncy.get(TODO_REMOVE_DONE_BUTTON_SELECTOR).click();\ncheckTodoList([todo1]);",
               "err": {},
-              "uuid": "6d49612b-f287-44b2-8389-dbd4ec3b2cb9",
-              "parentUUID": "58953ed9-604d-4ace-908c-83910a430037",
+              "uuid": "8e78fdac-f6b1-4f0e-9000-fe989c7af3c2",
+              "parentUUID": "1665b678-43a9-4732-8c5f-c565ffd323dc",
               "isHook": false,
               "skipped": true
             }
@@ -626,19 +626,19 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "251142dd-4dce-4abc-aa53-4e3e9c250f7c"
+            "4d6bb097-da2b-4335-a1ee-77f2af33d965"
           ],
           "pending": [],
           "skipped": [
-            "6d49612b-f287-44b2-8389-dbd4ec3b2cb9"
+            "8e78fdac-f6b1-4f0e-9000-fe989c7af3c2"
           ],
-          "duration": 207,
+          "duration": 169,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "8aa41b33-e055-4f3b-812d-13d5842d17dc",
+          "uuid": "53f7addd-e8d3-4e75-8ec5-6c0d793e00c4",
           "title": "12 - Adicione um botão com id=\"salvar-tarefas\" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava",
           "fullFile": "",
           "file": "",
@@ -649,7 +649,7 @@
               "title": "Será verificado que existe um elemento `button` com o id `salvar-tarefas`",
               "fullTitle": "12 - Adicione um botão com id=\"salvar-tarefas\" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava Será verificado que existe um elemento `button` com o id `salvar-tarefas`",
               "timedOut": null,
-              "duration": 207,
+              "duration": 191,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -658,12 +658,12 @@
               "context": null,
               "code": "cy.get(TODO_SAVE_LIST_BUTTON_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '12 - Adicione um botão com ...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '12 - Adicione um botão com ...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '12 - Adicione um botão com ...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '12 - Adicione um botão com ...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "8d453f8e-50dc-43e7-988a-6e644027d0a6",
-              "parentUUID": "8aa41b33-e055-4f3b-812d-13d5842d17dc",
+              "uuid": "535562ab-b148-4522-be33-a313b75049a4",
+              "parentUUID": "53f7addd-e8d3-4e75-8ec5-6c0d793e00c4",
               "isHook": false,
               "skipped": false
             },
@@ -680,8 +680,8 @@
               "context": null,
               "code": "var todo1 = {\n  content: 'primeira tarefa a ser salva'\n};\nvar todo2 = {\n  content: 'esta tarefa será salva também'\n};\nvar todo3 = {\n  content: 'mais uma para salvar'\n};\nvar todos = [todo1, todo2, todo3];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().dblclick();\ncy.get(TODO_SAVE_LIST_BUTTON_SELECTOR).click();\ncy.reload();\nvar newTodosState = [(0, _objectSpread2[\"default\"])({}, todo1, {\n  done: true\n}), todo2, todo3];\ncheckTodoList(newTodosState);",
               "err": {},
-              "uuid": "50f92e47-9ac6-492f-9a54-d72500662762",
-              "parentUUID": "8aa41b33-e055-4f3b-812d-13d5842d17dc",
+              "uuid": "2244ccf8-d56c-482d-bcb9-b9e527fe4fa2",
+              "parentUUID": "53f7addd-e8d3-4e75-8ec5-6c0d793e00c4",
               "isHook": false,
               "skipped": true
             }
@@ -689,19 +689,19 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "8d453f8e-50dc-43e7-988a-6e644027d0a6"
+            "535562ab-b148-4522-be33-a313b75049a4"
           ],
           "pending": [],
           "skipped": [
-            "50f92e47-9ac6-492f-9a54-d72500662762"
+            "2244ccf8-d56c-482d-bcb9-b9e527fe4fa2"
           ],
-          "duration": 207,
+          "duration": 191,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "9a5c3a76-3852-48f7-9a37-bae58b1b79e9",
+          "uuid": "6f5d5c27-3b0e-4495-a20e-f54ddaada43b",
           "title": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas",
           "fullFile": "",
           "file": "",
@@ -712,7 +712,7 @@
               "title": "Será verificada a existência de dois elementos `button`, um com o id `mover-cima` e o outro com o id `mover-baixo`",
               "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas Será verificada a existência de dois elementos `button`, um com o id `mover-cima` e o outro com o id `mover-baixo`",
               "timedOut": null,
-              "duration": 164,
+              "duration": 173,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -721,12 +721,12 @@
               "context": null,
               "code": "cy.get(TODO_MOVE_UP_BUTTON_SELECTOR).should('exist');\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '13 - Adicione dois botões, ...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '13 - Adicione dois botões, ...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '13 - Adicione dois botões, ...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '13 - Adicione dois botões, ...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "97337540-4dcf-4447-bc2e-457f1af75d71",
-              "parentUUID": "9a5c3a76-3852-48f7-9a37-bae58b1b79e9",
+              "uuid": "122148b1-2aa7-4f52-bf73-86d3c112ad31",
+              "parentUUID": "6f5d5c27-3b0e-4495-a20e-f54ddaada43b",
               "isHook": false,
               "skipped": false
             },
@@ -743,8 +743,8 @@
               "context": null,
               "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}, {\n  content: 'terceira tarefa'\n}, {\n  content: 'quarta tarefa'\n}];\nvar newTodosState = [todos[3], todos[2], todos[1], todos[0]];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(2)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(4)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(3)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(4)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(3)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(newTodosState);",
               "err": {},
-              "uuid": "9df996ac-dad1-4856-98dc-8afc9fe96393",
-              "parentUUID": "9a5c3a76-3852-48f7-9a37-bae58b1b79e9",
+              "uuid": "386e6c14-54d2-4c5f-8f95-8663c35509a0",
+              "parentUUID": "6f5d5c27-3b0e-4495-a20e-f54ddaada43b",
               "isHook": false,
               "skipped": true
             },
@@ -761,8 +761,8 @@
               "context": null,
               "code": "var todos = [{\n  content: 'primeira tarefa',\n  done: true\n}, {\n  content: 'segunda tarefa'\n}];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click().dblclick();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
               "err": {},
-              "uuid": "9ca7c304-168a-479f-a604-79943ddf257d",
-              "parentUUID": "9a5c3a76-3852-48f7-9a37-bae58b1b79e9",
+              "uuid": "3d6c986c-1ebe-43ab-8f4c-19a1b6856b0b",
+              "parentUUID": "6f5d5c27-3b0e-4495-a20e-f54ddaada43b",
               "isHook": false,
               "skipped": true
             },
@@ -779,8 +779,8 @@
               "context": null,
               "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}, {\n  content: 'terceira tarefa'\n}, {\n  content: 'quarta tarefa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
               "err": {},
-              "uuid": "4b5f0c1d-48bd-496d-9b90-3057cf803ccb",
-              "parentUUID": "9a5c3a76-3852-48f7-9a37-bae58b1b79e9",
+              "uuid": "3f1b1cc6-1e21-40c4-9ce0-1b0c9ca72194",
+              "parentUUID": "6f5d5c27-3b0e-4495-a20e-f54ddaada43b",
               "isHook": false,
               "skipped": true
             },
@@ -797,8 +797,8 @@
               "context": null,
               "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\nvar newTodos = [{\n  content: 'segunda tarefa'\n}, {\n  content: 'primeira tarefa'\n}];\ncheckTodoList(newTodos);\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
               "err": {},
-              "uuid": "3a32c532-1a73-470c-8cb0-a41811dc5a2a",
-              "parentUUID": "9a5c3a76-3852-48f7-9a37-bae58b1b79e9",
+              "uuid": "60960181-66bd-4e80-8a24-e3e0b1007776",
+              "parentUUID": "6f5d5c27-3b0e-4495-a20e-f54ddaada43b",
               "isHook": false,
               "skipped": true
             },
@@ -815,8 +815,8 @@
               "context": null,
               "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(2)\")).click();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
               "err": {},
-              "uuid": "8067044b-f015-4b68-b600-35b5c2beaf06",
-              "parentUUID": "9a5c3a76-3852-48f7-9a37-bae58b1b79e9",
+              "uuid": "2259a050-4030-479e-8123-ce7a5fa4e56d",
+              "parentUUID": "6f5d5c27-3b0e-4495-a20e-f54ddaada43b",
               "isHook": false,
               "skipped": true
             }
@@ -824,23 +824,23 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "97337540-4dcf-4447-bc2e-457f1af75d71"
+            "122148b1-2aa7-4f52-bf73-86d3c112ad31"
           ],
           "pending": [],
           "skipped": [
-            "9df996ac-dad1-4856-98dc-8afc9fe96393",
-            "9ca7c304-168a-479f-a604-79943ddf257d",
-            "4b5f0c1d-48bd-496d-9b90-3057cf803ccb",
-            "3a32c532-1a73-470c-8cb0-a41811dc5a2a",
-            "8067044b-f015-4b68-b600-35b5c2beaf06"
+            "386e6c14-54d2-4c5f-8f95-8663c35509a0",
+            "3d6c986c-1ebe-43ab-8f4c-19a1b6856b0b",
+            "3f1b1cc6-1e21-40c4-9ce0-1b0c9ca72194",
+            "60960181-66bd-4e80-8a24-e3e0b1007776",
+            "2259a050-4030-479e-8123-ce7a5fa4e56d"
           ],
-          "duration": 164,
+          "duration": 173,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "cddfd76c-ea30-4e74-939d-fac9d12938d6",
+          "uuid": "bab993d4-c1cf-40c3-9393-adb45c8fb452",
           "title": "14 - Adicione um botão com id=\"remover-selecionado\" que, quando clicado, remove o item selecionado",
           "fullFile": "",
           "file": "",
@@ -851,7 +851,7 @@
               "title": "Será verificada a presença de um elemento `button` com um id `remover-selecionado`",
               "fullTitle": "14 - Adicione um botão com id=\"remover-selecionado\" que, quando clicado, remove o item selecionado Será verificada a presença de um elemento `button` com um id `remover-selecionado`",
               "timedOut": null,
-              "duration": 204,
+              "duration": 182,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -860,12 +860,12 @@
               "context": null,
               "code": "cy.get(TODO_REMOVE_SELECTED_BUTTON_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '14 - Adicione um botão com ...'",
-                "estack": "Uncaught TypeError: Cannot read property 'appendChild' of null\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '14 - Adicione um botão com ...'\n    at textInput (http://localhost:38373/script.js:29:13)\n    at window.onload (http://localhost:38373/script.js:32:1)",
+                "message": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '14 - Adicione um botão com ...'",
+                "estack": "Uncaught ReferenceError: throughLine is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '14 - Adicione um botão com ...'\n    at window.onload (http://localhost:36481/script.js:28:39)",
                 "diff": null
               },
-              "uuid": "527b970c-9055-405f-9f85-3e8f56a911a2",
-              "parentUUID": "cddfd76c-ea30-4e74-939d-fac9d12938d6",
+              "uuid": "e321d3f5-7685-47d5-a597-3a04aa785d84",
+              "parentUUID": "bab993d4-c1cf-40c3-9393-adb45c8fb452",
               "isHook": false,
               "skipped": false
             },
@@ -882,8 +882,8 @@
               "context": null,
               "code": "var todo1 = {\n  content: 'não posso remover essa tarefa'\n};\nvar todo2 = {\n  content: 'essa tarefa aqui eu posso remover'\n};\nvar todos = [todo1, todo2];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).last().click();\ncy.get(TODO_REMOVE_SELECTED_BUTTON_SELECTOR).click();\ncheckTodoList([todo1]);",
               "err": {},
-              "uuid": "3bdb82af-ff64-4db8-b6e3-a66098787ac3",
-              "parentUUID": "cddfd76c-ea30-4e74-939d-fac9d12938d6",
+              "uuid": "05142ed6-a978-420c-be3e-09894fab51b0",
+              "parentUUID": "bab993d4-c1cf-40c3-9393-adb45c8fb452",
               "isHook": false,
               "skipped": true
             }
@@ -891,13 +891,13 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "527b970c-9055-405f-9f85-3e8f56a911a2"
+            "e321d3f5-7685-47d5-a597-3a04aa785d84"
           ],
           "pending": [],
           "skipped": [
-            "3bdb82af-ff64-4db8-b6e3-a66098787ac3"
+            "05142ed6-a978-420c-be3e-09894fab51b0"
           ],
-          "duration": 204,
+          "duration": 182,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
