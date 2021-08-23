@@ -39,11 +39,7 @@ function mudarACorDeFundo(event) { // função que vai estar na linha 53.
 
 function addOuRemoverClasseCompleted(event) { // função que vai tá na linha 54.
   const evento = event.target;
-  if (!evento.classList.contains('completed')) {
-    evento.classList.add('completed');
-  } else {
-    evento.classList.remove('completed');
-  }
+  evento.classList.toggle('completed');
 }
 
 function pegarValorDoInput() {
