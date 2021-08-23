@@ -21,19 +21,22 @@ let creatOl = document.createElement('ol');
 creatOl.id = 'lista-tarefas';
 selectBody.appendChild(creatOl);
 
-// Requesito 5
+// Requesito 5 ,6 e 7
 let creatButton = document.createElement('button');
 creatButton.id = 'criar-tarefa';
-selectBody.appendChild(creatButton); 
-// criei o botao e botei no body
-let creatLi = document.createElement('li');
-creatOl.appendChild(creatLi);
-// coloquei o li no Ol.
+selectBody.appendChild(creatButton); // criei o botao e botei no body
 
 creatButton.addEventListener('click', () =>{
-  let valueInput = creatInput.value;
-  creatLi   
-});
+  let creatLi = document.createElement('li'); // cria elemento li
+  creatOl.appendChild(creatLi); // coloca o li dentro do ol
+  let teste = creatInput.value;
+  let r = 128;
+  let g = 128;
+  let b = 128;
+  creatLi.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  creatLi.innerHTML = teste; // pega o conteúdo escrito no input e bota no li
+  creatInput.value = ""; // apaga o conteúdo escrito no input
+})
 
 
 
