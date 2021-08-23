@@ -9,52 +9,39 @@ const buttonUp = document.getElementById('mover-cima');
 const buttonDown = document.getElementById('mover-baixo');
 
 // Rquisit 13 - Changes position of the iten's list.
-function moveUp () { 
-  
-  list.splice(0, 1);
+function moveUp() {
+  const lineList = document.querySelectorAll('.lineList');
+  for (let index = 0; index < lineList.length; index += 1) {
+    if (lineList[index].classList.contains('selected')) {
+      if (index === 0) {
+        window.alert('Não pode mover o iten da lista');
+      } else {
+        const before = list.children[index - 1];
+        const child = list.children[index];
+        list.insertBefore(child, before);
+      }
+    }
+  }
 }
 buttonUp.addEventListener('click', moveUp);
-function moveDown () {
 
+function moveDown() {
+  const lineList = document.querySelectorAll('.lineList');
+  for (let index = 0; index < lineList.length; index += 1) {
+    if (lineList[index].classList.contains('selected')) {
+      if (index === lineList.length - 1) {
+        window.alert('Não pode mover o iten da lista');
+      } else {
+        const child = list.children[index + 1];
+        const after = list.children[index];
+        list.insertBefore(child, after);
+        list.classList.remove('selected');
+      }
+    }
+  }
 }
 buttonDown.addEventListener('click', moveDown);
 
-// Requisit 12 - Save the itens of the list on the Local storage, and bring then whem the itens reload the page.
-const toDolist = JSON.parse(localStorage.getItem('list-toDo')) || [];
-const toDoClass = JSON.parse(localStorage.getItem('list-class')) || [];
-
-function saveLocalStorage() {
-  const textToDoList = document.querySelectorAll('.lineList');
-  for (let index = 0; index < textToDoList.length; index += 1) {
-    if (textToDoList[index].classList.contains('completed')) {
-      toDolist.push(textToDoList[index].innerHTML);
-      toDoClass.push(1);
-    } else {
-      toDolist.push(textToDoList[index].innerHTML);
-      toDoClass.push(2);
-    }
-    localStorage.setItem('list-toDo', JSON.stringify(toDolist));
-    localStorage.setItem('list-class', JSON.stringify(toDoClass));
-  }
-}
-
-buttonSave.addEventListener('click', saveLocalStorage);
-function mostraTarefas() {
-  for (let index = 0; index < toDolist.length; index += 1) {
-    const itemList = document.createElement('li');
-    const itemText = document.createTextNode(toDolist[index]);
-    itemList.classList.add('lineList');
-    itemList.appendChild(itemText);
-    list.appendChild(itemList);
-    itemList.addEventListener('click', selectList);
-    itemList.addEventListener('dblclick', lineThrough);
-    if (toDoClass[index] === 1) {
-      itemList.classList.add('completed');
-    }
-  }
-}
-window.localStorage.clear();
-mostraTarefas();
 // Requisit 14 - Remove just the iten with the class selected.
 function removeSelected() {
   const listCompleted = document.querySelectorAll('.selected');
@@ -99,6 +86,8 @@ function selectList(event) {
   const lineListClass = document.querySelector('.selected');
   if (document.getElementsByClassName('selected').length === 0) {
     event.target.classList.add('selected');
+  } else if (event.target.classList.contains('selected')) {
+    event.target.classList.add('selected');
   } else {
     event.target.classList.add('selected');
     lineListClass.classList.remove('selected');
@@ -118,5 +107,42 @@ function insertList() {
 }
 
 buttonAdd.addEventListener('click', insertList);
+
+// Requisit 12 - Save the itens of the list on the Local storage, and bring then whem the itens reload the page.
+const toDolist = JSON.parse(localStorage.getItem('list-toDo')) || [];
+const toDoClass = JSON.parse(localStorage.getItem('list-class')) || [];
+function mostraTarefas() {
+  for (let index = 0; index < toDolist.length; index += 1) {
+    const itemList = document.createElement('li');
+    const itemText = document.createTextNode(toDolist[index]);
+    itemList.classList.add('lineList');
+    itemList.appendChild(itemText);
+    list.appendChild(itemList);
+    itemList.addEventListener('click', selectList);
+    itemList.addEventListener('dblclick', lineThrough);
+    if (toDoClass[index] === 1) {
+      itemList.classList.add('completed');
+    }
+  }
+}
+window.localStorage.clear();
+mostraTarefas();
+
+function saveLocalStorage() {
+  const textToDoList = document.querySelectorAll('.lineList');
+  for (let index = 0; index < textToDoList.length; index += 1) {
+    if (textToDoList[index].classList.contains('completed')) {
+      toDolist.push(textToDoList[index].innerHTML);
+      toDoClass.push(1);
+    } else {
+      toDolist.push(textToDoList[index].innerHTML);
+      toDoClass.push(2);
+    }
+    localStorage.setItem('list-toDo', JSON.stringify(toDolist));
+    localStorage.setItem('list-class', JSON.stringify(toDoClass));
+  }
+}
+
+buttonSave.addEventListener('click', saveLocalStorage);
 
 // The beginnig of the code ^.
