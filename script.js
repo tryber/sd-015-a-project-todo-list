@@ -10,6 +10,5 @@ caixaTexto.value= "trigo";
 }
 
 addTarefa.addEventListener("click", adicionador);
-document.addEventListener("DOMContentLoaded", adicionador);// Pode usar DOMContentLoaded para checar se o DOM já carregou
 
 
