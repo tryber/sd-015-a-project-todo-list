@@ -1,3 +1,4 @@
+const eraseAll = document.getElementById('apaga-tudo');
 const addBtn = document.getElementById('criar-tarefa');
 const input = document.getElementById('texto-tarefa');
 const ordList = document.getElementById('lista-tarefas');
@@ -25,4 +26,11 @@ function linhaDireta(event) {
   event.target.classList.toggle('completed');
 }
 ordList.addEventListener('dblclick', linhaDireta);
-      
+
+function bleach() {
+  let totalTasks = listText.length - 1;
+  for (let i = totalTasks; i >= 0; i -= 1) {
+    listText[i].remove();
+  }
+}
+eraseAll.addEventListener('click', bleach);
