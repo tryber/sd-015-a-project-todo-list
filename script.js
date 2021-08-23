@@ -9,12 +9,36 @@ function add(){
     newAdd.classList.add('select');
     Tlist.appendChild(newAdd);
     TvalorInput.value = '';
+    newAdd.addEventListener('click',function(event){
+        if(event.target){
+            let lista = document.querySelectorAll('li');
 
+
+        }
+    })
+
+ 
 }
 
-elemento.addEventListener(dblclick, function(){
-    
-})
-
 Tbutton.addEventListener('click', add );
+
+///////////////////////////////////////////////////////////////////
+
+//let listItem = querySelectorAll('li');
+
+//listItem.onclick = function(){
+    //let selected = window.getComputedStyle(cores[0]).getPropertyValue('background-color')
+    
+
+
+    //tabela[0].onclick = function(){
+    //    tabela[0].style.backgroundColor = selected
+   // }
+    //tabela[1].onclick = function(){
+    //    tabela[1].style.backgroundColor = selected
+
+
+//elemento.addEventListener(dblclick, function(){
+    
+//})
 
