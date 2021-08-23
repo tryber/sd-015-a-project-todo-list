@@ -27,16 +27,17 @@ function CriarBotaoAddTarefa() {
 }
 CriarBotaoAddTarefa();
 
-function mudarACorDeFundo(event) { // função que vai estar na linha 49.
+function mudarACorDeFundo(event) { // função que vai estar na linha 53.
   const evento = event.target;
   const selection = document.querySelector('.selected');
+
   if (selection) { // se tiver a classe selected
     selection.classList.remove('selected'); // remove a classe do elemento
   }
   evento.classList.add('selected'); // quando disparado o evento ele coloca a classe se não tiver no elemento
 }
 
-function addOuRemoverClasseCompleted(event) { // função que vai tá na linha 48.
+function addOuRemoverClasseCompleted(event) { // função que vai tá na linha 54.
   const evento = event.target;
   if (!evento.classList.contains('completed')) {
     evento.classList.add('completed');

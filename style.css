@@ -8,9 +8,8 @@ body {
 
 .selected {
   background-color: gray;
-  width: 380px;
 }
 
 .completed {
-  text-decoration: line-through solid black;
+  text-decoration: line-through solid rgb(0, 0, 0);
 }
