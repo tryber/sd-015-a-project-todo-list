@@ -1,3 +1,6 @@
 body{
     text-align: center;
 }
+::selection { /* Adicional - Fundo do texto selecionado, para dblclick do text */
+    background: grey;
+  }
