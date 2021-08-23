@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lista de tarefas </title>
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>lista</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 
 </head>
 <body>
-    
+<main>
     <header>
-        <h2>Minha Lista de Tarefas</h2>
+        <h1>Minha Lista de Tarefas</h1>
+    <p id="funcionamento"> Clique duas vezes em um item para marcá-lo como completo </p>
+
     </header>
 
-    <ul id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</ul>
-
-    <div class="caixaDeCriacao">
-    <input type="texto" id="texto-tarefa" placeholder="duvido voce fazer isso">
-    <button onclick="clicarBotao();" class="butao">add</button>
+    <div class="inputDiv">
+    	   <input type="text" class="input" placeholder="bora fazer isso ai" id="texto-tarefa">
+    	   <button class="add" id="criar-tarefa">add</button>
     </div>
-
-    <ol id=lista-tarefas> teste</ol>
-    
-
+    <div class="container">
+        <ol id="lista-tarefas"></ol>
+        <p>coisa 1 </p>
+    </div>
+    <footer>
+        <button id="apaga-tudo">Apagar Tudo!</button>
+        <button id="remover-finalizados">Apagar Tarefas Concluídas!</button>
+        <button id="salvar-tarefas">Salvar Tarefas</button>
+        <button id="mover-cima">cima</button>
+        <button id="mover-baixo">baixo</button>
+    </footer>
+</main>   
+        <script type="text/javascript" src="script.js" defer></script>    
 </body>
 </html>
