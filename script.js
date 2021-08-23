@@ -26,19 +26,34 @@ let creatButton = document.createElement('button');
 creatButton.id = 'criar-tarefa';
 selectBody.appendChild(creatButton); // criei o botao e botei no body
 
+
 creatButton.addEventListener('click', () =>{
   let creatLi = document.createElement('li'); // cria elemento li
   creatOl.appendChild(creatLi); // coloca o li dentro do ol
   let teste = creatInput.value;
-  let r = 128;
-  let g = 128;
-  let b = 128;
-  creatLi.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
   creatLi.innerHTML = teste; // pega o conteúdo escrito no input e bota no li
   creatInput.value = ""; // apaga o conteúdo escrito no input
+
+   creatLi.addEventListener('click', () => {
+     creatLi.style.backgroundColor = "rgb(128, 128, 128)"
+   })
 })
 
+//Requesito 10
+let creatEraseButton = document.createElement('button');
+creatEraseButton.id = 'apaga-tudo';
+selectBody.appendChild(creatEraseButton); // criei o botao e botei no body
 
+
+creatEraseButton.addEventListener ('click' , () => {
+  let creatLi = document.querySelectorAll('li');
+  for (let i = 0; i < creatLi.length; i++)
+  {
+    let eraseLi = creatLi[i];
+    eraseLi.remove();
+  }
+  
+})
 
 
 
