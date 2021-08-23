@@ -14,28 +14,84 @@ body {
   text-decoration: none; 
   font-weight: bolder;
   font-size: 15px; 
+  padding: 5px;
+  text-align: center;
 }
 
 .clearAll {
   background-color: rgb(255, 6, 243);
   border-radius: 5px;
   color: rgb(255, 255, 255);
-  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  margin-bottom:15px;
+  display: block;
   text-decoration: none;
   font-weight: bolder;
   font-size: 15px;
+  padding: 10px;
 }
 
 .clearComplet {
   background-color: rgb(114, 116, 26);
   border-radius: 5px;
   color: rgb(255, 255, 255);
-  margin: 15px;
+  margin: 5px;
   text-decoration: none;
   font-weight: bolder;
   font-size: 15px;
+  padding: 5px;
+  text-align: center;
 }
 
+.saveTask {
+  background-color: rgba(8, 110, 59, 0.76);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+.moveUp {
+  background-color: rgb(240, 1, 1);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.moveDown {
+  background-color: rgb(18, 1, 255);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.removeSelect {
+  background-color: rgb(139, 17, 150);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  /* margin:5px; */
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 5px;
+}
 
 .completed {
   text-decoration: line-through;
@@ -50,10 +106,28 @@ body {
 
 header {
   width: 100%;
-  align-items: center;
   display: inline-block;
+}
+
+h1{
+  text-align: center;
 }
 
 p {
   color: rgb(119, 117, 117);
+  text-align: center;
+}
+
+#input-section {
+  width: 100%;
+  display: inline-block;
+}
+
+#input-section {
+  text-align: center;
+}
+
+.allButons {
+  width: 100%;
+  display: inline-block;
 }

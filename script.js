@@ -114,6 +114,7 @@ function chekItenList (event){
 //Requisito 10 botão clear
 
 const sectionButtons = document.createElement('section');
+sectionButtons.className = 'allButons'
 
 const buttonResetList = document.createElement('button');
 
@@ -128,6 +129,8 @@ CreateresetButton();
 
 const butonDelet = document.getElementById('apaga-tudo');
 const ListOlId = document.getElementById('lista-tarefas')
+
+//Consultei o repositório do Caio Lima para conseguir resolver - https://github.com/tryber/sd-015-a-project-todo-list/pull/9/commits/8fc8a5aae594b65c3e8d9f01ffab32be3649aba7
 
 function clearAllList() {
   ListOlId.innerHTML = "";
