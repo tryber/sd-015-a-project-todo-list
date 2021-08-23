@@ -1,0 +1,39 @@
+body {
+  background-color: #3A3B3C;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#main-cointainer {
+  background-color: #B6B6B4;
+  box-shadow: 10px 5px 5px 5px  black;
+  border-radius: 15px;  
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+li {
+  width: fit-content;
+}
+
+button {
+  font-weight: bold;
+  border: rgb(128, 128, 128) solid 1px;
+}
+/* Requisit 9 */
+.completed {
+  text-decoration: line-through solid rgb(0,0,0);
+}
+
+/* Requisit 7 - This class assign the color rgb(128, 128, 128) */
+.selected {
+  background-color: rgb(128, 128, 128);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 30px;
+}
