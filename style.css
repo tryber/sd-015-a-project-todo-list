@@ -1,0 +1,19 @@
+.selected {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+#imagem {
+  position: absolute;
+  z-index: 1;
+  width: 1360px;
+  height: 665px;
+}
+
+button, input {
+  position: relative;
+  z-index: 2;
+}
