@@ -34,12 +34,14 @@ function clearBackground() {
 }
 
 // Requisito 09 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item
+// Ref.: https://stackoverflow.com/questions/2155737/remove-css-class-from-element-with-javascript-no-jquery
 listItem.addEventListener('dblclick', checkedItem);
 
 function checkedItem(event) {
     let checked = event.target;
+    console.log(checked);
     if (checked.classList.contains('completed')) {
-        checked.classList.remove('completed');
+        checked.removeAttribute('class');
     } else {
         checked.classList.add('completed');
     }
@@ -56,3 +58,16 @@ function clearList() {
         orderedList.removeChild(orderedList.firstChild);
     }
 } 
+
+// Requisito 11 - Adicione um botão com id="remover-finalizados" que quando clicado remove somente os elementos finalizados da sua lista
+let buttonClearChecked = document.getElementById('remover-finalizados');
+
+buttonClearChecked.addEventListener('click', clearChecked);
+
+function clearChecked() {
+    let checkedItems = document.getElementsByClassName('completed');
+    let qtdCheckedItems = checkedItems.length - 1;
+    for (let i = qtdCheckedItems; i >= 0; i -= 1) {
+        orderedList.removeChild(checkedItems[i]);
+    }
+}
