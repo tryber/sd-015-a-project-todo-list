@@ -24,7 +24,20 @@ selectBody.appendChild(creatOl);
 // Requesito 5
 let creatButton = document.createElement('button');
 creatButton.id = 'criar-tarefa';
-selectBody.appendChild(creatButton);
+selectBody.appendChild(creatButton); 
+// criei o botao e botei no body
+let creatLi = document.createElement('li');
+creatOl.appendChild(creatLi);
+// coloquei o li no Ol.
+
+creatButton.addEventListener('click', () =>{
+  let valueInput = creatInput.value;
+  creatLi   
+});
+
+
+
+
 
 
 
