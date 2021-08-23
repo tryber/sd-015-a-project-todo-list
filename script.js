@@ -11,8 +11,19 @@ function addTask() {
       toDoList.appendChild(listItem)
       task.value = ''
     } else {
-      alert('É necessário o preenchimento do campo com a tarefa a ser adicionada!')
+      alert('É necessário o preenchimento do campo \ncom a tarefa a ser adicionada!')
     }
   })
 }
 addTask()
+
+function changeItemColor() {
+  toDoList.addEventListener('click', function (event) {
+    let selectedItem = document.querySelectorAll('.selected')
+    for (let index = 0; index < selectedItem.length; index += 1) {
+      selectedItem[index].classList.remove('selected')      
+    }
+    event.target.classList.toggle('selected')
+  })
+}
+changeItemColor()
