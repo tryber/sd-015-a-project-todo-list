@@ -18,7 +18,7 @@ selectBody.appendChild(creatInput);
 
 // Requesito 4
 let creatOl = document.createElement('ol');
-creatOl.id = 'lista-tarefa';
+creatOl.id = 'lista-tarefas';
 selectBody.appendChild(creatOl);
 
 // Requesito 5
