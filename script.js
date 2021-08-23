@@ -4,6 +4,8 @@ const lista = document.getElementById('lista-tarefas');
 const btnApagar = document.getElementById('apaga-tudo');
 const btnRemover = document.getElementById('remover-finalizados');
 const btnSalvarDados = document.getElementById('salvar-tarefas');
+const btnMoverCima = document.getElementById('mover-cima');
+const btnMoverBaixo = document.getElementById('mover-baixo');
 
 // Adiciona cor de fundo em apenas um elemento da lista
 // Recebi suporte do Matheus Monteiro e do Diego Brito
@@ -70,6 +72,27 @@ function salvados() {
   lista.innerHTML = localStorage.getItem('salvar');
 }
 
+// Função para subir o elemento selecionado, desde que ele não esteja já no topo
+// Função 'insertBefore' foi consultada no site do Mozilla
+function subir() {
+  for (let i = 0; i < lista.children.length; i += 1) {
+    if (lista.children[i].classList.contains('backgroundGray') && i > 0) {
+      lista.insertBefore(lista.children[i], lista.children[(i - 1)]);
+    }
+  }
+}
+
+// Função para descer o elemento selecionado, desde que ele não esteja já no fundo
+// Função 'insertBefore' consultada no site do Mozilla, com modificação para que faça a troca inversa (pelo elemento posterior)
+function descer() {
+  for (let i = 0; i < lista.children.length; i += 1) {
+    if (lista.children[i].classList.contains('backgroundGray') && i < (lista.children.length - 1)) {
+      i += 1;
+      lista.insertBefore(lista.children[i], lista.children[(i - 1)]);
+    }
+  }
+}
+
 btnAdicionar.addEventListener('click', adicionaTarefa);
 
 btnApagar.addEventListener('click', apagaTarefas);
@@ -77,5 +100,9 @@ btnApagar.addEventListener('click', apagaTarefas);
 btnRemover.addEventListener('click', apagaConcluidas);
 
 btnSalvarDados.addEventListener('click', salvaDados);
+
+btnMoverCima.addEventListener('click', subir);
+
+btnMoverBaixo.addEventListener('click', descer);
 
 window.onload = salvados;
