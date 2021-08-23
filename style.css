@@ -1,0 +1,27 @@
+#título{
+
+}
+
+#funcionamento{
+
+}
+
+#texto-tarefa{
+
+}
+
+#criar-tarefas{
+
+}
+
+#lista-tarefas{
+
+}
+
+.body{
+    background-color:floralwhite;
+}
+
+.completed{
+    text-decoration: line-through solid rgb(0,0,0);
+}
