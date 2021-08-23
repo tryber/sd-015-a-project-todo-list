@@ -31,3 +31,9 @@ button {
   background-color: rgb(128, 128, 128);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 30px;
+}
