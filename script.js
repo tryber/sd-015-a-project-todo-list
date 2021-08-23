@@ -1,10 +1,10 @@
 // Requisito 05 - Adicione um botão com id="criar-tarefa" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo
 // Requisito 06 - Ordene os itens da lista de tarefas por ordem de criação
 let input = document.getElementById('texto-tarefa');
-let button = document.getElementById('criar-tarefa');
+let buttonAdd = document.getElementById('criar-tarefa');
 let orderedList = document.getElementById('lista-tarefas');
 
-button.addEventListener('click', handleButtonClick);
+buttonAdd.addEventListener('click', handleButtonClick);
 
 function handleButtonClick(){
     let li = document.createElement('li');
@@ -38,10 +38,21 @@ listItem.addEventListener('dblclick', checkedItem);
 
 function checkedItem(event) {
     let checked = event.target;
-    console.log(checked);
     if (checked.classList.contains('completed')) {
         checked.classList.remove('completed');
     } else {
         checked.classList.add('completed');
     }
 }
+
+// Requisito 10 - Adicione um botão com id="apaga-tudo" que quando clicado deve apagar todos os itens da lista
+// Ref.: https://www.javascripttutorial.net/dom/manipulating/remove-all-child-nodes/
+let buttonClear = document.getElementById('apaga-tudo');
+
+buttonClear.addEventListener('click', clearList);
+
+function clearList() {
+    while (orderedList.firstChild) {
+        orderedList.removeChild(orderedList.firstChild);
+    }
+} 
