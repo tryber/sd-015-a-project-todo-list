@@ -30,7 +30,7 @@ function clickOneColor() {
   }
 }
 
-//Segunda função criada com base no racicínio de Leonardo Felix.
+//Segunda função criada com base no raciocínio de Leonardo Felix.
 
 listTasks.addEventListener('click', (task) => {
   clickOneColor();
@@ -38,6 +38,22 @@ listTasks.addEventListener('click', (task) => {
   clickedTask.target.style.backgroundColor = 'rgb(128, 128, 128)';
   console.log('pinta uma só')
 });
+
+//Requisito 9
+
+listTasks.addEventListener('dblclick', TaskComplete);
+  function TaskComplete (event) {
+
+    if (event.target.classList.contains('completed')) {
+                      // Ref: https://developer.mozilla.org/pt-BR/docs/Web/API/Node/contains
+    event.target.classList.remove('completed');
+                  // Ref: https://developer.mozilla.org/en-US/docs/Web/API/Element/remove
+    } else {
+        event.target.classList.add('completed');
+                  // Ref: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Set/add
+    }
+}
+
 
 // alert('Você chegou na sua lista de tarefas! Cumpra todo o combinado, ok? =D')
 // console.log("kk")
