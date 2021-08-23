@@ -50,9 +50,9 @@ function insertElement() {
 
 // Deleta a lista.
 function deletList() {
-  const del = document.querySelector('li');
+  const del = document.querySelectorAll('li');
   for (let i = 0; i < del.length; i += 1) {
-    del.remove();
+    del[i].remove();
   }
 }
 
