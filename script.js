@@ -1,4 +1,4 @@
-let botaoAdiciona = document.querySelector('#criar-tarefa');
+const botaoAdiciona = document.querySelector('#criar-tarefa');
 const header = document.querySelector('header');
 const caixaTexto = document.createElement('input');
 
@@ -56,10 +56,31 @@ function riscaItem(textos) {
 listaOl.addEventListener('dblclick', riscaItem);
 
 // Requisito 10
+// Codigo utilizado da PR do https://github.com/tryber/sd-015-a-project-todo-list/tree/douglas-oliveira-todo-list-project
 function deletaItem() {
-    const botaoLimpar = document.querySelector("#apaga-tudo");
+    const botaoLimpar = document.querySelector('#apaga-tudo');
     botaoLimpar.addEventListener('click', function () {
         listaOl.textContent = ' ';
-    })
+    });
 }
 deletaItem();
+
+// Requisito 11
+// Codigo utilizado da PR do https://github.com/tryber/sd-015-a-project-todo-list/tree/douglas-oliveira-todo-list-project
+function deletedTaskSelected() {
+    const finishedButton = document.querySelector('#remover-finalizados');
+    finishedButton.addEventListener('click', () => {
+        const allCompleted = document.querySelectorAll('.completed');
+        for (let index = 0; index < allCompleted.length; index += 1) {
+            allCompleted[index].remove();
+        }
+    });
+}
+deletedTaskSelected();
+
+// Requisito 12
+let classeCompleted = document.getElementById('lista-tarefa');
+function salvarTarefa() {
+    localStorage.setItem('tarefas', list.innerHTML);
+
+}
