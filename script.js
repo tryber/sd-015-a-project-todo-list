@@ -1,10 +1,20 @@
 
-let ul = document.querySelector('li');
-let valorInput = document.querySelector('#texto-tarefa');
-let button = document.querySelector('#criar-tarefa');
+let TvalorInput = document.querySelector('#texto-tarefa');
+let Tbutton = document.querySelector('#criar-tarefa');
+let Tlist = document.querySelector('#lista-tarefas');
 
-button.addEventListener('click', function(){
-    let tarefa = '<li>' + valorInput.value + '</li>';
-    ul.innerHTML += tarefa;
-    valorInput.value = '';
+function add(){
+    const newAdd = document.createElement('li');
+    newAdd.innerText = TvalorInput.value;
+    newAdd.classList.add('select');
+    Tlist.appendChild(newAdd);
+    TvalorInput.value = '';
+
+}
+
+elemento.addEventListener(dblclick, function(){
+    
 })
+
+Tbutton.addEventListener('click', add );
+
