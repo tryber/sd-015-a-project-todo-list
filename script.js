@@ -8,6 +8,7 @@ function addTask() {
       let inputValue = task.value
       let listItem = document.createElement('li')
       listItem.innerText = inputValue
+      listItem.classList.add('task-item')
       toDoList.appendChild(listItem)
       task.value = ''
     } else {
@@ -27,3 +28,12 @@ function changeItemColor() {
   })
 }
 changeItemColor()
+
+function scratchesItem() {
+  toDoList.addEventListener('dblclick', function (event) {
+    if (event.target.classList.contains('task-item')) {
+      event.target.classList.toggle('completed')
+    }
+  })
+}
+scratchesItem()
