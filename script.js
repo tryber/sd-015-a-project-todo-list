@@ -17,6 +17,17 @@ creatInput.id = 'texto-tarefa';
 selectBody.appendChild(creatInput);
 
 // Requesito 4
+let creatOl = document.createElement('ol');
+creatOl.id = 'lista-tarefa';
+selectBody.appendChild(creatOl);
+
+// Requesito 5
+let creatButton = document.createElement('button');
+creatButton.id = 'criar-tarefa';
+selectBody.appendChild(creatButton);
+
+
+
 
 
 
