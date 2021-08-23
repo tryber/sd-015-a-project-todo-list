@@ -11,3 +11,13 @@ creatP.id = 'funcionamento';
 creatP.innerHTML = "Clique duas vezes em um item para marcá-lo como completo";
 selectBody.appendChild(creatP);
 
+// Requesito 3
+let creatInput = document.createElement('input');
+creatInput.id = 'texto-tarefa';
+selectBody.appendChild(creatInput);
+
+// Requesito 4
+
+
+
+
