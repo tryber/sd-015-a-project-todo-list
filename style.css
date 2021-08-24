@@ -2,8 +2,15 @@ body {
   background-color: bisque;
 }
 #funcionamento {
+  color: brown;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
+}
+#lista-tarefas {
+  background-color: rgb(128, 128, 128)
+}
+.completed {
+  text-decoration: line-through solid rgb(0, 0, 0);
 }
 #mover-baixo {
   color: blue;
