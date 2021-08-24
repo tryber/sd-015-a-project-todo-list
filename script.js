@@ -1,7 +1,7 @@
 const accessButton = document.querySelector('#criar-tarefa');
 const accessInput = document.querySelector('#texto-tarefa');
 const accessDelete = document.querySelector('#apaga-tudo');
-const teste = document.querySelector('#teste')
+const buttonFinished = document.querySelector('#remover-finalizados')
 
 function completedTask(event) {
   if (event.target.classList.length == 1) {
@@ -42,3 +42,12 @@ function deleteList() {
 }
 
 accessDelete.addEventListener('click', deleteList);
+
+function removeFinished() {
+  const accessLi = document.querySelectorAll('.list');
+  for(let i = 0; i < accessLi.length; i += 1) {
+
+  }
+}
+
+buttonFinished.addEventListener('click', removeFinished)

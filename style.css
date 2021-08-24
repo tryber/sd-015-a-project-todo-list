@@ -1,5 +1,5 @@
 #criar-tarefa { 
-  background-color: rgb(36, 36, 153);
+  background-color: rgb(36 , 36 , 153);
   color: white;
   border-radius: 10px;
   border-style: groove;
@@ -15,11 +15,11 @@
 }
 
 .completed {
-  text-decoration: line-through solid rgb(0, 0, 0);
+  text-decoration: line-through solid rgb(0 , 0 , 0);
 }
 
 body {
-  background-color: rgb(84, 36, 36);
+  background-color: rgb(84 , 36 , 36);
 }
 
 #texto-tarefa {
