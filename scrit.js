@@ -3,6 +3,7 @@ const add = document.getElementById('criar-tarefa');
 const List = document.getElementById('lista-tarefas');
 const deleteButton = document.getElementById('apaga-tudo');
 const deleteCompleteds = document.getElementById('remover-finalizados');
+const saveListButton = document.getElementById('salvar-tarefas');
 
 function liColor(event) {
   if (document.querySelector('.selected')) {
@@ -47,3 +48,15 @@ function deleteCompletedItems() {
   }
 }
 deleteCompleteds.addEventListener('click', deleteCompletedItems);
+
+function SaveList() {
+  localStorage.setItem('list', List.innerHTML);
+}
+
+saveListButton.addEventListener('click', SaveList);
+
+function reloadList() {
+  List.innerHTML = localStorage.getItem('list');
+}
+
+reloadList();
