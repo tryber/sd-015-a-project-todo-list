@@ -1,11 +1,39 @@
 body {
   background-color: bisque;
 }
-h4 {
-  color: blueviolet;
-}
-#funcionamento{
-  
+#funcionamento {
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
+}
+#mover-baixo {
+  color: blue;
+  margin: 5px;
+}
+#criar-tarefa {
+  color: blue;
+  margin: 5px;
+}
+#salvar-tarefas {
+  color: blue;
+  margin: 5px;
+}
+#remover-selecionado {
+  color: blue;
+  margin: 5px;
+}
+#mover-cima {
+  color: blue;
+  margin: 5px;
+}
+#mover-baixo {
+  color: blue;
+  margin: 5px;
+}
+#remove-finalizados {
+  color: blue;
+   margin: 5px;
+}
+#apaga-tudo {
+  color: blue;
+   margin: 5px;
 }
