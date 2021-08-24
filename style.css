@@ -21,3 +21,19 @@ button {
   padding: 0px;
   margin-left: 1px;
 }
+
+#remover-selecionado {
+  width: 100px;
+}
+
+#remover-finalizados {
+  width: 120px;
+}
+
+#mover-baixo {
+  width: 130px;
+}
+
+#mover-cima {
+  width: 130px;
+}

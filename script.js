@@ -5,12 +5,36 @@ const input = document.createElement('input');
 const listaOrdenada = document.createElement('ol');
 const buttonCriarTarefa = document.createElement('button');
 const buttonApagaTudo = document.createElement('button');
+const botaoDeletaSelecionado = document.createElement('button');
+const botaoDeletaFinalizado = document.createElement('button');
+const botaoMoverCima = document.createElement('button');
+const botaoMoverBaixo = document.createElement('button');
 
 buttonCriarTarefa.innerHTML = 'Inserir';
 buttonApagaTudo.innerHTML = 'Deletar';
+botaoDeletaSelecionado.innerHTML = 'Remove item';
+botaoDeletaFinalizado.innerHTML = 'Remove completo';
+botaoMoverBaixo.innerHTML = 'Move para baixo';
+botaoMoverCima.innerHTML = 'Move para cima';
 input.placeholder = 'Insira aqui sua tarefa';
 tagh1.innerText = 'Minha Lista de Tarefas';
 tagSectionCabecalho.innerText = 'Clique duas vezes em um item para marcá-lo como completo';
+
+function deletaSelecionado() {
+  botaoDeletaSelecionado.addEventListener('click', () => {
+    const elementSelected = document.querySelector('.selected');
+    elementSelected.remove();
+  });
+}
+
+function deletaFinalizados() {
+  botaoDeletaFinalizado.addEventListener('click', () => {
+    const elementoFinalizado = document.querySelectorAll('.completed');
+    for (let i = 0; i < elementoFinalizado.length; i += 1) {
+      elementoFinalizado[i].remove();
+    }
+  });
+}
 
 function criaID(elemento, ID) {
   elemento.id = ID;
@@ -93,12 +117,22 @@ bodyChild(input);
 bodyChild(listaOrdenada);
 bodyChild(buttonCriarTarefa);
 bodyChild(buttonApagaTudo);
+bodyChild(botaoDeletaSelecionado);
+bodyChild(botaoDeletaFinalizado);
+bodyChild(botaoMoverCima);
+bodyChild(botaoMoverBaixo);
 criaID(tagSectionCabecalho, 'funcionamento');
 criaID(input, 'texto-tarefa');
 criaID(listaOrdenada, 'lista-tarefas');
 criaID(buttonCriarTarefa, 'criar-tarefa');
 criaID(buttonApagaTudo, 'apaga-tudo');
+criaID(botaoDeletaSelecionado, 'remover-selecionado');
+criaID(botaoDeletaFinalizado, 'remover-finalizados');
+criaID(botaoMoverCima, 'mover-cima');
+criaID(botaoMoverBaixo, 'mover-baixo');
 botaoCriarTarefa();
 changeBackgroundColoronClick();
 doubleClick();
+deletaSelecionado();
+deletaFinalizados();
 apagaTarefa();
