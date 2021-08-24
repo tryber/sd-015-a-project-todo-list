@@ -1,0 +1,39 @@
+.lista {
+  background-color: white;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+#apaga-tudo {
+  text-align: center;
+  width: 50px;
+}
+
+ol {
+  background-color: white !important;
+}
+
+button {
+  width: 50px;
+  height: 20px;
+  padding: 0px;
+  margin-left: 1px;
+}
+
+#remover-selecionado {
+  width: 100px;
+}
+
+#remover-finalizados {
+  width: 120px;
+}
+
+#mover-baixo {
+  width: 130px;
+}
+
+#mover-cima {
+  width: 130px;
+}
