@@ -32,19 +32,23 @@ botaoRemoverFinalizado.addEventListener('click', function removeF() {
   }
 })
 
-lista.addEventListener('click', function cinzaBg(selecao) {
-  if (selecao.target.classList.length === 0) {
-    if(document.querySelectorAll('#lista-tarefas .selecao').length > 0) { //verificação para entrar no if, e garantir que nunca vai existir mais de uma li selecionada.
-      document.querySelectorAll('#lista-tarefas .selecao')[0].classList.remove('selecao'); //limpa a classe existente se houver, levando em conta que só vai existir uma com indice 0
+ lista.addEventListener('click', function cinzaBg(event) {
+  let listaGeral = document.querySelectorAll('li')
+  for (let index = 0; index < listaGeral.length; index +=1) {
+    let posicaoAtual = listaGeral[index];
+    if (posicaoAtual.classList.value == 'selecao') {
+      posicaoAtual.classList.remove('selecao')
     }
-    selecao.target.classList.add("selecao"); //adição da classe na li clicada.
-  } 
+  }
+  if (event.target.classList.value == '') {
+      event.target.classList.add("selecao");
+     }
 });
 
-lista.addEventListener('dblclick',function riscar(selecao) {
-  if (selecao.target.classList.value === "selecao") {
-    selecao.target.classList.add("completed")
+lista.addEventListener('dblclick',function riscar(event) {
+  if (event.target.classList.value === "selecao") {
+    event.target.classList.add("completed")
   } else {
-    selecao.target.classList.remove("completed")
+    event.target.classList.remove("completed")
   }
 })
