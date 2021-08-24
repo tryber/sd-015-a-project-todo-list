@@ -1,6 +1,7 @@
 const criarTarefa = document.getElementById('criar-tarefa');
 const texto = document.getElementById('texto-tarefa');
 const listaTarefa = document.getElementById('lista-tarefas');
+const remover = document.getElementById('apaga-tudo');
 
 // consultado o repositorio https://github.com/tryber/sd-015-a-project-todo-list/blob/arthur-teixeira-santos-todo-list-project/script.js
 // Alterar a cor de fundo
@@ -34,3 +35,12 @@ function criTar(event) {
 }
 
 criarTarefa.addEventListener('click', criTar);
+
+// Apagar elemento
+// Feito conforme a dica do Augusto Vasques no StackOverflow
+// https://pt.stackoverflow.com/questions/441373/como-remover-todos-os-elementos-de-uma-div-em-javascript
+function apagarLi() {
+  listaTarefa.innerHTML = '';
+}
+
+remover.addEventListener('click', apagarLi);
