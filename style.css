@@ -1,0 +1,89 @@
+body {
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  background-color: #7b81c7;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+input {
+  width: 300px;
+  height: 27px;
+  padding-left: 10px;
+  border-radius: 7px;
+  background-color: #bbc2d8;
+  border: none;
+  margin: 10px;
+}
+
+#criar-tarefa {
+  background-color: #8d05a8;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+}
+
+div ol {
+  width: 60%;
+  margin: auto;
+}
+
+li{
+  margin: 20px auto;
+  padding: 20px 20px 20px 50px;
+  text-align: left;
+  list-style-type: none;
+  border-radius: 10px;
+  background-color: #0a155a;
+  box-shadow: 2px 2px 2px #0a155a7e;
+  background-image: url(./image/stop.png);
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+
+.completed {
+  background-image: url(./image/check-box-with-check-sign.png);
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+
+.selected {
+  background-color: rgb(128, 128, 128);
+}
+
+.completed {
+  text-decoration: line-through solid rgb(0, 0, 0);
+}
+
+div button {
+  font-weight:600;
+  background-color: #48466b;
+  width: 30%;
+  margin: 10px 5px;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+}
+
+div button:hover {
+  background-color: #7d80aa;
+}
+
+#settings {
+  width: 50%;
+  margin: auto;
+}
+
+footer {
+  margin: 50px;
+  color: #aab1f8;
+}
+
+footer a {
+  text-decoration: none;
+  color: #aab1f8;
+}
