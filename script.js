@@ -6,39 +6,46 @@ let Tlist = document.querySelector('#lista-tarefas');
 function add(){
     const newAdd = document.createElement('li');
     newAdd.innerText = TvalorInput.value;
-    newAdd.classList.add('select');
+    newAdd.classList.add('lista');
     Tlist.appendChild(newAdd);
     TvalorInput.value = '';
-    newAdd.addEventListener('click',function(event){
-        if(event.target){
-            let lista = document.querySelectorAll('li');
+    
+    //newAdd.addEventListener('click',function(event){
+        //if(event.target){
+            //let lista = document.querySelectorAll('li');
+//background-color
+    function tugo(){
+        newAdd.classList.toggle('done')
+    }
+    newAdd.addEventListener('click', tugo)
 
-
-        }
-    })
-
- 
+    function tugobarra(){
+        newAdd.classList.toggle('completed')
+    }
+    newAdd.addEventListener('dblclick', tugobarra)
 }
 
 Tbutton.addEventListener('click', add );
 
-///////////////////////////////////////////////////////////////////
-
-//let listItem = querySelectorAll('li');
-
-//listItem.onclick = function(){
-    //let selected = window.getComputedStyle(cores[0]).getPropertyValue('background-color')
-    
 
 
-    //tabela[0].onclick = function(){
-    //    tabela[0].style.backgroundColor = selected
-   // }
-    //tabela[1].onclick = function(){
-    //    tabela[1].style.backgroundColor = selected
 
 
-//elemento.addEventListener(dblclick, function(){
-    
-//})
+
+
+
+
+
+
+
+
+
+
+
+//function clickrgb(event){
+//    const listaback = document.querySelectorAll('lista');
+//    listaback.classList.remove('selected');
+//    event.target.classList.add('selected');
+
+//}
 
