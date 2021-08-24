@@ -1,0 +1,18 @@
+#criar-tarefa{
+  width: 25px;
+  height: 25px;
+  border-radius: 200px;
+  margin: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.completed{
+  text-decoration: line-through solid rgb(0,0,0);
+}
+
+#apaga-tudo{
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
