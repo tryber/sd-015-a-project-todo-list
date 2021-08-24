@@ -115,14 +115,8 @@ function moveTaskUp() {
   const taskSelected = document.querySelector('.selected');
 
   for (let i = 0; i < tasks.length; i += 1) {
-    if (tasks[i] === taskSelected) {
-      const assistant = tasks[i - 1].innerHTML;
-      assistant.classList = tasks[i - 1].classList;
-      tasks[i - 1].innerHTML = tasks[i].innerHTML;
-      tasks[i - 1].classList = tasks[i].classList;
-      tasks[i].innerHTML = assistant;
-      tasks[i].classList = assistant.classList;
-      console.log(tasks);
+    if (tasks[i] === taskSelected && (i - 1) !== -1) {
+      listTask.insertBefore(tasks[i], tasks[i - 1]);
     }
   }
 }
@@ -134,13 +128,8 @@ function moveTaskDown() {
   const taskSelected = document.querySelector('.selected');
 
   for (let i = 0; i < tasks.length; i += 1) {
-    if (tasks[i] === taskSelected) {
-      const assistant = tasks[i + 1].innerHTML;
-      assistant.classList = tasks[i + 1].classList;
-      tasks[i + 1].innerHTML = tasks[i].innerHTML;
-      tasks[i + 1].classList = tasks[i].classList;
-      tasks[i].innerHTML = assistant;
-      tasks[i].classList = assistant.classList;
+    if (tasks[i] === taskSelected && (i + 1) < tasks.length) {
+      listTask.insertBefore(tasks[i + 1], tasks[i]);
     }
   }
 }
