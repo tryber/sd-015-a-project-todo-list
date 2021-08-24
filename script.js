@@ -34,16 +34,24 @@ creatButton.addEventListener('click', () =>{
   creatLi.innerHTML = teste; // pega o conteúdo escrito no input e bota no li
   creatInput.value = ""; // apaga o conteúdo escrito no input
 
-   creatLi.addEventListener('click', () => {
-     creatLi.style.backgroundColor = "rgb(128, 128, 128)"
+   creatLi.addEventListener('click', (event) => {
+
+     let allLi = document.querySelectorAll('li');
+     for (let i = 0; i < allLi.length; i ++) {
+      allLi[i].style.backgroundColor = "white";
+     }
+
+    creatLi.style.backgroundColor = "rgb(128, 128, 128)";   
    })
 })
+
+// Requesito 8
+
 
 //Requesito 10
 let creatEraseButton = document.createElement('button');
 creatEraseButton.id = 'apaga-tudo';
 selectBody.appendChild(creatEraseButton); // criei o botao e botei no body
-
 
 creatEraseButton.addEventListener ('click' , () => {
   let creatLi = document.querySelectorAll('li');
