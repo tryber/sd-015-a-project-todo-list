@@ -5,10 +5,75 @@
 
 /* Requisito 8 */
 .selected {
-  background-color: 'rgb(128,128,128)';
+  background-color: rgb(128, 128, 128);
 }
 
 /* Requisito 9 */
 .completed {
-  text-decoration: line-through solid 'rgb(0, 0, 0)';
+  text-decoration: line-through solid rgb(0, 0, 0);
+}
+
+/* Estilização */
+header, main {
+  padding-left: 50px;
+}
+
+body {
+  background-color: orange;
+}
+
+#bloco {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Referências pegas em: https://www.infowester.com/css3bordas.php */
+input {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 1px 1px 2px #333333;
+  -moz-box-shadow: 1px 1px 2px #333333;
+  -webkit-box-shadow: 1px 1px 2px #333333;
+  background: #cccccc;
+  border: 1px solid #000000;
+  width: 150px
+}
+
+/* Referências pegas em: https://www.jotform.com/pt/help/726-como-personalizar-o-botao-de-enviar-com-css/ */
+#criar-tarefa {
+  background: #0066A2;
+  color: white;
+  border-style: outset;
+  border-color: black;
+  border-radius: 15px;
+  height: 10;
+  width: 100;
+  font: bold 15px arial, sans-serif;
+  text-shadow: none;
+}
+
+#apaga-tudo {
+  background: red;
+  color: white;
+  border-style: outset;
+  border-color: black;
+  border-radius: 15px;
+  height: 10;
+  width: 100;
+  font: bold 15px arial, sans-serif;
+  text-shadow: none;
+}
+
+#remover-finalizados {
+  background: green;
+  color: white;
+  border-style: outset;
+  border-color: black;
+  border-radius: 15px;
+  height: 10;
+  width: 100;
+  font: bold 15px arial, sans-serif;
+  text-shadow: none;
 }
