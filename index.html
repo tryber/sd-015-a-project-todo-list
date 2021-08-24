@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <title>Projeto To Do List</title>
 </head>
-<body>
+<body class="body">
   <main id="spaceChange">
   <section id="principal">
     <header id="header"><h1>Minha Lista de Tarefas</h1></header>
@@ -15,10 +16,10 @@
    <div id="funcionamento" ><p>Clique duas vezes em um item para marcá-lo como completo</p></div>
   
     <div id="inputAndButton">
-      <input type="text" id="texto-tarefa" name="input" placeholder="Insira aqui sua tarefa">
-      <button id="criar-tarefa"> Adicionar </button>
-      <button id="apaga-tudo"> X </button>
-      <button id="remover-finalizados"> Remover Finalizados </button>
+      <input type="text" id="texto-tarefa" name="input" placeholder="Insira aqui sua tarefa...">
+      <button id="criar-tarefa" class="btn btn-primary button"> Adicionar </button>
+      <button id="apaga-tudo" class="btn btn-warning button"> X </button>
+      <button id="remover-finalizados" class="btn btn-danger button"> Remover Finalizados </button>
     </div>
     <ol id="lista-tarefas"></ol>
 
