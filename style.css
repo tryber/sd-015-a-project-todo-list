@@ -1,5 +1,11 @@
-
+body {
+  background-color: bisque;
+}
+h4 {
+  color: blueviolet;
+}
 #funcionamento{
+  
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
