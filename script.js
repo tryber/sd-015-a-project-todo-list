@@ -2,7 +2,7 @@ const criarTarefa = document.getElementById('criar-tarefa');
 const texto = document.getElementById('texto-tarefa');
 const listaTarefa = document.getElementById('lista-tarefas');
 const remover = document.getElementById('apaga-tudo');
-
+const removerFin = document.getElementById('remover-finalizados');
 // consultado o repositorio https://github.com/tryber/sd-015-a-project-todo-list/blob/arthur-teixeira-santos-todo-list-project/script.js
 // Alterar a cor de fundo
 
@@ -28,6 +28,7 @@ function criTar(event) {
   event.preventDefault();
   const criarLi = document.createElement('li');
   criarLi.innerText = texto.value;
+  criarLi.classList.add('tarefas')
   listaTarefa.appendChild(criarLi);
   criarLi.addEventListener('click', trocaCor);
   criarLi.addEventListener('dblclick', completar);
@@ -44,3 +45,17 @@ function apagarLi() {
 }
 
 remover.addEventListener('click', apagarLi);
+
+// Remover finalizados
+// consultado o repositorio https://github.com/tryber/sd-015-a-project-todo-list/blob/leandro-basilio-todo-list-project/script.js
+function revFin() {
+  for (let index = 0; index < listaTarefa.children.length; index += 0) {
+    if (listaTarefa.children[index].classList.contains('completed')) {
+      listaTarefa.removeChild(listaTarefa.children[index]);
+    } else {
+      index += 1;
+    }
+  }
+}
+
+removerFin.addEventListener('click', revFin)
