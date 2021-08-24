@@ -68,7 +68,25 @@ function addOl() {
         ol.appendChild(li);
         tagInput.value = '';
 
-        // adiciona click nas lis e pinta a linha de cinza clicada
+        let getLista = document.getElementsByTagName('li');
+        for (let k = 0; k < getLista.length; k += 1) {
+
+            getLista[k].addEventListener('dblclick', function(event) {
+                if (getLista[k] === 'completed') {
+                    getLista[k].className = 'completedOff';
+                    getLista[k].innerHTML;
+
+                } else {
+                    getLista[k].className = 'completed';
+                    getLista[k].innerHTML;
+                }
+
+            });
+
+
+        }
+
+        // adiciona click nas li's e taxa o texto
         let getLis = document.getElementsByTagName('li');
         let ultSelec;
 
@@ -82,50 +100,59 @@ function addOl() {
                         getLis[j].className = ('estDivDefault');
                         getLis[j].innerHTML;
                     }
+                    /* else if (getLis[j].className === ('completed')) {
+                        getLis[j].className = ('completed estSelected');
+                        getLis[j].innerHTML;
+                    } else if (getLis[j].className === ('completedOff')) {
+                        getLis[j].className = ('completedOff estSelected');
+                        getLis[j].innerHTML;
+                    }*/
+
                 }
 
                 getLis[i].className = ('estSelected');
                 getLis[i].innerHTML;
                 ultSelec = getLis[i];
 
+
             });
 
         }
 
     });
-
 }
+
 addOl();
 
-function duploClique() {
+function removeFinaliz() {
 
-    let getLis = document.getElementsByTagName('li');
+    let body = document.querySelector('body');
+    let btnRmvSelected = document.createElement('button');
+    btnRmvSelected.className = 'btnRmvSelected';
+    btnRmvSelected.id = 'remover-finalizados';
+    btnRmvSelected.innerText = 'Limpar Completos';
+    btnRmvSelected.innerHTML;
+    body.appendChild(btnRmvSelected);
 
-    for (let k = 0; k < getLis.length; k += 1) {
+    let getListOl = document.getElementsByTagName('ol');
+    let listLi = document.getElementsByTagName('li');
+    let marcados = document.querySelectorAll('#completed')[0];
 
-        getLis[k].addEventListener('dblclick', function(event) {
-            getLis[k].innerHTML;
-            alert('foi');
-        });
 
-    }
+    btnRmvSelected.addEventListener('click', function() {
 
-    /*getLis.addEventListener('dblclick', function(event) {
+        for (let index = listLi.length - 1; index >= 0; index -= 1) {
+            if (listLi[index].className === 'completed') {
+                listLi[index].remove();
+            }
 
-        if (getLis.className === 'completed') {
-            getLis.className = ('completedOff');
-            getLis.innerHTML;
-            alert('Ja clicou');
-        } else {
-
-            getLis.className = ('completed');
-            getLis.innerHTML;
         }
 
-    });*/
+    });
+
 
 }
-duploClique();
+removeFinaliz();
 
 function removeAllList() {
     // cria o botao
