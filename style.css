@@ -1,0 +1,29 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    /* background-color: #0f0e17; */
+    background-color: blue;
+}
+
+button {
+    color: #fffffe;
+    background-color: #ff8906;
+}
+
+
+#Header, h1, p  {
+   color: white;
+}
+
+#Header {
+  text-align: center;
+  height: 150px;
+}
+
+.selected {
+    background-color: gray;
+}
+
+.completed {
+    text-decoration: line-through solid rgb(0, 0, 0);    
+}
