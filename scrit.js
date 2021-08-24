@@ -4,6 +4,9 @@ const List = document.getElementById('lista-tarefas');
 const deleteButton = document.getElementById('apaga-tudo');
 const deleteCompleteds = document.getElementById('remover-finalizados');
 const saveListButton = document.getElementById('salvar-tarefas');
+const removeSelected = document.getElementById('remover-selecionado');
+const CompletedItems = document.getElementsByClassName('completed');
+
 
 function liColor(event) {
   if (document.querySelector('.selected')) {
@@ -42,7 +45,6 @@ function deleteItems() {
 deleteButton.addEventListener('click', deleteItems);
 
 function deleteCompletedItems() {
-  const CompletedItems = document.getElementsByClassName('completed');
   while (CompletedItems.length !== 0) {
     document.querySelector('.completed').remove();
   }
@@ -60,3 +62,12 @@ function reloadList() {
 }
 
 reloadList();
+
+// referencia para exercicio 14 tirada de
+// https://github.com/tryber/sd-015-a-project-todo-list/pull/1/files
+
+function RemoveSelected() {
+  List.removeChild(document.querySelector('.selected'));
+}
+
+removeSelected.addEventListener('click', RemoveSelected);
