@@ -11,16 +11,10 @@ function add(){
     Tlist.appendChild(newAdd);
     TvalorInput.value = '';
 
-    //newAdd.addEventListener('click',function(event){
-        //if(event.target){
-            //let lista = document.querySelectorAll('li');
-//background-color
-    //function tugo(event){
-    //  event.target.classList.add('done');
-
 //clique background cinza, único, ou seja apenas 1 elemento deve ter a classe 'done', enquanto o outro volta ao background normal
     function clickcinza(event){
         let lis = document.querySelectorAll('li');
+
         for(let li of lis){
         li.classList.remove('done');
     }
