@@ -1,0 +1,13 @@
+header p {
+  font-style: italic;
+  color: rgb ( 128 , 128 , 128);
+}
+
+.completed {
+  text-decoration: line-through solid;
+  color: black;
+}
+
+.selected {
+  background-color: gray;
+}
