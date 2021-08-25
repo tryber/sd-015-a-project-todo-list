@@ -1,5 +1,11 @@
+.body {
+  background-color: #add8e6;
+}
+
 .button {
   margin-left: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .completed {
@@ -10,13 +16,9 @@
   border-radius: 35px;
 }
 
-.paintGray {
-  background-color: gray;
-}
-
 #principal {
   background-color: white;
-  padding: 50px;
+  padding: 20px 50px;
   border-radius: 15px;
   margin: 20px 20%;
 }
@@ -31,19 +33,15 @@
   justify-content: center;
 }
 
-#inputAndButton {
+#input {
   display: flex;
   justify-content: center;
 }
 
 #lista-tarefas {
-  padding-left: 80px;
+  padding-left: 230px;
 }
 
 .list {
-  width: 100px;
-}
-
-.body {
-  background-color: #add8e6;
+  width: 200px;
 }

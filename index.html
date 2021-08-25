@@ -15,14 +15,19 @@
   
    <div id="funcionamento" ><p>Clique duas vezes em um item para marcá-lo como completo</p></div>
   
-    <div id="inputAndButton">
+    <div id="input">
       <input type="text" id="texto-tarefa" name="input" placeholder="Insira aqui sua tarefa...">
+    </div>
+   
+    <ol id="lista-tarefas"></ol>
+
+    <div class="button">
       <button id="criar-tarefa" class="btn btn-primary button"> Adicionar </button>
       <button id="apaga-tudo" class="btn btn-warning button"> X </button>
       <button id="remover-finalizados" class="btn btn-danger button"> Remover Finalizados </button>
+      <button id="remover-selecionado" class="btn btn-success button"> Remover Selecionados </button>
     </div>
-    <ol id="lista-tarefas"></ol>
-
+    
     </section>
   </main>
   <script src="script.js"></script>

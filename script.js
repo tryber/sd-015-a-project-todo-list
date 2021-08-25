@@ -61,3 +61,17 @@ function removeFinished() {
 
 const buttonFinished = document.querySelector('#remover-finalizados');
 buttonFinished.addEventListener('click', removeFinished);
+
+function removeSelected() {
+  const accessLi = document.querySelectorAll('.list');
+  for (let i = 0; i < accessLi.length; i += 1) {
+    const runList = accessLi[i];
+    const styleList = runList.style.backgroundColor
+    if (styleList === 'gray') {
+      runList.remove();
+    }
+  }
+}
+
+const buttonSelected = document.querySelector('#remover-selecionado');
+buttonSelected.addEventListener('click', removeSelected);
