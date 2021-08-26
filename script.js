@@ -3,7 +3,7 @@ const campoEntrada = document.getElementById('texto-tarefa'); // Pegar entrada d
 const botaoTarefas = document.getElementById('criar-tarefa'); // Botão Criar tarefa
 const lista = document.getElementById('lista-tarefas'); // Lista de Tarefas
 
-function criarTarefa(event) {
+function criarTarefa() {
   const novaTarefa = document.createElement('li'); // Cria um novo elemento li
   novaTarefa.innerText = campoEntrada.value; // Esse novo elemento li recebe o valor digitado no imput
   lista.appendChild(novaTarefa); // // Cria um novo elemento li e adiciona-o ao final da lista de Tarefas
@@ -12,7 +12,7 @@ function criarTarefa(event) {
 
 botaoTarefas.addEventListener('click', criarTarefa);
 
-// Explicacao requisito 6: O appendChild adiciona um nó ao final da lista de filhos de um nó pai especificado. 
+// Explicacao requisito 6: O appendChild adiciona um nó ao final da lista de filhos de um nó pai especificado.
 
 // Requisito 7 e 8
 function mudarCor(event) {
@@ -50,7 +50,7 @@ lista.addEventListener('dblclick', duploRisco);
 // Requisito 10
 const botaoApagaTudo = document.getElementById('apaga-tudo');
 
-function apagar(event) {
+function apagar() {
   lista.innerHTML = '';
   // lista é a Lista de Tarefas inteira
 }
@@ -58,12 +58,12 @@ function apagar(event) {
 botaoApagaTudo.addEventListener('click', apagar);
 
 // Requisito 11
-const botaoFinalizados = document.getElementById('remover-finalizados'); 
+const botaoFinalizados = document.getElementById('remover-finalizados');
 
-function apagarFinalizados(event) {
+function apagarFinalizados() {
   const tarefasFinalizadas = document.getElementsByClassName('completed');
   // pegando todos os elementos que possuem a classe completed
-  
+
   if (tarefasFinalizadas.length !== 0) {
     for (let i = tarefasFinalizadas.length - 1; i >= 0; i -= 1) {
       tarefasFinalizadas[i].remove();

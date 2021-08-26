@@ -12,7 +12,7 @@ body {
 */
 
 #funcionamento {
-  font-weight: bold; /* Negrito */
+  font-weight: 700; /* Negrito */
   font-size: 12px;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 #criar-tarefa {
-  padding: 0px;
+  padding: 0;
   width: 200px;
   margin-left: 20px;
 }
