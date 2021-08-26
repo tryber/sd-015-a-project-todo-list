@@ -1,0 +1,51 @@
+/*
+  Estilizando a pagina
+*/
+
+body {
+  background: rgb(255, 255, 180);
+  margin: 50px;
+}
+
+/*
+  Estilizando o header = Frase Clique duas vezes em um item para marcá-lo como completo
+*/
+
+#funcionamento {
+  font-weight: 700; /* Negrito */
+  font-size: 12px;
+}
+
+/*
+  Estilizando o formulario e o botão adicionar tarefa a lista
+*/
+
+.container {
+  display: flex;
+}
+
+#texto-tarefa {
+  padding: 10px;
+}
+
+#criar-tarefa {
+  padding: 0;
+  width: 200px;
+  margin-left: 20px;
+}
+
+/*
+  Requisito 7 e 8 - mudando a cor de fundo do item selecionado
+*/
+
+.liSelecionada {
+  background: rgb(128, 128, 128);
+}
+
+/*
+  Requisito 9 - mudando a cor de fundo do item selecionado
+*/
+
+.completed {
+  text-decoration: line-through solid rgb(0, 0, 0);
+}
