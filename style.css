@@ -1,9 +1,10 @@
 /*
-  Estilizando o site
+  Estilizando a pagina
 */
 
-#conteudo {
-  background-color: white;
+body {
+  background: rgb(255, 255, 180);
+  margin: 50px;
 }
 
 /*
@@ -11,28 +12,30 @@
 */
 
 #funcionamento {
-  color: red;
+  font-weight: bold; /* Negrito */
+  font-size: 12px;
 }
 
 /*
-  Estilizando o formulario
+  Estilizando o formulario e o botão adicionar tarefa a lista
 */
+
+.container {
+  display: flex;
+}
 
 #texto-tarefa {
   padding: 10px;
 }
 
 #criar-tarefa {
-  padding: 5px;
-  width: 120px;
-  margin-left: 50px;
-  border-radius: 10px;
-  background-color: yellow;
-  font-weight: bold;
+  padding: 0px;
+  width: 200px;
+  margin-left: 20px;
 }
 
 /*
-  Requisito 7 - mudando a cor de fundo do item selecionado
+  Requisito 7 e 8 - mudando a cor de fundo do item selecionado
 */
 
 .liSelecionada {

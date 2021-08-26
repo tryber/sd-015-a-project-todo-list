@@ -9,29 +9,35 @@
 </head>
 
 <body>
+  <header id="header-container">
+    <!-- Requisito 1 -->
+    <h1>Minha Lista de Tarefas</h1>
 
-  <div id="conteudo">
-    
-    <header id="header-container">
-      <h1>Minha Lista de Tarefas</h1>
-      <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-    </header>
+    <!-- Requisito 2 -->
+    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+  </header>
 
-    <main>
-      
-      <section>
-        <input id="texto-tarefa" placeholder="Escreva sua tarefa aqui">
-        <button id="criar-tarefa">Adicionar tarefa a lista</button>
-        <ol id="lista-tarefas"></ol>
-        <button id="apaga-tudo">Limpar Lista</button>
-        <button id="remover-finalizados">Limpar Completos</button>
-      </section>
-      
-    </main>
+  <main>
+    <div class="container">
+      <!-- A div container é para estilizacao do input e do botão -->
+      <!-- Requisito 3 -->
+      <input id="texto-tarefa" placeholder="Escreva sua tarefa aqui">
 
-</div>
+      <!-- Requisito 5 "ação" no JAVA -->
+      <button id="criar-tarefa">Adicionar tarefa a lista</button>
+    </div>
 
-  <script src="script.js"></script>
+    <!-- Requisito 4 -->
+    <ol id="lista-tarefas"></ol>
+
+    <!-- Requisito 10 -->
+    <button id="apaga-tudo">Limpar Lista</button>
+
+    <!-- Requisito 11 -->
+    <button id="remover-finalizados">Limpar Finalizados</button>
+  </main>
+
+<script src="script.js"></script>
 
 </body>
 </html>
