@@ -3,3 +3,14 @@ body{
     background-color: rgb(240, 240, 240);
     
 }
+.header{    
+    display: inline-block;
+    text-align: center;
+    
+
+
+}
+.forms-contain{ 
+    display: flex;
+    justify-content: center;
+}
