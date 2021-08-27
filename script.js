@@ -1,4 +1,4 @@
-//Add a line-through on the double-clicked object
+// Add a line-through on the double-clicked object
 function completedTask(event) {
   if (event.target.classList.length === 1) {
     event.target.classList.add('completed');
@@ -18,9 +18,9 @@ function clearCompletedTask() {
 // Function that assigns gray color to selected list element, but first calls clearCompletedTask function
 function selected(event) {
   clearCompletedTask();
-  event.target.style.backgroundColor = 'gray';
+  const way = event.target;
+  way.style.backgroundColor = 'gray';
 }
-
 
 // Function that adds input text to "li"
 function addText() {
@@ -62,11 +62,12 @@ function removeFinished() {
 const buttonFinished = document.querySelector('#remover-finalizados');
 buttonFinished.addEventListener('click', removeFinished);
 
+// Function that removes objects from the selected list
 function removeSelected() {
   const accessLi = document.querySelectorAll('.list');
   for (let i = 0; i < accessLi.length; i += 1) {
     const runList = accessLi[i];
-    const styleList = runList.style.backgroundColor
+    const styleList = runList.style.backgroundColor;
     if (styleList === 'gray') {
       runList.remove();
     }
@@ -75,3 +76,12 @@ function removeSelected() {
 
 const buttonSelected = document.querySelector('#remover-selecionado');
 buttonSelected.addEventListener('click', removeSelected);
+
+// Query on the website https://www.horadecodar.com.br/2020/12/10/acionar-um-button-com-o-enter-do-teclado-em-javascript/ (Obs: Does not fit as a project requirement)
+function pressEnter(event) {
+  if (event.key === 'Enter') {
+    addText();
+  }
+}
+
+document.addEventListener('keypress', pressEnter);
