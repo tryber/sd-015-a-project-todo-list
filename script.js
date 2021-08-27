@@ -1,3 +1,5 @@
+const listaTarefa = document.getElementById('lista-tarefas');
+
 function addNovaTarefa() {
     const listaTarefa = document.getElementById('lista-tarefas');
     const novaTarefa = document.createElement('li'); 
@@ -7,13 +9,22 @@ function addNovaTarefa() {
     tarefa.value = '';
 }
 
-const listaTarefa = document.getElementById('lista-tarefas');
 const botaoTarefa = document.getElementById('criar-tarefa');
 botaoTarefa.addEventListener('click', addNovaTarefa);
 
-function alteraCor(tarefas) {
+function marcar(tarefas) {
+    desmarcar();
     const clickTarefa = tarefas.target;
     clickTarefa.style.backgroundColor = 'rgb(128,128,128)';
 }
 
-listaTarefa.addEventListener('click', alteraCor);
+function desmarcar() { 
+    const desTarefa = document.querySelectorAll('li');
+    for (var i = 0; i < desTarefa.length; i += 1) {
+        desTarefa[i].style.backgroundColor = '';
+    }
+}
+
+listaTarefa.addEventListener('click', marcar);
+
+
