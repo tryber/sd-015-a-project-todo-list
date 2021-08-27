@@ -52,3 +52,16 @@ function apagaTarefas() {
 }
 
 apagaTarefas();
+
+const botaoApagarTarefasFeitas = document.getElementById('remover-finalizados');
+
+function apagarTarefasFeitas() {
+    botaoApagarTarefasFeitas.addEventListener('click', () => {
+        const allTarefas = document.querySelectorAll('.completed');
+        for (var i = 0; i < allTarefas.length; i += 1) {
+            allTarefas[i].remove();
+        }
+    });
+}
+
+apagarTarefasFeitas();
