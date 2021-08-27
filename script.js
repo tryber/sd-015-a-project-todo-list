@@ -39,3 +39,16 @@ function tarefaConcluida(tarefa) {
 }
 
 listaTarefa.addEventListener('dblclick', tarefaConcluida);
+
+const botaoApagaTarefas = document.getElementById('apaga-tudo');
+
+function apagaTarefas() {
+    botaoApagaTarefas.addEventListener('click', () => {
+        const allTarefas = document.querySelectorAll('li');
+        for (var i = 0; i < allTarefas.length; i += 1) {
+            allTarefas[i].remove();
+        }
+    })
+}
+
+apagaTarefas();
