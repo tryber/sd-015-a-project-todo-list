@@ -79,3 +79,12 @@ salvarTarefas();
 window.onload = function retornaTarefasSalvas() {
     listaTarefa.innerHTML = localStorage.getItem('task');
 }
+
+const botaoRemoverSelecao = document.getElementById('remover-selecionado');
+
+function removerSelecao() {
+    const allTarefas = document.querySelector('li[style');
+    allTarefas.remove();
+}
+
+botaoRemoverSelecao.addEventListener('click', removerSelecao);
