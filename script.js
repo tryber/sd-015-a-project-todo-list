@@ -65,3 +65,17 @@ function apagarTarefasFeitas() {
 }
 
 apagarTarefasFeitas();
+
+const botaoSalvarTarefas = document.getElementById('salvar-tarefas');
+
+function salvarTarefas() {
+    botaoSalvarTarefas.addEventListener('click', () => {
+        localStorage.setItem('task', listaTarefa.innerHTML);    
+    });
+}
+
+salvarTarefas();
+
+window.onload = function retornaTarefasSalvas() {
+    listaTarefa.innerHTML = localStorage.getItem('task');
+}
