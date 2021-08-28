@@ -23,7 +23,18 @@ resgateiBotao.addEventListener("click", criarTarefa);
 
 
 
+const tagDaLi = document.getElementsByTagName('li');
+console.log(tagDaLi);
+
+function mudarAcorDoElemento() {
+console.log("clicou")
+}
+for(let cont = 0; cont < tagDaLi.length; cont ++){
+  tagDaLi[cont].addEventListener("click", mudarAcorDoElemento)
+
+}
 
 
 
+ 
 
