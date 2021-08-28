@@ -31,7 +31,7 @@ resgateiBotao.addEventListener("click", criarTarefa);
 
 function mudarAcorDoElemento(event) {
   console.log(event.target);
-event.target.style.color = 'rgb(128, 128, 128)';
+event.target.style.backgroundColor = 'rgb(128, 128, 128)';
 
 
 
