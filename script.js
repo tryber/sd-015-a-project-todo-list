@@ -30,12 +30,19 @@ resgateiBotao.addEventListener("click", criarTarefa);
 
 
 function mudarAcorDoElemento(event) {
-  console.log(event.target);
-event.target.style.backgroundColor = 'rgb(128, 128, 128)';
-
-
+  
+  
+const UmElementoPorVez = document.getElementsByTagName('li');
+for(let cont = 0; cont < UmElementoPorVez.length ; cont ++){
+   UmElementoPorVez[cont].style.backgroundColor = 'white';
 
 }
+event.target.style.backgroundColor = 'rgb(128, 128, 128)';
+}
+
+
+
+
 
 
 
