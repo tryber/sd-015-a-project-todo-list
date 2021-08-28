@@ -16,23 +16,27 @@ tagLi.innerHTML = input.value;
 tagPaiOl.appendChild(tagLi);
 input.value = "";
 
+const tagDaLi = document.getElementsByTagName('li');
+for (let cont = 0; cont < tagDaLi.length; cont++){
+  tagDaLi[cont].addEventListener("click", mudarAcorDoElemento);
+
+}
 }
 
 const resgateiBotao = document.querySelector('#criar-tarefa');
 resgateiBotao.addEventListener("click", criarTarefa);
+//-----------------------------------------------------------------------------
 
 
 
-const tagDaLi = document.getElementsByTagName('li');
-console.log(tagDaLi);
+function mudarAcorDoElemento(event) {
+  console.log(event.target);
+event.target.style.color = 'rgb(128, 128, 128)';
 
-function mudarAcorDoElemento() {
-console.log("clicou")
-}
-for(let cont = 0; cont < tagDaLi.length; cont ++){
-  tagDaLi[cont].addEventListener("click", mudarAcorDoElemento)
+
 
 }
+
 
 
 
