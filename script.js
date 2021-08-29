@@ -6,6 +6,9 @@ const removeTask = document.getElementById('apaga-tudo');
 const done = document.getElementsByClassName('completed');
 const btnRemove = document.getElementById('remover-finalizados');
 const btnSelect = document.getElementById('remover-selecionado');
+// const tasks = document.getElementsByClassName('tasks');
+const btnSave = document.getElementById('salvar-tarefas');
+// const li = document.getElementsByTagName('li');
 function changClass(e) {
   if (selected[0]) {
     selected[0].classList.remove('selected');
@@ -21,6 +24,15 @@ function taskDone(t) {
     e.classList.add('completed');
   }
 }
+
+// function taskDone2(a) {
+//   const e = a.target;
+//   if (e.className.includes('completed')) {
+//     e.classList.remove('completed');
+//   } else {
+//     e.classList.add('completed');
+//   }
+// }
 
 function creatTask() {
   btnTarefa.addEventListener('click', () => {
@@ -55,9 +67,24 @@ removeDone();
 
 function removeSelected() {
   btnSelect.addEventListener('click', () => {
-    while (selected.length > 0) {
+    while (selected.length) {
       selected[0].remove();
     }
   });
 }
 removeSelected();
+
+function saveList() {
+  const listSaved = list.innerHTML;
+  localStorage.setItem('list', listSaved);
+}
+
+btnSave.addEventListener('click', saveList);
+
+function takeList() {
+  const myListOut = localStorage.getItem('list');
+  list.innerHTML = myListOut;
+  // list.addEventListener('click', changClass);
+  // list.addEventListener('dblclick', taskDone);
+}
+window.addEventListener('load', takeList);
