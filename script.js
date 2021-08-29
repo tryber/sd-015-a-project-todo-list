@@ -5,7 +5,7 @@ const selected = document.getElementsByClassName('selected');
 const removeTask = document.getElementById('apaga-tudo');
 const done = document.getElementsByClassName('completed');
 const btnRemove = document.getElementById('remover-finalizados');
-// const listChild = document.getElementById('lista-tarefas').children;
+const btnSelect = document.getElementById('remover-selecionado');
 function changClass(e) {
   if (selected[0]) {
     selected[0].classList.remove('selected');
@@ -52,3 +52,12 @@ function removeDone() {
   });
 }
 removeDone();
+
+function removeSelected() {
+  btnSelect.addEventListener('click', () => {
+    while (selected.length > 0) {
+      selected[0].remove();
+    }
+  });
+}
+removeSelected();
