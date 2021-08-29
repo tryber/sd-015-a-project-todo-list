@@ -1,16 +1,11 @@
-body{
-    margin:0px;   
-    background-color: rgb(240, 240, 240);
-    
+.tasks {
+  font-size: xx-large;
 }
-.header{    
-    display: inline-block;
-    text-align: center;
-    
 
-
+.selected {
+  background-color:rgb(128, 128, 128);
 }
-.forms-contain{ 
-    display: flex;
-    justify-content: center;
+
+.completed {
+  text-decoration: line-through;
 }
