@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto To Do List</title>
+    <link rel="stylesheet" href="/style.css"/>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto To Do List</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
+  <body>
+    <header><h1>Minha Lista de Tarefas</h1>
+    <hr />
+    <p id="funcionamento">
+      Clique duas vezes em um item para marcá-lo como completo
+    </p>
+  </header>
 
-<body>
+    <input id="texto-tarefa" type="text" />
 
-  <header><h1> Minha Lista de Tarefas </h1></header>
+    <ol id="lista-tarefas">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
 
-  <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+    <button id="criar-tarefa">Criar Tarefa</button>
 
-  <input id="texto-tarefa" type="text">
+    <button id="salvar-tarefas">Salva Tarefas</button>
+    <button id="remover-selecionado">Apaga Selecionados</button>
+    <button id="mover-cima">Move para Cima</button>
+    <button id="mover-baixo">Move para Baixo</button>
+    <button id="remover-finalizados">Apaga Finalizados!</button>
+    <button id="apaga-tudo">Apaga Tudo!</button>
 
-  <ol id="lista-tarefas">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ol>
-
-  <button id="criar-tarefa">Criar Tarefa</button>
-
-
-
-  <button id="salvar-tarefas">Salva Tarefas</button>
-  <button id="remover-selecionado">Apaga Selecionados</button>
-  <button id="mover-cima">Move para Cima</button>
-  <button id="mover-baixo">Move para Baixo</button>
-  <button id="remover-finalizados">Apaga Finalizados!</button>
-  <button id="apaga-tudo">Apaga Tudo!</button>
-
-  <script src="/script.js"></script>
-</body>
+    <script src="/script.js"></script>
+  </body>
 </html>
