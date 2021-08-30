@@ -82,13 +82,10 @@ function levelUp() {
   for (let i = 0; i < accessLi.length; i += 1) {
     const gray = accessLi[i];
     const element = gray.previousSibling;
-    if (element !== null) {
-      const runList = accessLi[i];
-      const styleList = runList.style.backgroundColor;
-      if (styleList === 'gray') {
-        console.log(element);
-        accessOl.insertBefore(gray, element);
-      }
+    const runList = accessLi[i];
+    const styleList = runList.style.backgroundColor;
+    if (styleList === 'gray' && element !== null) {
+      accessOl.insertBefore(gray, element);
     }
   }
 }
@@ -101,13 +98,10 @@ function levelDown() {
   for (let i = 0; i < accessLi.length; i += 1) {
     const gray = accessLi[i];
     const element = gray.nextSibling;
-    if (element !== null) {
-      const runList = accessLi[i];
-      const styleList = runList.style.backgroundColor;
-      if (styleList === 'gray') {
-        console.log(element);
-        accessOl.insertBefore(element, gray);
-      }
+    const runList = accessLi[i];
+    const styleList = runList.style.backgroundColor;
+    if (styleList === 'gray' && element !== null) {
+      accessOl.insertBefore(element, gray);
     }
   }
 }
@@ -125,7 +119,7 @@ function pressEnter(event) {
 document.addEventListener('keypress', pressEnter);
 
 function clearKey(event) {
-  if (event.ctrlKey && event.key === 'b') {
+  if (event.ctrlKey && event.key === 'x') {
     deleteList();
   }
 }
