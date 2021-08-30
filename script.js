@@ -1,3 +1,5 @@
+const accessOl = document.querySelector('#lista-tarefas');
+
 // Add a line-through on the double-clicked object
 function completedTask(event) {
   if (event.target.classList.contains('completed')) {
@@ -25,7 +27,6 @@ function selected(event) {
 // Function that adds input text to "li"
 function addText() {
   const accessInput = document.querySelector('#texto-tarefa');
-  const accessOl = document.querySelector('#lista-tarefas');
   const createLi = document.createElement('li');
   createLi.innerText = accessInput.value; // Getting the input value
   createLi.classList.add('list');
@@ -40,7 +41,6 @@ accessButton.addEventListener('click', addText);
 
 // Function that deletes all objects from the list
 function deleteList() {
-  const accessOl = document.querySelector('#lista-tarefas');
   accessOl.innerText = '';
 }
 
@@ -77,6 +77,44 @@ function removeSelected() {
 const buttonSelected = document.querySelector('#remover-selecionado');
 buttonSelected.addEventListener('click', removeSelected);
 
+function levelUp() {
+  const accessLi = document.querySelectorAll('.list');
+  for (let i = 0; i < accessLi.length; i += 1) {
+    const gray = accessLi[i];
+    const element = gray.previousSibling;
+    if (element !== null) {
+      const runList = accessLi[i];
+      const styleList = runList.style.backgroundColor;
+      if (styleList === 'gray') {
+        console.log(element);
+        accessOl.insertBefore(gray, element);
+      }
+    }
+  }
+}
+
+const buttonUp = document.querySelector('#mover-cima');
+buttonUp.addEventListener('click', levelUp);
+
+function levelDown() {
+  const accessLi = document.querySelectorAll('.list');
+  for (let i = 0; i < accessLi.length; i += 1) {
+    const gray = accessLi[i];
+    const element = gray.nextSibling;
+    if (element !== null) {
+      const runList = accessLi[i];
+      const styleList = runList.style.backgroundColor;
+      if (styleList === 'gray') {
+        console.log(element);
+        accessOl.insertBefore(element, gray);
+      }
+    }
+  }
+}
+
+const buttonDown = document.querySelector('#mover-baixo');
+buttonDown.addEventListener('click', levelDown);
+
 // Query on the website https://www.horadecodar.com.br/2020/12/10/acionar-um-button-com-o-enter-do-teclado-em-javascript/ (Obs: Does not fit as a project requirement)
 function pressEnter(event) {
   if (event.key === 'Enter') {
@@ -85,3 +123,11 @@ function pressEnter(event) {
 }
 
 document.addEventListener('keypress', pressEnter);
+
+function clearKey(event) {
+  if (event.ctrlKey && event.key === 'b') {
+    deleteList();
+  }
+}
+
+document.addEventListener('keyup', clearKey);
