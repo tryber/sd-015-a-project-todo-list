@@ -1,9 +1,9 @@
 // Add a line-through on the double-clicked object
 function completedTask(event) {
-  if (event.target.classList.length === 1) {
-    event.target.classList.add('completed');
-  } else {
+  if (event.target.classList.contains('completed')) {
     event.target.classList.remove('completed');
+  } else {
+    event.target.classList.add('completed');
   }
 }
 
