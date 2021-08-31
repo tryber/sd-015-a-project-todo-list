@@ -10,6 +10,18 @@ function limparLista() {
 
 const clearButton = document.getElementById('apagar-tudo');
 clearButton.addEventListener('click', limparLista);
+
+// Função que remove apenas os itens da lista que estão concluídos
+function limparCompletos() {
+  const completeTarget = document.querySelectorAll('.completed');
+  for (let i = 0; i < completeTarget.length; i += 1) {
+    completeTarget[i].remove();
+  }
+}
+
+const completeTasksBtn = document.getElementById('remover-finalizados');
+completeTasksBtn.addEventListener('click', limparCompletos);
+
 // Funções que mudam a cor do item
 function alteraCor(task) {
   const taskItemList = document.querySelectorAll('li');
