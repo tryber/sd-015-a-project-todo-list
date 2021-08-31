@@ -99,3 +99,15 @@ function moveDown() {
 
 document.getElementById('mover-cima').addEventListener('click', moveUp);
 document.getElementById('mover-baixo').addEventListener('click', moveDown);
+
+// Função que remove o item selecionado na lista de tarefas.
+function removeItemSelecionado() {
+  const taskItem = document.querySelectorAll('li');
+  for (let i = taskItem.length - 1; i >= 0; i -= 1) {
+    if (taskItem[i].style.backgroundColor === 'grey') {
+      (taskItem[i]).remove();
+    }
+  }
+}
+
+document.getElementById('remover-selecionado').addEventListener('click', removeItemSelecionado);
