@@ -9,13 +9,12 @@ function alteraCor(task) {
 
   const taskGrey = task.target;
   taskGrey.style.backgroundColor = 'rgb(128, 128, 128)';
-  taskGrey.style.color = 'white';
 }
 
 function alteraCorOnClick() {
   const newTaskItem = document.querySelectorAll('li');
   for (let i = 0; i < newTaskItem.length; i += 1) {
-    newTaskItem[i].addEventListener('click', alteraCor);
+    newTaskItem[i].addEventListener('dblclick', alteraCor);
   }
 }
 
