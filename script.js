@@ -1,5 +1,15 @@
 const taskList = document.querySelector('#lista-tarefas');
 
+// Função que remove todos os itens da lista ao cicar no botão limpar lista
+function limparLista() {
+  const deleteTarget = document.querySelectorAll('li');
+  for (let i = 0; i < deleteTarget.length; i += 1) {
+    deleteTarget[i].remove();
+  }
+}
+
+const clearButton = document.getElementById('apagar-tudo');
+clearButton.addEventListener('click', limparLista);
 // Funções que mudam a cor do item
 function alteraCor(task) {
   const taskItemList = document.querySelectorAll('li');
@@ -51,8 +61,3 @@ function adicionaTarefa() {
 
 const createBtn = document.getElementById('criar-tarefa');
 createBtn.addEventListener('click', adicionaTarefa);
-
-// Função que remove todos os itens da lista ao cicar no botão limpar lista
-function limparLista() {
-  
-}
