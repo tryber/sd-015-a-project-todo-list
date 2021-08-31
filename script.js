@@ -51,3 +51,8 @@ function adicionaTarefa() {
 
 const createBtn = document.getElementById('criar-tarefa');
 createBtn.addEventListener('click', adicionaTarefa);
+
+// Função que remove todos os itens da lista ao cicar no botão limpar lista
+function limparLista() {
+  
+}
