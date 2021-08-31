@@ -73,3 +73,29 @@ function adicionaTarefa() {
 
 const createBtn = document.getElementById('criar-tarefa');
 createBtn.addEventListener('click', adicionaTarefa);
+
+// Move o item selecionado para cima na lista.
+function moveUp() {
+  const taskItem = document.querySelectorAll('li');
+  for (let i = 0; i < taskItem.length; i += 1) {
+    if (taskItem[i].style.backgroundColor === 'grey' && (i - 1) !== -1) {
+      taskList.insertBefore(taskItem[i],
+        taskItem[i - 1]);
+    }
+  }
+}
+
+// Move o item selecionado para baixo na lista.
+function moveDown() {
+  const taskItem = document.querySelectorAll('li');
+  for (let i = taskItem.length - 1; i >= 0; i -= 1) {
+    if (taskItem[i].style.backgroundColor === 'grey'
+      && (i + 1) !== taskItem.length) {
+      taskList.insertBefore(taskItem[i + 1],
+        taskItem[i]);
+    }
+  }
+}
+
+document.getElementById('mover-cima').addEventListener('click', moveUp);
+document.getElementById('mover-baixo').addEventListener('click', moveDown);
