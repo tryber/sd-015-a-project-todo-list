@@ -8,7 +8,7 @@ function limparLista() {
   }
 }
 
-const clearButton = document.getElementById('apagar-tudo');
+const clearButton = document.getElementById('apaga-tudo');
 clearButton.addEventListener('click', limparLista);
 
 // Função que remove apenas os itens da lista que estão concluídos
@@ -30,13 +30,13 @@ function alteraCor(task) {
   }
 
   const taskGrey = task.target;
-  taskGrey.style.backgroundColor = 'rgb(128, 128, 128)';
+  taskGrey.style.backgroundColor = 'grey';
 }
 
 function alteraCorOnClick() {
   const newTaskItem = document.querySelectorAll('li');
   for (let i = 0; i < newTaskItem.length; i += 1) {
-    newTaskItem[i].addEventListener('dblclick', alteraCor);
+    newTaskItem[i].addEventListener('click', alteraCor);
   }
 }
 
@@ -44,7 +44,7 @@ function alteraCorOnClick() {
 function riscaTarget(item) {
   const taskItem = item.target;
   if (taskItem.className === 'completed') {
-    taskItem.removeAtributte('class');
+    taskItem.classList.remove('completed');
   } else {
     taskItem.classList.add('completed');
   }
