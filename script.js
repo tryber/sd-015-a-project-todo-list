@@ -82,8 +82,7 @@ function levelUp() {
   for (let i = 0; i < accessLi.length; i += 1) {
     const gray = accessLi[i];
     const element = gray.previousSibling;
-    const runList = accessLi[i];
-    const styleList = runList.style.backgroundColor;
+    const styleList = gray.style.backgroundColor;
     if (styleList === 'gray' && element !== null) {
       accessOl.insertBefore(gray, element);
     }
@@ -98,9 +97,9 @@ function levelDown() {
   for (let i = 0; i < accessLi.length; i += 1) {
     const gray = accessLi[i];
     const element = gray.nextSibling;
-    const runList = accessLi[i];
-    const styleList = runList.style.backgroundColor;
+    const styleList = gray.style.backgroundColor;
     if (styleList === 'gray' && element !== null) {
+      console.log(element);
       accessOl.insertBefore(element, gray);
     }
   }
@@ -109,9 +108,8 @@ function levelDown() {
 const buttonDown = document.querySelector('#mover-baixo');
 buttonDown.addEventListener('click', levelDown);
 
-// Query on the website https://www.horadecodar.com.br/2020/12/10/acionar-um-button-com-o-enter-do-teclado-em-javascript/ (Obs: Does not fit as a project requirement)
 function pressEnter(event) {
-  if (event.key === 'Enter') {
+  if (event.key === 'Enter') { // Taken by reference to the '.key' function of the site https://www.horadecodar.com.br/2020/12/10/acionar-um-button-com-o-enter-do-teclado-em-javascript/ (Obs: Does not fit as a project requirement)
     addText();
   }
 }
@@ -125,3 +123,14 @@ function clearKey(event) {
 }
 
 document.addEventListener('keyup', clearKey);
+
+function move(event) {
+  if (event.key === 'ArrowUp') {
+    levelUp();
+  }
+  if (event.key === 'ArrowDown') {
+    levelDown();
+  }
+}
+
+document.addEventListener('keydown', move);
