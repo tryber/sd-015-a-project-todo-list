@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project To DO List</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project To Do List</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
 
-<body>
-<header>
-  <h1>Minha Lista de Tarefas</h1>
-  <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-</header>
+  <body>
+    <header>
+      <h1>Minha Lista de Tarefas</h1>
+      <p id="funcionamento">
+        Clique duas vezes em um item para marcá-lo como completo
+      </p>
+    </header>
 
-<section>
-  <input
-  type="text"
-  name="texto-tarefa"
-  id="texto-tarefa"
-  autocomplete="off"
-  placeholder="Digite uma Tarefa">
+    <section>
+      <input type="text" id="texto-tarefa" placeholder="Adicione uma tarefa" />
+      <button class="btn" id="criar-tarefa">Adicionar</button>
+      <ol id="lista-tarefas"></ol>
+      <button id="apaga-tudo">Limpar Lista</button>
+      <button id="remover-finalizados">Remover Concluídos</button>
+      <button id="mover-cima">Move Para Cima</button>
+      <button id="mover-baixo">Move Para Baixo</button>
+      <button id="remover-selecionado">Remover Selecionado</button>
+      <button id="salvar-tarefas">Salvar Tarefas</button>
+    </section>
 
-  <ol id="lista-tarefas">Lista</ol>
-
-  <button id="criar-tarefa">Adicionar Item</button>
-  <button id="apaga-tudo">Apagar Itens</button>
-  <button id="remover-finalizados">Remover Concluídos</button>
-
-
-
-</section>
-<script src="/script.js"></script>
-</body>
-
+    <script src="/script.js"></script>
+  </body>
 </html>
