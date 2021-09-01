@@ -5,7 +5,7 @@ function addTaskList() {
     const tasks = document.getElementById('lista-tarefas');
     const listItem = document.createElement('li');
     listItem.innerText = textItem;
-    listItem.className = 'listItens';
+    listItem.className = 'list-itens';
     tasks.appendChild(listItem);
     document.getElementById('texto-tarefa').value = '';
   }
@@ -17,7 +17,7 @@ clickAddItem.addEventListener('click', addTaskList);
 
 // Função para selecionar tarefas na lista
 function selectElement(clickEvent) {
-  const taskList = document.querySelectorAll('.listItens');
+  const taskList = document.querySelectorAll('.list-itens');
   const itenSelection = clickEvent.target;
   for (let i = 0; i < taskList.length; i += 1) {
     if (taskList[i].id === 'selected') {
@@ -33,7 +33,7 @@ clickSelection.addEventListener('click', selectElement);
 
 function markDone(clickEvent) {
   const itenSelection = clickEvent.target;
-  if (itenSelection.className === 'listItens completed') {
+  if (itenSelection.className === 'list-itens completed') {
     itenSelection.classList.remove('completed');
   } else {
     itenSelection.classList.add('completed');
@@ -41,3 +41,13 @@ function markDone(clickEvent) {
 }
 
 clickSelection.addEventListener('dblclick', markDone);
+
+function clearList() {
+  const list = document.querySelectorAll('.list-itens');
+  for (let i = 0; i < list.length; i += 1) {
+    list[i].remove();
+  }
+}
+
+const clearListButton = document.getElementById('apaga-tudo');
+clearListButton.addEventListener('click', clearList);
