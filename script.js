@@ -15,6 +15,7 @@ function addTaskList() {
 const clickAddItem = document.getElementById('criar-tarefa');
 clickAddItem.addEventListener('click', addTaskList);
 
+// Função para selecionar tarefas na lista
 function selectElement(clickEvent) {
   const taskList = document.querySelectorAll('.listItens');
   const itenSelection = clickEvent.target;
@@ -26,5 +27,17 @@ function selectElement(clickEvent) {
   itenSelection.id = 'selected';
 }
 
+// Escutador de evento para selecionar um elemento da lista.
 const clickSelection = document.getElementById('lista-tarefas');
 clickSelection.addEventListener('click', selectElement);
+
+function markDone(clickEvent) {
+  const itenSelection = clickEvent.target;
+  if (itenSelection.className === 'listItens completed') {
+    itenSelection.classList.remove('completed');
+  } else {
+    itenSelection.classList.add('completed');
+  }
+}
+
+clickSelection.addEventListener('dblclick', markDone);
