@@ -1,3 +1,10 @@
+/*
+Para fazer esse Projeto tive auxilio dos colegas da Turma 15A
+Rafael de Lima Consulta de Repositório do Git
+Ítalo Sérgio
+Gabriel Moda
+Mentorias 1:1
+*/
 const taskList = document.querySelector('#lista-tarefas');
 
 // Função limpar lista remove todos os itens
@@ -109,5 +116,12 @@ function removeItemSelecionado() {
     }
   }
 }
-
 document.getElementById('remover-selecionado').addEventListener('click', removeItemSelecionado);
+document.getElementById('salvar-tarefas').addEventListener('click', salvaTarefa);
+function salvaTarefa() {
+  localStorage.setItem('key', document.getElementById('lista-tarefas').innerHTML);
+}
+function trazerTarefa() {
+  document.getElementById('lista-tarefas').innerHTML = localStorage.getItem('key');
+}
+trazerTarefa();
