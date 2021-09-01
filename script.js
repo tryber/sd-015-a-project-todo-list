@@ -92,4 +92,32 @@ const botaoRemoverFinalizados = (removerFinalizados) => {
   botaoRemover.addEventListener('click',removerFinalizadosDaLista);
 }
 botaoRemoverFinalizados ('Remover finalizados');
- 
+
+
+
+
+
+
+const salvandoTarefas = () => {
+  const tagOl = document.querySelector('#lista-tarefas');
+  localStorage.setItem('tarefas',tagOl.innerHTML);
+  
+}
+
+window.onload = () => {
+const tarefas = localStorage.getItem('tarefas');
+const tagOl = document.querySelector('#lista-tarefas');
+tagOl.innerHTML = tarefas;
+
+}
+
+const botaoSalvaConteudoLista = (salvarTarefas) => {
+  const botaoSalvar = document.createElement('button');
+  botaoSalvar.id = 'salvar-tarefas';
+  botaoSalvar.innerHTML = salvarTarefas;
+  const body = document.getElementsByTagName('body');
+  body[0].appendChild(botaoSalvar);
+  botaoSalvar.addEventListener('click', salvandoTarefas);
+} 
+
+botaoSalvaConteudoLista('Salvar tarefas');
