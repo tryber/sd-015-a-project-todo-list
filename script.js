@@ -1,17 +1,17 @@
+// Seletores
 const listItens = 'list-itens';
-const listaTarefas = 'lista-tarefas';
-const textoTarefa = 'texto-tarefa';
+const textTask = document.getElementById('texto-tarefa');
+const tasks = document.getElementById('lista-tarefas');
 
 // função para adicionar tarefas a lista
 function addTaskList() {
-  const textItem = document.getElementById(textoTarefa).value;
+  const textItem = textTask.value;
   if (textItem !== '') {
-    const tasks = document.getElementById(listaTarefas);
     const listItem = document.createElement('li');
     listItem.innerText = textItem;
     listItem.className = listItens;
     tasks.appendChild(listItem);
-    document.getElementById(textoTarefa).value = '';
+    textTask.value = '';
   }
 }
 
@@ -32,7 +32,7 @@ function selectElement(clickEvent) {
 }
 
 // Escutador de evento para selecionar um elemento da lista.
-const clickSelection = document.getElementById(listaTarefas);
+const clickSelection = tasks;
 clickSelection.addEventListener('click', selectElement);
 
 function markDone(clickEvent) {
@@ -84,6 +84,7 @@ function saveList() {
   localStorage.setItem('listC', JSON.stringify(saveClass));
 }
 
+// Função para recuperar a lista salva
 function getList() {
   const saveString = localStorage.getItem('list');
   const objSave = JSON.parse(saveString);
@@ -92,18 +93,47 @@ function getList() {
   const objSaveClass = JSON.parse(saveClassString);
   const arrayListC = Object.values(objSaveClass);
   for (let i = 0; i < arrayList.length; i += 1) {
-    const tasks = document.getElementById(listaTarefas);
     const listItem = document.createElement('li');
     listItem.innerText = arrayList[i];
     listItem.className = arrayListC[i];
     tasks.appendChild(listItem);
-    document.getElementById(textoTarefa).value = '';
+    textTask.value = '';
   }
 }
 
+// Escutador de evento para o botão de salvar tarefas
 const saveListButton = document.getElementById('salvar-tarefas');
 saveListButton.addEventListener('click', saveList);
 
+// Teste para saber se existe alguma lista salva no localstorage
 if ('list' in localStorage) {
   getList();
 }
+
+// Mover tarefa para cima
+function moveUp() {
+  const changeTask = tasks.children;
+  for (let i = 1; i < changeTask.length; i += 1) {
+    if (changeTask[i].id === 'selected') {
+      tasks.insertBefore(changeTask[i], changeTask[i - 1]);
+    }
+  }
+}
+
+// Escutador de evento para o botão de mover para cima
+const moveUpButton = document.getElementById('mover-cima');
+moveUpButton.addEventListener('click', moveUp);
+
+// Mover tarefa para baixo
+function moveDown() {
+  const changeTask = document.querySelectorAll('li');
+  for (let i = 0; i < changeTask.length - 1; i += 1) {
+    if (changeTask[i].id === 'selected') {
+      tasks.insertBefore(changeTask[i + 1], changeTask[i]);
+    }
+  }
+}
+
+// Escutador de evento para o botão de mover para baixo
+const moveDownButton = document.getElementById('mover-baixo');
+moveDownButton.addEventListener('click', moveDown);
