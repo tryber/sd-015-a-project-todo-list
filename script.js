@@ -4,7 +4,7 @@ function botaos(nomeBotao) {
   botao.innerHTML = nomeBotao;
   const body = document.getElementsByTagName('body');
   body[0].appendChild(botao);
-  console.log(body[0]);
+  
 
 }
 botaos('Criar tarefas');
@@ -121,3 +121,33 @@ const botaoSalvaConteudoLista = (salvarTarefas) => {
 } 
 
 botaoSalvaConteudoLista('Salvar tarefas');
+
+
+//------------------------------------------------------------------
+
+
+const removeItem = () => {
+ const liLista = document.getElementsByTagName('li');
+ const liSelecionado = '';
+ for(let cont = 0 ; cont < liLista.length ; cont ++){
+   if(liLista[cont].style.backgroundColor == 'rgb(128, 128, 128)'){
+     liLista[cont].remove()
+   }
+
+ }
+   
+
+}
+
+
+const botaoRemoverItemSelecionado = (removeSelecionado) => {
+  const botaoRemoverSelecionado = document.createElement('button');
+  botaoRemoverSelecionado.id = 'remover-selecionado';
+  botaoRemoverSelecionado.innerHTML = removeSelecionado;
+  const body = document.getElementsByTagName('body');
+  body[0].appendChild(botaoRemoverSelecionado);
+  botaoRemoverSelecionado.addEventListener('click',removeItem);
+
+}
+
+botaoRemoverItemSelecionado('Remover Selecionado')

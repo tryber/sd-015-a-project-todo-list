@@ -1,1 +1,1 @@
-for(let cont = 0; cont < UmElementoPorVez.length ; cont ++) {
+rgb(128, 128, 128)
