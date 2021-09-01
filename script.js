@@ -137,3 +137,15 @@ function moveDown() {
 // Escutador de evento para o botão de mover para baixo
 const moveDownButton = document.getElementById('mover-baixo');
 moveDownButton.addEventListener('click', moveDown);
+
+// Função para remover tarefa selecionada
+function removeSelected() {
+  const selection = document.querySelector('#selected');
+  if (selection.id === 'selected') {
+    selection.remove();
+  }
+}
+
+// Escutador de evento para o botão de remover selecionado
+const removeSelButton = document.getElementById('remover-selecionado');
+removeSelButton.addEventListener('click', removeSelected);
