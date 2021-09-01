@@ -1,0 +1,57 @@
+body {
+  font-family: fantasy, Courier, monospace;
+  background-color: bisque;
+}
+
+h1 {
+  color: darkgreen;
+}
+
+#funcionamento {
+  color: red;
+}
+
+#texto-tarefa {
+  border-radius: 100px;
+  width: 30%;
+  height: 30px;
+}
+
+#criar-tarefa {
+  color: brown;
+  border-radius: 100px;
+}
+
+#apaga-tudo {
+  color: brown;
+  border-radius: 100px;
+}
+
+#remover-finalizados {
+  color: brown;
+  border-radius: 100px;
+}
+
+#salvar-tarefas {
+  color: brown;
+  border-radius: 100px;
+}
+
+#mover-cima {
+  color: brown;
+  border-radius: 100px;
+}
+
+#mover-baixo {
+  color: brown;
+  border-radius: 100px;
+}
+
+#remover-selecionado {
+  color: brown;
+  border-radius: 100px;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
