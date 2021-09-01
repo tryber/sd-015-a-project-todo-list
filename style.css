@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+#selected {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+header {
+  background-color: cadetblue;
+  width: 750px;
+}
+
+main {
+  background-color: cornflowerblue;
+  width: 750px;
+}
+
+#list-control {
+  display: flex;
+  justify-content: space-between;
+}
