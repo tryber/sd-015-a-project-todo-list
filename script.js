@@ -1,13 +1,17 @@
+const listItens = 'list-itens';
+const listaTarefas = 'lista-tarefas';
+const textoTarefa = 'texto-tarefa';
+
 // função para adicionar tarefas a lista
 function addTaskList() {
-  const textItem = document.getElementById('texto-tarefa').value;
+  const textItem = document.getElementById(textoTarefa).value;
   if (textItem !== '') {
-    const tasks = document.getElementById('lista-tarefas');
+    const tasks = document.getElementById(listaTarefas);
     const listItem = document.createElement('li');
     listItem.innerText = textItem;
-    listItem.className = 'list-itens';
+    listItem.className = listItens;
     tasks.appendChild(listItem);
-    document.getElementById('texto-tarefa').value = '';
+    document.getElementById(textoTarefa).value = '';
   }
 }
 
@@ -28,7 +32,7 @@ function selectElement(clickEvent) {
 }
 
 // Escutador de evento para selecionar um elemento da lista.
-const clickSelection = document.getElementById('lista-tarefas');
+const clickSelection = document.getElementById(listaTarefas);
 clickSelection.addEventListener('click', selectElement);
 
 function markDone(clickEvent) {
@@ -66,3 +70,40 @@ function clearDone() {
 // Escutador de evento para limpar tarefas concluídas
 const clearDoneButton = document.getElementById('remover-finalizados');
 clearDoneButton.addEventListener('click', clearDone);
+
+// Função para salvar a lista
+function saveList() {
+  const listItensSave = document.getElementsByClassName('list-itens');
+  const save = {};
+  const saveClass = {};
+  for (let i = 0; i < listItensSave.length; i += 1) {
+    save[`item${i}`] = listItensSave[i].innerText;
+    saveClass[`itemC${i}`] = listItensSave[i].className;
+  }
+  localStorage.setItem('list', JSON.stringify(save));
+  localStorage.setItem('listC', JSON.stringify(saveClass));
+}
+
+function getList() {
+  const saveString = localStorage.getItem('list');
+  const objSave = JSON.parse(saveString);
+  const arrayList = Object.values(objSave);
+  const saveClassString = localStorage.getItem('listC');
+  const objSaveClass = JSON.parse(saveClassString);
+  const arrayListC = Object.values(objSaveClass);
+  for (let i = 0; i < arrayList.length; i += 1) {
+    const tasks = document.getElementById(listaTarefas);
+    const listItem = document.createElement('li');
+    listItem.innerText = arrayList[i];
+    listItem.className = arrayListC[i];
+    tasks.appendChild(listItem);
+    document.getElementById(textoTarefa).value = '';
+  }
+}
+
+const saveListButton = document.getElementById('salvar-tarefas');
+saveListButton.addEventListener('click', saveList);
+
+if ('list' in localStorage) {
+  getList();
+}
