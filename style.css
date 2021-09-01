@@ -1,0 +1,10 @@
+background: grey;
+}
+
+#cria-tarefa {
+  display: inline-block;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
