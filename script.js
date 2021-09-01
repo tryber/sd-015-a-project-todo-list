@@ -43,7 +43,6 @@ function mudarAcorDoElemento(event) {
 //------------------------------------------------------------------------------
 
 const riscarElement = (event) => {
-  console.log(event.target.style.textDecoration);
   
   if(event.target.className == 'completed') {
     event.target.className = ' ';
@@ -65,15 +64,32 @@ const criarBotao = (nomeDoBotao) => {
  
 const limparItens = () => {
   const elementoOl = document.querySelector('#lista-tarefas');
-  // const tagDaLi = document.getElementsByTagName('li');
   elementoOl.innerHTML = ' ';
-//    for(let cont = 0 ; cont < tagDaLi.length ; cont ++){
-//     elementoOl.removeChild(tagDaLi[cont]);
-
-//  }
 
 }
  
- criarBotao('Limpar');
+criarBotao('Limpar');
 
+
+
+const removerFinalizadosDaLista = () => {
+  const tagLi = document.querySelectorAll('.completed');
+  console.log(tagLi)
+  for(let cont = 0 ; cont < tagLi.length ; cont ++){
+     tagLi[cont].remove()
+   
+
+}
+   
+}
+
+const botaoRemoverFinalizados = (removerFinalizados) => {
+  const botaoRemover = document.createElement('button');
+  botaoRemover.id = 'remover-finalizados';
+  botaoRemover.innerHTML = removerFinalizados;
+  const body = document.getElementsByTagName('body');
+  body[0].appendChild(botaoRemover);
+  botaoRemover.addEventListener('click',removerFinalizadosDaLista);
+}
+botaoRemoverFinalizados ('Remover finalizados');
  
