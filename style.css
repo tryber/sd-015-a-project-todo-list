@@ -1,4 +1,5 @@
 body {
+  font-family: 'Times New Roman', Times, serif;
   background-color: bisque;
 }
 
@@ -8,4 +9,21 @@ h1 {
 
 #funcionamento {
   color: red;
+}
+
+#criar-tarefa {
+  color: brown;
+}
+#apaga-tudo {
+  color: brown;
+}
+#remover-finalizados {
+  color: brown;
+}
+.completed {
+  text-decoration: line-through solid rgb(0, 0, 0);
+}
+.selected {
+  background-color: rgb(128, 128, 128);
+  width: 200px;
 }
