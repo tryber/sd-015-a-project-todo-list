@@ -8,30 +8,38 @@
     <title>To Do List</title>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Minha Lista de Tarefas</h1>
+        </header>
+        <main>
+            <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+            
+            <div class="addItem">
+                <input type="text" id="texto-tarefa" placeholder="Adicione sua tarefa aqui">
+                <button id="criar-tarefa" class="btn">Adicionar</button>
+            </div>
+            
+            
+            <ol id="lista-tarefas"></ol>
     
-    <header>
-        <h1>Minha Lista de Tarefas</h1>
-    </header>
-    <main>
-        <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+            <div class="botoes">
+
+                <button id="remover-selecionado" class="btn">Limpar Selecionado</button>
+
+                <button id="mover-cima" class="btn">&uarr;</button>
     
-        <input type="text" id="texto-tarefa" placeholder="Adicione sua tarefa aqui">
-        <button id="criar-tarefa">Adicionar</button>
-        
-        <ol id="lista-tarefas"></ol>
+                <button id="mover-baixo" class="btn">&darr;</button>             
     
-        <button id="mover-cima">&uarr;</button>
-
-        <button id="mover-baixo">&darr;</button>
-
-        <button id="remover-selecionado">Limpar Selecionado</button>
-
-        <button id="remover-finalizados">Limpar Completos</button>
-
-        <button id="apaga-tudo">Limpar Lista</button>      
-
-        <button id="salvar-tarefas">Salvar Lista</button>
-    </main>
+                <button id="remover-finalizados" class="btn">Limpar Completos</button>
+    
+                <button id="apaga-tudo" class="btn">Limpar Lista</button>      
+    
+                <button id="salvar-tarefas" class="btn">Salvar Lista</button>
+            </div>
+        </main>
+    </div>
+    
     
 
 

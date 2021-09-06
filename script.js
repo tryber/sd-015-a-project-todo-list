@@ -3,12 +3,12 @@ const listaTarefas = document.getElementById('lista-tarefas');
 
 // FUNÇÕES DE SELECIONAR TAREFA(bgCinza) E COMPLETA-LA(riscar)
 // essas funções vem antes de criar as tarefas por causa do lint, elas funcionam graças ao principio de hoisting
-function bgCinza(event) {
+function selecionado(event) {
   const tarefa = document.getElementsByClassName('tarefa');
 
   for (let index = 0; index < tarefa.length; index += 1) {
-    tarefa[index].classList.remove('bgCinza');
-    event.target.classList.add('bgCinza');
+    tarefa[index].classList.remove('selecionado');
+    event.target.classList.add('selecionado');
   }
 }
 
@@ -25,8 +25,8 @@ function criarTarefa() {
   listaTarefas.appendChild(tarefaCriada);
   inputTarefa.value = '';
 
-  // chama a função bgCinza logo depois de criar a tarefa, antes disso a tarefa não existe portanto se eu chamar depois, ela não vai funcionar, não tem como atribuir algo, a alguma coisa que não existe
-  tarefaCriada.addEventListener('click', bgCinza);
+  // chama a função selecionado logo depois de criar a tarefa, antes disso a tarefa não existe portanto se eu chamar depois, ela não vai funcionar, não tem como atribuir algo, a alguma coisa que não existe
+  tarefaCriada.addEventListener('click', selecionado);
   tarefaCriada.addEventListener('dblclick', riscado);
 }
 const btnAddTarefa = document.getElementById('criar-tarefa');
@@ -81,7 +81,7 @@ listaTarefas.innerHTML = exibir; // e coloco o conteudo do local storage no cont
 function moverCima() {
   const tarefa = document.getElementsByClassName('tarefa');
   for (let i = 1; i < tarefa.length; i += 1) {
-    if (tarefa[i].className === 'tarefa bgCinza') {
+    if (tarefa[i].className !== 'tarefa') {
       listaTarefas.insertBefore(tarefa[i], tarefa[i - 1]);
     }
   }
@@ -92,7 +92,7 @@ botaoMoverCima.addEventListener('click', moverCima);
 function moverBaixo() {
   const tarefa = document.getElementsByClassName('tarefa');
   for (let i = 0; i < tarefa.length - 1; i += 1) {
-    if (tarefa[i].className === 'tarefa bgCinza') {
+    if (tarefa[i].className !== 'tarefa') {
       listaTarefas.insertBefore(tarefa[i + 1], tarefa[i]);
     }
   }
@@ -105,7 +105,7 @@ botaoMoverBaixo.addEventListener('click', moverBaixo);
 function removerSelecionado() {
   const tarefa = document.getElementsByClassName('tarefa');
   for (let i = 0; i < tarefa.length; i += 1) {
-    if (tarefa[i].className === 'tarefa bgCinza') {
+    if (tarefa[i].className === 'tarefa selecionado') {
       tarefa[i].remove();
     }
   }

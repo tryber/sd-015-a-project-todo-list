@@ -1,5 +1,86 @@
-.bgCinza {
-    background-color: rgb(128, 128, 128);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/736x/63/50/c7/6350c747985e8918f7a2bd13a17b1aa0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3%;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.644);
+    width: 80%;
+    border-radius: 10px;
+}
+header {
+    padding: 1.5%;
+    font-size: small;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5%;
+    font-size: 18px;
+}
+
+#funcionamento {
+    margin-bottom: 2%;
+    color: rgb(138, 138, 138);
+}
+
+.addItem {
+    margin-bottom: 15px;
+}
+
+#texto-tarefa {
+    width: 25%;
+    height: 32px;
+    padding: 2px;
+    border: 2px solid rgb(216, 230, 235);
+    border-radius: 5px;
+}
+
+#lista-tarefas {
+    padding-left: 2.7%;
+    font-size: 16px;
+    color: rgb(43, 43, 43);
+}
+
+.btn {
+    border: 0;
+    border-radius: 8px;
+    height: 30px;
+    padding: 0 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#criar-tarefa, #remover-finalizados {
+    background-color: rgb(31, 142, 238);
+}
+
+#mover-cima, #mover-baixo {
+    background-color: rgb(240, 173, 78);
+}
+
+#remover-selecionado, #apaga-tudo {
+    background-color: rgb(217, 83, 79);
+}
+
+#salvar-tarefas {
+    background-color: rgb(108, 184, 108);
+}
+.selecionado {
+    background-color: rgba(100, 187, 146, 0.555);
+    width: 30%;
+    border-radius: 10px;
+    padding-left: 10px;
 }
 
 .completed {
