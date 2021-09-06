@@ -99,3 +99,16 @@ function moverBaixo() {
 }
 const botaoMoverBaixo = document.getElementById('mover-baixo');
 botaoMoverBaixo.addEventListener('click', moverBaixo);
+
+// FUNÇÃO EXCLUIR SELECIONADO
+
+function removerSelecionado() {
+  const tarefa = document.getElementsByClassName('tarefa');
+  for (let i = 0; i < tarefa.length; i += 1) {
+    if (tarefa[i].className === 'tarefa bgCinza') {
+      tarefa[i].remove();
+    }
+  }
+}
+const botaoRmvSelecionado = document.getElementById('remover-selecionado');
+botaoRmvSelecionado.addEventListener('click', removerSelecionado);
