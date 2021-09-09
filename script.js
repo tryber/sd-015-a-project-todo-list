@@ -1,3 +1,4 @@
+// Exercises - 5 and 6
 const button = document.getElementById('criar-tarefa');
 
 function addList() {
@@ -9,64 +10,9 @@ function addList() {
 
 button.addEventListener('click', addList);
 
-const ol = document.getElementById('lista-tarefas');
+// Exercises - 7 and 8
 
 const body = document.querySelector('body');
-
-body.addEventListener('click', listSelect);
-
-body.addEventListener('dblclick', completed);
-
-function completed(e) {
-
-  e.target.classList.toggle('completed');  
-
-  // const taskComplete = document.querySelectorAll('.list');
-  //  let list;
-  // for (list of taskComplete) {
-  //   let li = e.target;
-
-  //   if(!li.classList.contains('completed')) {
-  //     li.classList.add('completed');
-  //   } else {
-  //     li.removeAttribute('')
-  //   }
-
-    // switch(!li.classList.contains('completed')) {
-    //   case true:
-    //     li.classList.add('completed');
-    //     break;
-    //   case false: 
-    //     li.classList.remove('completed');
-    //     break;
-    // }
-   
-    // if(li.classList.contains('completed')) {
-    //   li.classList.remove('completed');
-    // } else {
-    //   li.classList.add('completed');
-    // }
-
-    // switch(li.classList.contains('completed')) {
-    //   case true:
-    //   li.classList.remove('completed');
-    //   break;
-    //   case false:
-    //     li.classList.add('completed');
-    //   break;
-    // }
-
-    // li.classList.toggle('completed');
-  // }
-}
-
-function listSelect() {
-  const selectList = document.querySelectorAll('.list');
-   let list;
-  for (list of selectList) {
-    list.addEventListener('click', color);
-  }
-}
 
 function color(e) {
   const selectList = document.querySelectorAll('.list');
@@ -79,6 +25,93 @@ function color(e) {
   }
 }
 
+function listSelect() {
+  const selectList = document.querySelectorAll('.list');
+   let list;
+  for (list of selectList) {
+    list.addEventListener('click', color);
+  }
+}
+
+body.addEventListener('click', listSelect);
+
+// Exercise - 9
+
+const ol = document.getElementById('lista-tarefas');
+
+// body.addEventListener('dblclick', completed); "ERRO"
+
+ol.addEventListener('dblclick', completed);
+
+function completed(e) {
+
+  e.target.classList.toggle('completed');  
+  
+
+  // const taskComplete = document.querySelectorAll('.list');
+  // let list;
+  // for (list of taskComplete) {
+  //  let li = e.target;
+  //  li.classList.toggle('completed');
+  // }
+  
+
+  // const taskComplete = document.querySelectorAll('.list');
+  // let list;
+  // for (list of taskComplete) {
+  //  let li = e.target;
+  //   switch(!li.classList.contains('completed')) {
+  //     case true:
+  //       li.classList.add('completed');
+  //       break;
+  //     case false: 
+  //       li.classList.remove('completed');
+  //       break;
+  //   }
+  // }
+
+
+  // const taskComplete = document.querySelectorAll('.list');
+  // let list;
+  // for (list of taskComplete) {
+  //   let li = e.target;
+  //   switch(li.classList.contains('completed')) {
+  //     case true:
+  //       li.classList.remove('completed');
+  //       break;
+  //     case false:
+  //       li.classList.add('completed');
+  //       break;
+  //   }
+  // }
+   
+
+  // const taskComplete = document.querySelectorAll('.list');
+  // let list;
+  // for (list of taskComplete) {
+  //   let li = e.target;
+  //   if(li.classList.contains('completed')) {
+  //     li.classList.remove('completed');
+  //   } else {
+  //     li.classList.add('completed');
+  //   }
+  // }
+
+
+  // const taskComplete = document.querySelectorAll('.list');
+  // let list;
+  // for (list of taskComplete) {
+  //   let li = e.target;
+  //   if(!li.classList.contains('completed')) {
+  //     li.classList.add('completed');
+  //   } else {
+  //     li.removeAttribute('')
+  //   }
+  // }
+}
+
+// Exercise - 10
+
 const clear = document.querySelector('#apaga-tudo');
 
 clear.addEventListener('click', clearTask)
@@ -86,6 +119,8 @@ clear.addEventListener('click', clearTask)
 function clearTask() {
   ol.innerHTML = '';
 }
+
+// Exercise - 11
 
 const removeTask = document.querySelector('#remover-finalizados');
 
