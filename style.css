@@ -1,0 +1,12 @@
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+}
+ol li {
+  list-style: none;
+  user-select: none;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
