@@ -1,6 +1,8 @@
 const taskButton = document.getElementById('criar-tarefa');
 const cleanButton = document.getElementById('apaga-tudo');
 const cleanFinished = document.getElementById('remover-finalizados');
+const saveButton = document.querySelector('#salvar-tarefas');
+const ol = document.querySelector('#lista-tarefas');
 
 function makeSelected(event) {
   const addSelectedClass = event.target;
@@ -55,3 +57,14 @@ function finishedButton() {
   }
 }
 cleanFinished.addEventListener('click', finishedButton);
+
+function saveTasksButton() {
+  localStorage.setItem('savedTasks', ol.innerHTML);
+}
+saveButton.addEventListener('click', saveTasksButton);
+
+function loadTasks() {
+  ol.innerHTML = localStorage.getItem('savedTasks');
+}
+
+window.onload = () => loadTasks();
