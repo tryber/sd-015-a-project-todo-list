@@ -1,0 +1,68 @@
+.body {
+  background-color: lightblue;
+}
+
+.button {
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+#texto-tarefa {
+  border-radius: 35px;
+}
+
+#principal {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  margin: 20px 20%;
+  padding-bottom: 100px;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+#funcionamento {
+  display: flex;
+  justify-content: center;
+}
+
+#input {
+  display: flex;
+  justify-content: center;
+}
+
+#lista-tarefas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 100px;
+}
+
+.list {
+  width: 450px;
+}
+
+.inputClass {
+  width: 550px;
+  margin: 20px 0;
+}
+
+.gray {
+  background-color: gray;
+}
+
+#salvar-tarefas {
+  margin: 0 5px 0 80px;
+}
+
+#confirmação-de-salvo {
+  margin: 20px 80px;
+}
