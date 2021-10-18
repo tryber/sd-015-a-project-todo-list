@@ -28,10 +28,10 @@ function selected(event) {
 function addText() {
   const accessInput = document.querySelector('#texto-tarefa');
   const createLi = document.createElement('li');
-  createLi.innerText = accessInput.value; // Getting the input value
+  createLi.innerText = accessInput.value; // Getting input value
   createLi.classList.add('list');
   accessOl.appendChild(createLi);
-  accessInput.value = ''; // Resetting the input
+  accessInput.value = ''; // Resetting input
   createLi.addEventListener('dblclick', completedTask);
   createLi.addEventListener('click', selected);
 }
@@ -99,14 +99,42 @@ function levelDown() {
     const element = gray.nextSibling;
     const styleList = gray.style.backgroundColor;
     if (styleList === 'gray' && element !== null) {
-      console.log(element);
       accessOl.insertBefore(element, gray);
     }
   }
 }
 
+const textSave = document.querySelector('#confirmação-de-salvo');
 const buttonDown = document.querySelector('#mover-baixo');
 buttonDown.addEventListener('click', levelDown);
+
+function saveList() {
+  if (accessOl.childNodes.length === 0) {
+    alert('Não pode salvar a lista vazias');
+  }
+  const list = accessOl.innerHTML;
+  localStorage.setItem('value', list);
+  textSave.innerText = 'Sua lista foi salva';
+}
+
+const accessButtonSave = document.querySelector('#salvar-tarefas');
+accessButtonSave.addEventListener('click', saveList);
+
+function getList() {
+  accessOl.innerHTML = localStorage.getItem('value');
+  accessOl.childNodes.forEach((element) => {
+    element.addEventListener('dblclick', completedTask);
+    element.addEventListener('click', selected);
+  });
+}
+
+function deleteSave() {
+  localStorage.clear();
+  textSave.innerText = 'Sua lista não está salva';
+}
+
+const removeSaves = document.querySelector('#excluir-itens-salvos');
+removeSaves.addEventListener('click', deleteSave);
 
 function pressEnter(event) {
   if (event.key === 'Enter') { // Taken by reference to the '.key' function of the site https://www.horadecodar.com.br/2020/12/10/acionar-um-button-com-o-enter-do-teclado-em-javascript/ (Obs: Does not fit as a project requirement)
@@ -134,3 +162,7 @@ function move(event) {
 }
 
 document.addEventListener('keydown', move);
+
+window.onload = () => {
+  getList();
+};

@@ -15,27 +15,24 @@
     <header id="header"><h1>Minha Lista de Tarefas</h1></header>
   
    <div id="funcionamento" ><p>Clique duas vezes em um item para marcá-lo como completo</p></div>
-  
+   <div class="button">
+    <button id="criar-tarefa" class="btn btn-primary button"> Adicionar </button>
+    <button id="apaga-tudo" class="btn btn-warning button"> <span class="material-icons">
+      delete
+      </span> </button>
+    <button id="remover-finalizados" class="btn btn-danger button"> Remover Finalizados </button>
+    <button id="remover-selecionado" class="btn btn-warning button"> Remover Selecionados </button>
+    <button id="mover-cima" class="btn btn-secondary button"> <span class="material-icons"> arrow_upward </span> </button>
+    <button id="mover-baixo" class="btn btn-secondary button"><span class="material-icons"> arrow_downward </span></button>
+  </div>
     <div id="input">
       <input class="inputClass" type="text" id="texto-tarefa" name="input" placeholder="Insira aqui sua tarefa...">
     </div>
-   
     <ol id="lista-tarefas"></ol>
-
-    <div class="button">
-      <button id="criar-tarefa" class="btn btn-primary button"> Adicionar </button>
-      <button id="apaga-tudo" class="btn btn-warning button"> X </button>
-      <button id="remover-finalizados" class="btn btn-danger button"> Remover Finalizados </button>
-      <button id="remover-selecionado" class="btn btn-success button"> Remover Selecionados </button>
-      <button id="mover-cima" class="btn btn-secondary button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-      </svg></button>
-      <button id="mover-baixo" class="btn btn-secondary button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-      </svg></button>
-    </div>
+    <button id="salvar-tarefas" class="btn btn-success salvar"> Salvar Lista </button>
+    <button id="excluir-itens-salvos" class="btn btn-success salvar"> Remover Itens Salvos </button>
+    <p id="confirmação-de-salvo"> </p>
     </section>
-    
   </main>
   
   <script src="script.js"></script>
