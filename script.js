@@ -1,3 +1,7 @@
+// Global Variables
+let allLi = document.querySelectorAll('li');
+  
+
 // Requesito 1
 let selectBody = document.querySelector('body'); // selecionar tag body
 let creatHeader = document.createElement('header'); // criar tag header
@@ -34,18 +38,44 @@ creatButton.addEventListener('click', () =>{
   creatLi.innerHTML = teste; // pega o conteúdo escrito no input e bota no li
   creatInput.value = ""; // apaga o conteúdo escrito no input
 
-   creatLi.addEventListener('click', (event) => {
-
-     let allLi = document.querySelectorAll('li');
-     for (let i = 0; i < allLi.length; i ++) {
-      allLi[i].style.backgroundColor = "white";
-     }
-
-    creatLi.style.backgroundColor = "rgb(128, 128, 128)";   
-   })
-})
 
 // Requesito 8
+creatLi.addEventListener('click', (event) => {
+  let allLi = document.querySelectorAll('li');
+  for (let i = 0; i < allLi.length; i ++) {
+  allLi[i].style.backgroundColor = "white";
+  }
+  creatLi.style.backgroundColor = "rgb(128, 128, 128)";   
+  }) 
+
+  // Requesito 9
+
+  creatLi.addEventListener('dblclick', () => {
+    let allLi1 = document.querySelectorAll('li');
+    for (let i = 0; i < allLi1.length; i ++) {
+    let forLi = allLi1[i];
+    forLi.className = 'completed';
+    console.log(forLi);
+    }
+    
+    
+
+})
+creatOl.addEventListener('dblclick', () => {
+  allLi
+
+})
+
+
+   
+})
+
+
+
+
+
+
+
 
 
 //Requesito 10
