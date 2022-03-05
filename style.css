@@ -1,0 +1,66 @@
+.completed {
+  text-decoration: line-through;
+}
+main {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4f3ee;
+}
+body {
+  background-color: #bcb8b1;
+}
+header {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  font-size: 25px;
+}
+p {
+  text-align: center;
+  font-style: italic;
+}
+#apaga-tudo {
+  background-color: #ff595e;
+}
+#criar-tarefa {
+  background-color: #8ac926;
+}
+#remover-finalizados {
+  background-color: #ffca3a;
+}
+#lista-tarefas {
+  font-family: 'Balsamiq Sans', cursive;
+  line-height: 30px;
+  list-style: circle;
+}
+#lista-tarefas li {
+  margin-bottom: 10px;
+}
+#texto-tarefa {
+  border-radius: 10px;
+  font-size: medium;
+  height: 35px;
+  width: 600px;
+}
+.inputs {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.buttons {
+  padding: 15px;
+}
+
+.buttons button {
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 9px;
+  box-shadow: 0 3px #999;
+  cursor: pointer;
+}
+
+
+.buttons button:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
