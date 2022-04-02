@@ -12,7 +12,7 @@ const buttonMoveDown = document.querySelector('#mover-baixo');
 
 window.onload = createList();
 async function createList() {  
-  const list = await JSON.parse(localStorage.getItem('todoList'));
+  const list = await JSON.parse(localStorage.getItem('todoList')) || [];
 
   if (list.length > 0) {
     list.forEach((el) => {
@@ -30,6 +30,7 @@ async function createList() {
 
 function moveElementUp() {
   const target = document.querySelector('.selected');
+  if (!target) return null;
   const prevTask = target.closest('li').previousSibling;
 
   if(typeof(prevTask) !== 'undefined' && prevTask !== null){
@@ -40,6 +41,7 @@ buttonMoveUp.addEventListener('click', moveElementUp);
 
 function moveElementDown() {
   const target = document.querySelector('.selected');
+  if (!target) return null;
   const nextTarget = target.closest('li').nextSibling;
   
   if(typeof(nextTarget) !== 'undefined' && nextTarget !== null){
