@@ -45,6 +45,17 @@ header {
  color: aqua;
  opacity: 30%;
 }
+
+.selected {
+  background-color: rgb(128, 128, 128);
+}
+
+.buttonDefault {
+  background-color: black;
+  font-style: italic;
+  color: aqua;
+  opacity: 30%;
+ }
 .completed {
     text-decoration: line-through solid rgb(0, 0, 0);
 }
