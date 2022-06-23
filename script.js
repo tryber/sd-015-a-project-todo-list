@@ -2,7 +2,6 @@ const inputTarefa = document.getElementById('texto-tarefa');
 const listaTarefas = document.getElementById('lista-tarefas');
 
 // FUNÇÕES DE SELECIONAR TAREFA(bgCinza) E COMPLETA-LA(riscar)
-// essas funções vem antes de criar as tarefas por causa do lint, elas funcionam graças ao principio de hoisting
 function selecionado(event) {
   const tarefa = document.getElementsByClassName('tarefa');
 
@@ -25,7 +24,6 @@ function criarTarefa() {
   listaTarefas.appendChild(tarefaCriada);
   inputTarefa.value = '';
 
-  // chama a função selecionado logo depois de criar a tarefa, antes disso a tarefa não existe portanto se eu chamar depois, ela não vai funcionar, não tem como atribuir algo, a alguma coisa que não existe
   tarefaCriada.addEventListener('click', selecionado);
   tarefaCriada.addEventListener('dblclick', riscado);
 }
@@ -46,16 +44,10 @@ btnlimparLista.addEventListener('click', limparLista);
 
 function limparCompletos() {
   const deletaCompletos = document.getElementsByClassName('completed');
-  // console.log(deletaCompletos);
-  // aqui preciso pedir para o while excluir o indice 0 pois, se eu pedir pra ele excluir os elementos que contém a classe completed, quando a lista estiver vazia, ela ainda existirá, e da erro de lista indefinida
+
   while (deletaCompletos[0]) {
-    // console.log(deletaCompletos[0]);
     deletaCompletos[0].remove();
   }
-  // condição para excluir apenas um elemento riscado por click
-  // for (let index = 0; index < deletaCompletos.length; index += 1) {
-  //   deletaCompletos[index].remove(deletaCompletos[index]);
-  // }
 }
 const btnLimparCompletos = document.getElementById('remover-finalizados');
 btnLimparCompletos.addEventListener('click', limparCompletos);
@@ -63,18 +55,15 @@ btnLimparCompletos.addEventListener('click', limparCompletos);
 // MECANICA PARA SALVAR A LISTA NO BROWSER E EXIBI-LA QUANDO QUANDO ELA FOR CARREGADA NAVAMENTE
 
 function salvarLista() {
-  // listaTarefas = ol no html
-  localStorage.setItem('listaTarefas', JSON.stringify(listaTarefas.innerHTML)); // add o conteudo da ol (no caso as li) no browser -> chave = listaTarefas / valor = json.stringify
-  // console.log(listaTarefas.innerHTML);
+  localStorage.setItem('listaTarefas', JSON.stringify(listaTarefas.innerHTML));
 }
 const btnSalvarLista = document.getElementById('salvar-tarefas');
 btnSalvarLista.addEventListener('click', salvarLista);
 
-const exibir = JSON.parse(localStorage.getItem('listaTarefas')); // pego o conteudo q está no local storage, e coloco na variavel exibir
-window.onload = exibir; // variavel exibir é carregada na pagina
+const exibir = JSON.parse(localStorage.getItem('listaTarefas'));
+window.onload = exibir;
 
-// listaTarefas = ol no html
-listaTarefas.innerHTML = exibir; // e coloco o conteudo do local storage no conteudo da ol
+listaTarefas.innerHTML = exibir;
 
 // BOTÕES PARA MOVER AS TAREFAS
 
